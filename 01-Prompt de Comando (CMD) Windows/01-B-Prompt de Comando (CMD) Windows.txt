@@ -1,0 +1,131 @@
+C:\Users\Aluno\Desktop>mkdir projeto_inicial
+
+C:\Users\Aluno\Desktop>cd projeto_inicial
+
+C:\Users\Aluno\Desktop\projeto_inicial>mkdir html css js assets
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd assets
+
+C:\Users\Aluno\Desktop\projeto_inicial\assets>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd css
+
+C:\Users\Aluno\Desktop\projeto_inicial\css>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd html
+
+C:\Users\Aluno\Desktop\projeto_inicial\html> cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd js
+
+C:\Users\Aluno\Desktop\projeto_inicial\js>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd html
+
+C:\Users\Aluno\Desktop\projeto_inicial\html>echo Bem-vindo ao Projeto inicial. > index.html
+
+C:\Users\Aluno\Desktop\projeto_inicial\html>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd css
+
+C:\Users\Aluno\Desktop\projeto_inicial\css>echo  body{font-family:Arial,sans-serif;background-color:beige} > style.css
+
+C:\Users\Aluno\Desktop\projeto_inicial\css>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd assets
+
+C:\Users\Aluno\Desktop\projeto_inicial\assets>mkdir img fonts
+
+C:\Users\Aluno\Desktop\projeto_inicial\assets>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd css
+
+C:\Users\Aluno\Desktop\projeto_inicial\css>move style.css ..\assets
+        1 arquivo(s) movido(s).
+
+C:\Users\Aluno\Desktop\projeto_inicial\css>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial> cd assets
+
+C:\Users\Aluno\Desktop\projeto_inicial\assets>tree /f
+Listagem de caminhos de pasta para o volume Windows
+O número de série do volume é E472-E37A
+C:.
+│   style.css
+│
+├───fonts
+└───img
+
+C:\Users\Aluno\Desktop\projeto_inicial\assets>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd js
+
+C:\Users\Aluno\Desktop\projeto_inicial\js> echo console.log ("Script carregado!") > script.js
+
+C:\Users\Aluno\Desktop\projeto_inicial\js> echo console.log ("Aplicação iniciada!") > app.js
+
+C:\Users\Aluno\Desktop\projeto_inicial\js>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd html
+
+C:\Users\Aluno\Desktop\projeto_inicial\html>copy index.html ..\assets
+        1 arquivo(s) copiado(s).
+
+C:\Users\Aluno\Desktop\projeto_inicial\html>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd js
+
+C:\Users\Aluno\Desktop\projeto_inicial\js> rename app.js main.js
+
+C:\Users\Aluno\Desktop\projeto_inicial\js>cd..
+
+C:\Users\Aluno\Desktop\projeto_inicial>tree /f
+Listagem de caminhos de pasta para o volume Windows
+O número de série do volume é E472-E37A
+C:.
+├───assets
+│   │   index.html
+│   │   style.css
+│   │
+│   ├───fonts
+│   └───img
+├───css
+├───html
+│       index.html
+│
+└───js
+        main.js
+        script.js
+
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd assets
+
+C:\Users\Aluno\Desktop\projeto_inicial\assets>del index.html
+
+C:\Users\Aluno\Desktop\projeto_inicial\assets>cd ..
+
+C:\Users\Aluno\Desktop\projeto_inicial>cd html
+
+C:\Users\Aluno\Desktop\projeto_inicial\html>notepad index.html
+
+C:\Users\Aluno\Desktop\projeto_inicial\html>cd..
+
+C:\Users\Aluno\Desktop\projeto_inicial>tree /f
+Listagem de caminhos de pasta para o volume Windows
+O número de série do volume é E472-E37A
+C:.
+├───assets
+│   │   style.css
+│   │
+│   ├───fonts
+│   └───img
+├───css
+├───html
+│       index.html
+│
+└───js
+        main.js
+        script.js
+
+
+C:\Users\Aluno\Desktop\projeto_inicial>

@@ -1,0 +1,28 @@
+Protótipo de Tela
+Lucas Torquato
+•
+22 de fev.
+100 pontos
+Criando Telas no Figma
+Objetivo: Desenvolver a interface de um sistema simples no Figma.
+
+Descrição:
+Agora que você já tem os requisitos da sua sistema de login, crie as telas necessárias se baseando na prática realizada em aula.
+
+Exemplo: 
+
+Tela de Login
+Logo do App (pode usar algum aleatório da internet)
+Campos: E-mail, Senha.
+Check para lembrar o usuário
+Link para recuperar Senha
+Botão para fazer o login.
+Botão Cadastrar conta.
+Tela de Cadastro
+Campos: Nome, E-mail, Senha, Confirmar Senha.
+Botão Cadastrar conta.
+Botão para voltar ao login.
+Tela de Esqueceu a Senha
+Campos: E-mail.
+Botão para recuperar a senha.
+Botão para voltar ao login

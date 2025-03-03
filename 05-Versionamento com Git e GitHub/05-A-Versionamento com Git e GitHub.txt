@@ -1,0 +1,28 @@
+Versionamento com Git e GitHub
+Lucas Torquato
+•
+Ontem
+100 pontos
+Atividade Versionamento com Git e GitHub
+
+Você será responsável por criar e gerenciar um repositório local utilizando o Git e enviar suas alterações para um repositório remoto no GitHub. Siga os passos abaixo:
+
+1 - Crie uma pasta chamada desenvolvimento-javascript no seu computador.
+2 - Inicialize o repositório Git nessa pasta.
+3 - Configure seu nome e e-mail no Git.
+4 - Crie dois arquivos:
+      -- README.md: Adicione uma breve descrição do repositório, onde haverá conteúdos realizados no curso.
+      -- anotacoes.txt: Faça uma rápida pesquisa sobre JavaScript e adicione algumas informações que achou relevante.
+5 - Adicione os dois arquivos ao controle de versão, faça o commit e conecte ao repositório remoto que você criará no GitHub com o mesmo nome da pasta.
+6 - Envie o commit para o repositório remoto.
+7 - Edite o arquivo anotacoes.txt, adicione mais algumas informações sobre JavaScript, e suba as alterações para o GitHub novamente.
+8 - Por fim, exclua a pasta local e utilize o comando de clone para baixar o repositório completo do GitHub novamente.
+9 - Após o clone faça um comentário no arquivo anotações.txt adicionando seu nome na última linha do arquivo e atualize o diretório remoto.
+
+Entrega:
+Garanta que o repositório no GitHub contenha os dois arquivos (README.md e anotacoes.txt), com todas as alterações salvas e o histórico de commits organizado.
+
+Desafio extra: Experimente criar dentro da pasta desenvolvimento-javascript pastas referentes as atividades já realizadas, baixar os arquivos enviados no classroom e colocar dentro de suas respectivas pastas, assim todas as atividades realizadas durante o curso irão ficar no repositório remoto.
+
+Enviar o link do repositório GitHub
+Enviar os comandos que você utilizou.

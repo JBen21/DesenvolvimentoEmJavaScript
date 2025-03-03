@@ -1,0 +1,25 @@
+Levantamento de Requisitos - Biblioteca
+Lucas Torquato
+•
+15 de fev.
+100
+/100
+100 pontos de 100 possíveis
+Estudo de Caso: Sistema de Gerenciamento de Biblioteca
+
+Cenário:
+
+A biblioteca de uma escola deseja modernizar seu sistema de gerenciamento, atualmente baseado em papel, para um
+sistema informatizado. Os principais objetivos incluem melhorar a eficiência no controle de empréstimos, facilitar a busca por livros e proporcionar uma experiência mais amigável para os usuários.
+
+Stakeholders:
+•Bibliotecários
+•Alunos
+•Professores
+
+Levantando os requisitos:
+
+Individual:
+identificar os requisitos funcionais e não funcionais necessários para o sistema de acordo com o cenário apresentado, pensem no sistema como um todo, em vários aspectos.
+
+Fazer em um bloco de notas, word, google docs.

@@ -1,0 +1,18 @@
+funcionais 
+cadastro do aluno
+histórico de empréstimos (gênero da literatura...)
+calculo da data de entrega mediante a data de empréstimo
+histórico de entregas (prazo/fora do prazo)
+acessibilidade 
+envio de avisos por e-mail/ SMS / WhatsApp
+
+
+não funcionais 
+O sistema deve ser capaz de processar 100 cadastros por segundo.
+O sistema deve ser acessível a partir de dispositivos móveis.
+O sistema deve ser seguro, com criptografia de dados sensíveis.
+O sistema deve ter uma interface amigável e fácil de usar.
+O sistema deve ter uma resposta rapida de busca da disponibilidade do livro 
+O sistema deve ser leve
+
+
