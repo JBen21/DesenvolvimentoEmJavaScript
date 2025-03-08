@@ -1,0 +1,24 @@
+REQUISITOS 
+	Funcionais
+		Cadastro de Usuário (Nome, E-mail, Telefone, Senha)
+		Acesso a Conta "Login" (E-mail ou Telefone, Senha)
+		Acesso vinculado a empresas (Meta, google...)
+		Acesso via biometria (para plataforma de celular)
+		Recuperação de Senha (E-mail ou Telefone)
+		Salvar conta
+		
+	Não Funcionais
+		Sistema online
+		Múltiplas plataformas e responsividade
+	        Acessibilidade
+		Integração (WhatsApp)
+		Intuitivo
+		Segurança
+
+	Regras de negocio
+		Não pode haver múltiplos cadastros para o mesmo usuário (E-mail, Telefone, Senha)
+		E-mail deve ser valido assim como numero de telefone
+		Tentativas de digitação de senha erradas exigem contato para recuperação de login
+		
+
+		

@@ -1,1 +1,2 @@
 # DesenvolvimentoEmJavaScript
+O curso de Desenvolvedor JavaScript capacita os alunos para desenvolverem sistemas e aplicações, determinando interface gráfica, critérios ergonômicos de navegação, montagem da estrutura de banco de dados e codificação de programas. Projetam, implantam e realizam manutenção de sistemas e aplicações, selecionam recursos de trabalho, tais como metodologias de desenvolvimento de sistemas, linguagem de programação e ferramentas de desenvolvimento. Planejam etapas e ações de trabalho.

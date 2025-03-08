@@ -1,0 +1,20 @@
+Levantamento de Requisitos - Sistema de Autenticação
+Lucas Torquato
+•
+15 de fev.
+100 pontos
+Atividade: Definição de Requisitos para um Sistema de Autenticação
+Objetivo:
+O objetivo desta atividade é desenvolver a habilidade de identificar e definir requisitos funcionais e não funcionais para um sistema de autenticação de usuários.
+
+Descrição da Atividade:
+Uma empresa precisa de um sistema de autenticação de usuários, que inclui três funcionalidades principais: login, cadastro de novos usuários e recuperação de senha. Para isso, sua equipe foi encarregada de definir os requisitos funcionais e não funcionais do sistema.
+
+Tarefa:
+Leia atentamente a descrição das telas abaixo e identifique quais requisitos devem ser implementados para garantir o funcionamento correto e seguro do sistema.
+
+Liste pelo menos 5 requisitos funcionais, 3 requisitos não funcionais e algumas regras de negócio.
+Os requisitos devem ser escritos de forma clara e objetiva, seguindo o formato:
+Requisitos Funcionais (RF): Definem o que o sistema deve fazer.
+Requisitos Não Funcionais (RNF): Definem restrições de qualidade, desempenho e segurança.
+Regras de Negócio (RN): Definem as regras da empresa.

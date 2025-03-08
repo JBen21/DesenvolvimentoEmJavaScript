@@ -1,0 +1,47 @@
+Prompt de Comando (CMD) Windows
+Lucas Torquato
+•
+8 de fev.
+100
+/100
+100 pontos de 100 possíveis
+Atividade Prompt de Comando (CMD) Windows
+
+Você foi contratado como Desenvolvedor para organizar e configurar a estrutura de um projeto de desenvolvimento web. Sua tarefa é utilizar o Prompt de Comando (CMD) para realizar uma série de atividades, como criação de pastas, manipulação de arquivos e configuração de um ambiente básico de trabalho.
+
+O objetivo é que você demonstre suas habilidades com os comandos básicos do terminal, gerenciando eficientemente os arquivos e pastas do projeto. Siga os passos descritos em cada exercício abaixo, aplicando o conhecimento aprendido.
+
+Exercícios:
+
+1 - Crie uma pasta chamada "projeto_inicial" na área de trabalho e, dentro dela, crie as seguintes subpastas:
+--- html
+--- css
+--- js
+--- assets
+
+2 - Navegue para a pasta "html", "css", "js", "assets" e verifique se o caminho atual está correto (dica: utilize o comando para mostrar o diretório atual).
+
+3 - Na pasta "html", crie um arquivo chamado "index.html" com o seguinte texto: Bem-vindo ao Projeto Inicial. Na pasta "css", crie um arquivo chamado "style.css" com o texto: body { font-family: Arial, sans-serif; background-color: beige}
+
+4 - Dentro da pasta "assets", crie duas subpastas chamadas "img" e "fonts".
+
+5 - Mova o arquivo "style.css" da pasta "css" para dentro da pasta "assets".
+
+6 - Liste os arquivos e subpastas dentro da pasta "assets" para verificar se o arquivo "style.css" foi movido corretamente.
+
+7 - Na pasta "js", crie dois arquivos chamados "script.js" com o texto console.log("Script carregado!"); e "app.js" com o texto console.log("Aplicação Iniciada!");
+
+8 - Faça uma cópia do arquivo "index.html" da pasta "html" para a pasta "assets".
+
+9 - Renomeie o arquivo "app.js" para "main.js" dentro da pasta "js".
+
+10 - Verifique a estrutura do projeto, listando os diretórios e arquivos de cada pasta principal (html, css, js, e assets) para garantir que tudo está no lugar correto.
+
+11 - Navegue até a pasta "assets" e delete o arquivo "index.html".
+
+12 - Navegue até a pasta "html" e abra o arquivo "index.html" no notepad (bloco de notas).
+
+O objetivo de como deve ficar a organização de pastas e arquivos está na imagem anexada na atividade.
+Desafio: Criando um script batch para automação para recriar a mesma estrutura. 
+
+Enviar os comandos utilizados em um arquivo texto, enviar os comandos separados por exercício.
