@@ -1,0 +1,132 @@
+PS C:\Users\Jessé> cd .\Desktop\   
+PS C:\Users\Jessé\Desktop> mkdir DesenvolVimento-JavaScript                           
+
+
+    Diretório: C:\Users\Jessé\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02/03/2025     14:06                DesenvolVimento-JavaScript
+
+
+PS C:\Users\Jessé\Desktop> cd .\DesenvolVimento-JavaScript\
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> 
+__________________________________________________________________________________________________________
+
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git init
+Initialized empty Git repository in C:/Users/Jessé/Desktop/DesenvolVimento-JavaScript/.git/
+__________________________________________________________________________________________________________
+
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git config --global user.name "Jessé Benício"
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git config --global user.email "cdcssloj@gmail.com"
+__________________________________________________________________________________________________________
+
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> echo "O curso de Desenvolvedor JavaScript capacita os 
+alunos para desenvolverem sistemas e aplicações, determinando interface gráfica, critérios ergonômicos de 
+navegação, montagem da estrutura de banco de dados e codificação de programas. Projetam, implantam e realizam 
+manutenção de sistemas e aplicações, selecionam recursos de trabalho, tais como metodologias de 
+desenvolvimento de sistemas, linguagem de programação e ferramentas de desenvolvimento. 
+Planejam etapas e ações de trabalho."> README.md
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> echo "JavaScript ou JS é uma linguagem de programação projetada 
+para escrever as partes de Front-end (lado do cliente) e Back-end (lado do servidor) dos sites e aplicativos. 
+É uma linguagem de alto nível, legível por humanos, mas que não necessita de um compilador para traduzi-la 
+para a linguagem de máquina. O código é interpretado e executado diretamente em um navegador web, o que 
+facilita e acelera a interação com o usuário."> anotacoes.txt
+__________________________________________________________________________________________________________
+
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git add .
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git commit -m "inicio desenvolvimento-javascript anotacoes.txt README.md"
+[master (root-commit) 11f6bec] inicio desenvolvimento-javascript anotacoes.txt README.md
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+ create mode 100644 anotacoes.txt
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git remote add origin https://github.com/JBen21/DesenvolvimentoEmJavaScript.git
+__________________________________________________________________________________________________________
+
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1021 bytes | 510.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/JBen21/DesenvolvimentoEmJavaScript/pull/new/master
+remote:
+To https://github.com/JBen21/DesenvolvimentoEmJavaScript.git
+ * [new branch]      master -> master
+__________________________________________________________________________________________________________
+
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git add .
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git commit -m "add outras inf no anotacoes.txt"
+[master 447780a] add outras inf no anotacoes.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\Jessé\Desktop\DesenvolVimento-JavaScript> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 679 bytes | 679.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JBen21/DesenvolvimentoEmJavaScript.git
+   11f6bec..447780a  master -> master
+__________________________________________________________________________________________________________
+
+PS C:\Users\Jessé\Desktop> git clone https://github.com/JBen21/DesenvolvimentoEmJavaScript.git
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 10 (delta 1), reused 7 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (10/10), done.
+Resolving deltas: 100% (1/1), done.
+PS C:\Users\Jessé\Desktop> cd .\DesenvolvimentoEmJavaScript\
+PS C:\Users\Jessé\Desktop\DesenvolvimentoEmJavaScript> git branch
+* main
+PS C:\Users\Jessé\Desktop\DesenvolvimentoEmJavaScript> git checkout master
+branch 'master' set up to track 'origin/master'.
+Switched to a new branch 'master'
+PS C:\Users\Jessé\Desktop\DesenvolvimentoEmJavaScript> git branch
+  main
+* master
+__________________________________________________________________________________________________________
+
+PS C:\Users\Jessé\Desktop\DesenvolvimentoEmJavaScript> git add .
+PS C:\Users\Jessé\Desktop\DesenvolvimentoEmJavaScript> git commit -m "add nome do autor anotacoes.txt"
+[master c9024db] add nome do autor anotacoes.txt       
+ 1 file changed, 0 insertions(+), 0 deletions(-)       
+PS C:\Users\Jessé\Desktop\DesenvolvimentoEmJavaScript> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 361 bytes | 361.00 KiB/s, done. 
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JBen21/DesenvolvimentoEmJavaScript.git
+   447780a..c9024db  master -> master
+__________________________________________________________________________________________________________
+
+PS C:\Users\Jessé\Desktop\DesenvolvimentoEmJavaScript> git log
+commit c9024dbfe0e3df994e00227ad555cb2032906bbd (HEAD -> master, origin/master)
+Author: Jessé Benício <cdcssloj@gmail.com>
+Date:   Sun Mar 2 19:45:12 2025 -0300
+
+    add nome do autor anotacoes.txt
+
+commit 447780af98077af8cef861ba2785e54e0c646b18
+Author: Jessé Benício <cdcssloj@gmail.com>
+Date:   Sun Mar 2 18:47:01 2025 -0300
+
+    add outras inf no anotacoes.txt
+
+commit 11f6bec7e0c0dd87488d9a24c3a5c24a359675d4
+Author: Jessé Benício <cdcssloj@gmail.com>
+Date:   Sun Mar 2 17:53:31 2025 -0300
+
+    inicio desenvolvimento-javascript anotacoes.txt README.md
+__________________________________________________________________________________________________________
+
+REPOSITORIO LINK (https://github.com/JBen21/DesenvolvimentoEmJavaScript.git)
