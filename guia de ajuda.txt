@@ -1,0 +1,51 @@
+echo "# desenvolvimento-javascript" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/JBen21/desenvolvimento-javascript.git
+git push -u origin main
+
+our
+
+git remote add origin https://github.com/JBen21/desenvolvimento-javascript.git
+git branch -M main
+git push -u origin main
+
+
+Para mudar de branch: master -> main executar esses comandos 
+
+git branch -> RETORNA EM QUAL BRANCH ESTÁ
+* main
+git checkout master -> NAVEGA PARA A NOVA BRANCH
+branch 'master' set up to track 'origin/master'.
+Switched to a new branch 'master'
+git checkout main -> NAVEGA PARA A ANTIGA BRANCH
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+git merge master -> MESCLA A NOVA BRANCH COM A ANTIGA
+fatal: refusing to merge unrelated histories -> CASO APRESENTAR ERRO EXECUTAR PROXIMO COMANDO
+git pull origin master --allow-unrelated-histories -> BUSCA O HISTORICO DA BRANCH E MOSTRA O CONFLITO
+From https://github.com/JBen21/DesenvolvimentoEmJavaScript
+ * branch            master     -> FETCH_HEAD
+warning: Cannot merge binary files: README.md (HEAD vs. f3a24142d0fc15226ea1399fdff545d9508591ce)
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+git branch -> MOSTRA AS BRANCH'S E SINALIZA A DE TRABALHO ATUAL 
+* main
+  master
+git add . -> ADICIONA PASTAS E ARQUIVOS CRIADOS EM UM COMMIT DE TRANSIÇÃO 
+git commit -m "merge master -> main" -> ATUALIZA COMMIT E O NOMEIA
+[main 077a518] merge master -> main
+git push -> ENVIA OS COMMIT PARA A NUVEM (GITHUB)
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 587 bytes | 587.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JBen21/DesenvolvimentoEmJavaScript.git
+   be2f0c7..077a518  main -> main 
