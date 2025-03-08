@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="pt-BR" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec"  prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="profile" href="https://gmpg.org/xfn/11" />
+  <link rel="pingback" href="https://www.uniaogeek.com.br/xmlrpc.php">
+
+  <title>Guia de Comandos CMD (Terminal do Windows) | União Geek</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.7.9.1 - aioseo.com -->
+	<meta name="description" content="Manipulando a Janela do Prompt no Ambiente Windows Para exibir o CMD em tela cheia, pressione “Alt+Enter”. Clicando no ícone que se encontra no alto à esquerda, você poderá acessar as propriedades da janela e escolher layout, cores, fontes, etc. Já para localizar texto, rolar tela, selecionar texto, copiar e colar, você deverá clicar com" />
+	<meta name="robots" content="max-image-preview:large" />
+	<meta name="author" content="Andre Henrique"/>
+	<meta name="google-site-verification" content="CHib0UIp2EsPn7qXQKGHLoC_VSuCm-AsU9_gD5NzhyQ" />
+	<link rel="canonical" href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/" />
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.7.9.1" />
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:site_name" content="União Geek, Sempre Compartilhando Conhecimento" />
+		<meta property="og:type" content="blog" />
+		<meta property="og:title" content="Guia de Comandos CMD (Terminal do Windows) | União Geek" />
+		<meta property="og:description" content="Manipulando a Janela do Prompt no Ambiente Windows Para exibir o CMD em tela cheia, pressione “Alt+Enter”. Clicando no ícone que se encontra no alto à esquerda, você poderá acessar as propriedades da janela e escolher layout, cores, fontes, etc. Já para localizar texto, rolar tela, selecionar texto, copiar e colar, você deverá clicar com" />
+		<meta property="og:url" content="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/" />
+		<meta property="fb:admins" content="100000788196109" />
+		<meta property="og:image" content="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/comandos_cmd.jpg" />
+		<meta property="og:image:secure_url" content="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/comandos_cmd.jpg" />
+		<meta property="og:image:width" content="720" />
+		<meta property="og:image:height" content="340" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Guia de Comandos CMD (Terminal do Windows) | União Geek" />
+		<meta name="twitter:description" content="Manipulando a Janela do Prompt no Ambiente Windows Para exibir o CMD em tela cheia, pressione “Alt+Enter”. Clicando no ícone que se encontra no alto à esquerda, você poderá acessar as propriedades da janela e escolher layout, cores, fontes, etc. Já para localizar texto, rolar tela, selecionar texto, copiar e colar, você deverá clicar com" />
+		<meta name="twitter:image" content="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/comandos_cmd.jpg" />
+		<!-- All in One SEO -->
+
+<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<link rel='dns-prefetch' href='//fonts.bunny.net' />
+<link rel="alternate" type="application/rss+xml" title="Feed para União Geek &raquo;" href="https://www.uniaogeek.com.br/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para União Geek &raquo;" href="https://www.uniaogeek.com.br/comments/feed/" />
+<link id="hu-user-gfont" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,300,400italic,600&subset=latin,latin-ext" rel="stylesheet" type="text/css"><link rel="alternate" type="application/rss+xml" title="Feed de comentários para União Geek &raquo; Guia de Comandos CMD (Terminal do Windows)" href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/feed/" />
+		<!-- This site uses the Google Analytics by ExactMetrics plugin v8.3.1 - Using Analytics tracking - https://www.exactmetrics.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-56FXT5RC4C"  data-cfasync="false" data-wpfc-render="false" async></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var em_version = '8.3.1';
+				var em_track_user = true;
+				var em_no_track_reason = '';
+								var ExactMetricsDefaultLocations = {"page_location":"https:\/\/www.uniaogeek.com.br\/guia-de-comandos-cmd-terminal-do-windows\/?authuser=0"};
+				if ( typeof ExactMetricsPrivacyGuardFilter === 'function' ) {
+					var ExactMetricsLocations = (typeof ExactMetricsExcludeQuery === 'object') ? ExactMetricsPrivacyGuardFilter( ExactMetricsExcludeQuery ) : ExactMetricsPrivacyGuardFilter( ExactMetricsDefaultLocations );
+				} else {
+					var ExactMetricsLocations = (typeof ExactMetricsExcludeQuery === 'object') ? ExactMetricsExcludeQuery : ExactMetricsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-56FXT5RC4C',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.ExactMetricsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (em_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = exactmetrics_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof ExactMetricsDualTracker.trackers[hookName] !== 'undefined') {
+								ExactMetricsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dNDMyYj': true,
+											});
+					if ( ExactMetricsLocations.page_location ) {
+						__gtagTracker('set', ExactMetricsLocations);
+					}
+										__gtagTracker('config', 'G-56FXT5RC4C', {"forceSSL":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by ExactMetrics -->
+		<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.uniaogeek.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=aea88eeaefd8877fb6f97caa6a60658d"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel='stylesheet' id='urvanov_syntax_highlighter-css' href='https://www.uniaogeek.com.br/wp-content/plugins/urvanov-syntax-highlighter/css/min/urvanov_syntax_highlighter.min.css?ver=2.8.38' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.uniaogeek.com.br/wp-includes/css/dist/block-library/style.min.css?ver=aea88eeaefd8877fb6f97caa6a60658d' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='toc-screen-css' href='https://www.uniaogeek.com.br/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=2411.1' media='all' />
+<link rel='stylesheet' id='hueman-main-style-css' href='https://www.uniaogeek.com.br/wp-content/themes/hueman/assets/front/css/main.min.css?ver=3.7.27' media='all' />
+<style id='hueman-main-style-inline-css'>
+body { font-family:'Source Sans Pro', Arial, sans-serif;font-size:1.00rem }@media only screen and (min-width: 720px) {
+        .nav > li { font-size:1.00rem; }
+      }::selection { background-color: #3b8dbd; }
+::-moz-selection { background-color: #3b8dbd; }a,a>span.hu-external::after,.themeform label .required,#flexslider-featured .flex-direction-nav .flex-next:hover,#flexslider-featured .flex-direction-nav .flex-prev:hover,.post-hover:hover .post-title a,.post-title a:hover,.sidebar.s1 .post-nav li a:hover i,.content .post-nav li a:hover i,.post-related a:hover,.sidebar.s1 .widget_rss ul li a,#footer .widget_rss ul li a,.sidebar.s1 .widget_calendar a,#footer .widget_calendar a,.sidebar.s1 .alx-tab .tab-item-category a,.sidebar.s1 .alx-posts .post-item-category a,.sidebar.s1 .alx-tab li:hover .tab-item-title a,.sidebar.s1 .alx-tab li:hover .tab-item-comment a,.sidebar.s1 .alx-posts li:hover .post-item-title a,#footer .alx-tab .tab-item-category a,#footer .alx-posts .post-item-category a,#footer .alx-tab li:hover .tab-item-title a,#footer .alx-tab li:hover .tab-item-comment a,#footer .alx-posts li:hover .post-item-title a,.comment-tabs li.active a,.comment-awaiting-moderation,.child-menu a:hover,.child-menu .current_page_item > a,.wp-pagenavi a{ color: #3b8dbd; }input[type="submit"],.themeform button[type="submit"],.sidebar.s1 .sidebar-top,.sidebar.s1 .sidebar-toggle,#flexslider-featured .flex-control-nav li a.flex-active,.post-tags a:hover,.sidebar.s1 .widget_calendar caption,#footer .widget_calendar caption,.author-bio .bio-avatar:after,.commentlist li.bypostauthor > .comment-body:after,.commentlist li.comment-author-admin > .comment-body:after{ background-color: #3b8dbd; }.post-format .format-container { border-color: #3b8dbd; }.sidebar.s1 .alx-tabs-nav li.active a,#footer .alx-tabs-nav li.active a,.comment-tabs li.active a,.wp-pagenavi a:hover,.wp-pagenavi a:active,.wp-pagenavi span.current{ border-bottom-color: #3b8dbd!important; }.sidebar.s2 .post-nav li a:hover i,
+.sidebar.s2 .widget_rss ul li a,
+.sidebar.s2 .widget_calendar a,
+.sidebar.s2 .alx-tab .tab-item-category a,
+.sidebar.s2 .alx-posts .post-item-category a,
+.sidebar.s2 .alx-tab li:hover .tab-item-title a,
+.sidebar.s2 .alx-tab li:hover .tab-item-comment a,
+.sidebar.s2 .alx-posts li:hover .post-item-title a { color: #82b965; }
+.sidebar.s2 .sidebar-top,.sidebar.s2 .sidebar-toggle,.post-comments,.jp-play-bar,.jp-volume-bar-value,.sidebar.s2 .widget_calendar caption{ background-color: #82b965; }.sidebar.s2 .alx-tabs-nav li.active a { border-bottom-color: #82b965; }
+.post-comments::before { border-right-color: #82b965; }
+      .search-expand,
+              #nav-topbar.nav-container { background-color: #26272b}@media only screen and (min-width: 720px) {
+                #nav-topbar .nav ul { background-color: #26272b; }
+              }.is-scrolled #header .nav-container.desktop-sticky,
+              .is-scrolled #header .search-expand { background-color: #26272b; background-color: rgba(38,39,43,0.90) }.is-scrolled .topbar-transparent #nav-topbar.desktop-sticky .nav ul { background-color: #26272b; background-color: rgba(38,39,43,0.95) }#header { background-color: #33363b; }
+@media only screen and (min-width: 720px) {
+  #nav-header .nav ul { background-color: #33363b; }
+}
+        #header #nav-mobile { background-color: #33363b; }.is-scrolled #header #nav-mobile { background-color: #33363b; background-color: rgba(51,54,59,0.90) }#nav-header.nav-container, #main-header-search .search-expand { background-color: #33363b; }
+@media only screen and (min-width: 720px) {
+  #nav-header .nav ul { background-color: #33363b; }
+}
+        .site-title a img { max-height: 150px; }body { background-color: #eaeaea; }
+</style>
+<link rel='stylesheet' id='hueman-font-awesome-css' href='https://www.uniaogeek.com.br/wp-content/themes/hueman/assets/front/css/font-awesome.min.css?ver=3.7.27' media='all' />
+<link rel='stylesheet' id='slb_core-css' href='https://www.uniaogeek.com.br/wp-content/plugins/simple-lightbox/client/css/app.css?ver=2.9.3' media='all' />
+<link rel='stylesheet' id='sab-font-css' href='https://fonts.bunny.net/css?family=Cookie:400,700,400italic,700italic|Acme:400,700,400italic,700italic&#038;subset=latin-ext' media='all' />
+<link rel='stylesheet' id='addthis_all_pages-css' href='https://www.uniaogeek.com.br/wp-content/plugins/addthis/frontend/build/addthis_wordpress_public.min.css?ver=aea88eeaefd8877fb6f97caa6a60658d' media='all' />
+<script src="https://www.uniaogeek.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.uniaogeek.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="urvanov_syntax_highlighter_js-js-extra">
+var UrvanovSyntaxHighlighterSyntaxSettings = {"version":"2.8.38","is_admin":"0","ajaxurl":"https:\/\/www.uniaogeek.com.br\/wp-admin\/admin-ajax.php","prefix":"urvanov-syntax-highlighter-","setting":"urvanov-syntax-highlighter-setting","selected":"urvanov-syntax-highlighter-setting-selected","changed":"urvanov-syntax-highlighter-setting-changed","special":"urvanov-syntax-highlighter-setting-special","orig_value":"data-orig-value","debug":""};
+var UrvanovSyntaxHighlighterSyntaxStrings = {"copy":"Copied to the clipboard","minimize":"Click To Expand Code"};
+</script>
+<script src="https://www.uniaogeek.com.br/wp-content/plugins/urvanov-syntax-highlighter/js/min/urvanov_syntax_highlighter.min.js?ver=2.8.38" id="urvanov_syntax_highlighter_js-js"></script>
+<script src="https://www.uniaogeek.com.br/wp-content/plugins/google-analytics-dashboard-for-wp/assets/js/frontend-gtag.min.js?ver=8.3.1" id="exactmetrics-frontend-script-js" async data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" id='exactmetrics-frontend-script-js-extra'>var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"zip,mp3,mpeg,pdf,docx,pptx,xlsx,rar","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.uniaogeek.com.br","hash_tracking":"false","v4_id":"G-56FXT5RC4C"};</script>
+<link rel="https://api.w.org/" href="https://www.uniaogeek.com.br/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.uniaogeek.com.br/wp-json/wp/v2/posts/116" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.uniaogeek.com.br/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://www.uniaogeek.com.br/?p=116' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.uniaogeek.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.uniaogeek.com.br%2Fguia-de-comandos-cmd-terminal-do-windows%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.uniaogeek.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.uniaogeek.com.br%2Fguia-de-comandos-cmd-terminal-do-windows%2F&#038;format=xml" />
+    <link rel="preload" as="font" type="font/woff2" href="https://www.uniaogeek.com.br/wp-content/themes/hueman/assets/front/webfonts/fa-brands-400.woff2?v=5.15.2" crossorigin="anonymous"/>
+    <link rel="preload" as="font" type="font/woff2" href="https://www.uniaogeek.com.br/wp-content/themes/hueman/assets/front/webfonts/fa-regular-400.woff2?v=5.15.2" crossorigin="anonymous"/>
+    <link rel="preload" as="font" type="font/woff2" href="https://www.uniaogeek.com.br/wp-content/themes/hueman/assets/front/webfonts/fa-solid-900.woff2?v=5.15.2" crossorigin="anonymous"/>
+  <!--[if lt IE 9]>
+<script src="https://www.uniaogeek.com.br/wp-content/themes/hueman/assets/front/js/ie/html5shiv-printshiv.min.js"></script>
+<script src="https://www.uniaogeek.com.br/wp-content/themes/hueman/assets/front/js/ie/selectivizr.js"></script>
+<![endif]-->
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css">.saboxplugin-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px solid #eee;width:100%;clear:both;display:block;overflow:hidden;word-wrap:break-word;position:relative}.saboxplugin-wrap .saboxplugin-gravatar{float:left;padding:0 20px 20px 20px}.saboxplugin-wrap .saboxplugin-gravatar img{max-width:100px;height:auto;border-radius:0;}.saboxplugin-wrap .saboxplugin-authorname{font-size:18px;line-height:1;margin:20px 0 0 20px;display:block}.saboxplugin-wrap .saboxplugin-authorname a{text-decoration:none}.saboxplugin-wrap .saboxplugin-authorname a:focus{outline:0}.saboxplugin-wrap .saboxplugin-desc{display:block;margin:5px 20px}.saboxplugin-wrap .saboxplugin-desc a{text-decoration:underline}.saboxplugin-wrap .saboxplugin-desc p{margin:5px 0 12px}.saboxplugin-wrap .saboxplugin-web{margin:0 20px 15px;text-align:left}.saboxplugin-wrap .sab-web-position{text-align:right}.saboxplugin-wrap .saboxplugin-web a{color:#ccc;text-decoration:none}.saboxplugin-wrap .saboxplugin-socials{position:relative;display:block;background:#fcfcfc;padding:5px;border-top:1px solid #eee}.saboxplugin-wrap .saboxplugin-socials a svg{width:20px;height:20px}.saboxplugin-wrap .saboxplugin-socials a svg .st2{fill:#fff; transform-origin:center center;}.saboxplugin-wrap .saboxplugin-socials a svg .st1{fill:rgba(0,0,0,.3)}.saboxplugin-wrap .saboxplugin-socials a:hover{opacity:.8;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;box-shadow:none!important;-webkit-box-shadow:none!important}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color{box-shadow:none;padding:0;border:0;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;display:inline-block;color:#fff;font-size:0;text-decoration:inherit;margin:5px;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;overflow:hidden}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey{text-decoration:inherit;box-shadow:none;position:relative;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;margin:10px 5px;color:#444;fill:#444}.clearfix:after,.clearfix:before{content:' ';display:table;line-height:0;clear:both}.ie7 .clearfix{zoom:1}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitch{border-color:#38245c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-addthis{border-color:#e91c00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-behance{border-color:#003eb0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-delicious{border-color:#06c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-deviantart{border-color:#036824}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-digg{border-color:#00327c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-dribbble{border-color:#ba1655}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-facebook{border-color:#1e2e4f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-flickr{border-color:#003576}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-github{border-color:#264874}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-google{border-color:#0b51c5}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-googleplus{border-color:#96271a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-html5{border-color:#902e13}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-instagram{border-color:#1630aa}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-linkedin{border-color:#00344f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-pinterest{border-color:#5b040e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-reddit{border-color:#992900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-rss{border-color:#a43b0a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-sharethis{border-color:#5d8420}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-skype{border-color:#00658a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-soundcloud{border-color:#995200}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-spotify{border-color:#0f612c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stackoverflow{border-color:#a95009}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-steam{border-color:#006388}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-user_email{border-color:#b84e05}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stumbleUpon{border-color:#9b280e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-tumblr{border-color:#10151b}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitter{border-color:#0967a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vimeo{border-color:#0d7091}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-windows{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-whatsapp{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-wordpress{border-color:#0f3647}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-yahoo{border-color:#14002d}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-youtube{border-color:#900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-xing{border-color:#000202}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mixcloud{border-color:#2475a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vk{border-color:#243549}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-medium{border-color:#00452c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-quora{border-color:#420e00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-meetup{border-color:#9b181c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-goodreads{border-color:#000}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-snapchat{border-color:#999700}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-500px{border-color:#00557f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mastodont{border-color:#185886}.sabox-plus-item{margin-bottom:20px}@media screen and (max-width:480px){.saboxplugin-wrap{text-align:center}.saboxplugin-wrap .saboxplugin-gravatar{float:none;padding:20px 0;text-align:center;margin:0 auto;display:block}.saboxplugin-wrap .saboxplugin-gravatar img{float:none;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1}.saboxplugin-wrap .saboxplugin-desc{margin:0 10px 20px;text-align:center}.saboxplugin-wrap .saboxplugin-authorname{text-align:center;margin:10px 0 20px}}body .saboxplugin-authorname a,body .saboxplugin-authorname a:hover{box-shadow:none;-webkit-box-shadow:none}a.sab-profile-edit{font-size:16px!important;line-height:1!important}.sab-edit-settings a,a.sab-profile-edit{color:#0073aa!important;box-shadow:none!important;-webkit-box-shadow:none!important}.sab-edit-settings{margin-right:15px;position:absolute;right:0;z-index:2;bottom:10px;line-height:20px}.sab-edit-settings i{margin-left:5px}.saboxplugin-socials{line-height:1!important}.rtl .saboxplugin-wrap .saboxplugin-gravatar{float:right}.rtl .saboxplugin-wrap .saboxplugin-authorname{display:flex;align-items:center}.rtl .saboxplugin-wrap .saboxplugin-authorname .sab-profile-edit{margin-right:10px}.rtl .sab-edit-settings{right:auto;left:0}img.sab-custom-avatar{max-width:75px;}.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color svg {border-width: 1px;border-style:solid;border-radius:50%}.saboxplugin-wrap .saboxplugin-authorname {font-family:"Cookie";}.saboxplugin-wrap .saboxplugin-desc {font-family:Acme;}.saboxplugin-wrap {margin-top:0px; margin-bottom:15px; padding: 0px 0px }.saboxplugin-wrap .saboxplugin-authorname {font-size:30px; line-height:37px;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {font-size:14px !important; line-height:21px !important;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials a svg {width:28px;height:28px;}</style><script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.2.7"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":true,"ignore_server_config":true,"ui_language":"pt","ui_atversion":"300"}; } if (window.addthis_layers === undefined) { window.addthis_layers = {}; } if (window.addthis_layers_tools === undefined) { window.addthis_layers_tools = [{"share":{"counts":"one","numPreferredServices":5,"mobile":false,"position":"right","theme":"transparent"}},{"sharedock":{"counts":"one","numPreferredServices":4,"mobileButtonSize":"large","position":"bottom","theme":"transparent"}}]; } else { window.addthis_layers_tools.push({"share":{"counts":"one","numPreferredServices":5,"mobile":false,"position":"right","theme":"transparent"}}); window.addthis_layers_tools.push({"sharedock":{"counts":"one","numPreferredServices":4,"mobileButtonSize":"large","position":"bottom","theme":"transparent"}});  } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.2.7","plugin_mode":"WordPress","anonymous_profile_id":"wp-90024d9ca29c0d3aeab7cab01b594d4f","page_info":{"template":"posts","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script> <script data-cfasync="false" type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=wp-90024d9ca29c0d3aeab7cab01b594d4f" async="async"></script><link rel="icon" href="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/logotipo_url_2-150x150-1-160x160.png" sizes="32x32" />
+<link rel="icon" href="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/logotipo_url_2-150x150-1-320x320.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/logotipo_url_2-150x150-1-320x320.png" />
+<meta name="msapplication-TileImage" content="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/logotipo_url_2-150x150-1-320x320.png" />
+		<style id="wp-custom-css">
+			#nav-topbar{
+	font-weight: bold;
+	color: yellow;
+	background-color: #333;
+  overflow: hidden;
+}
+
+#nav-topbar a:hover{
+    background-color: #4CAF50;
+    color: yellow;
+}
+
+#menu-secundario-1{
+	font-weight: 500;
+}
+
+#menu-secundario-1 a:hover{
+  background-color: #4CAF50;
+	color: yellow;
+}
+		</style>
+		</head>
+
+<body class="post-template-default single single-post postid-116 single-format-quote wp-embed-responsive col-2cr full-width topbar-enabled header-desktop-sticky header-mobile-sticky hueman-3-7-27 chrome">
+<div id="wrapper">
+  <a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+  
+  <header id="header" class="main-menu-mobile-on one-mobile-menu main_menu header-ads-desktop  topbar-transparent has-header-img">
+        <nav class="nav-container group mobile-menu mobile-sticky " id="nav-mobile" data-menu-id="header-1">
+  <div class="mobile-title-logo-in-header"></div>
+        
+                    <!-- <div class="ham__navbar-toggler collapsed" aria-expanded="false">
+          <div class="ham__navbar-span-wrapper">
+            <span class="ham-toggler-menu__span"></span>
+          </div>
+        </div> -->
+        <button class="ham__navbar-toggler-two collapsed" title="Menu" aria-expanded="false">
+          <span class="ham__navbar-span-wrapper">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </span>
+        </button>
+            
+      <div class="nav-text"></div>
+      <div class="nav-wrap container">
+                  <ul class="nav container-inner group mobile-search">
+                            <li>
+                  <form role="search" method="get" class="search-form" action="https://www.uniaogeek.com.br/">
+				<label>
+					<span class="screen-reader-text">Pesquisar por:</span>
+					<input type="search" class="search-field" placeholder="Pesquisar &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Pesquisar" />
+			</form>                </li>
+                      </ul>
+                <ul id="menu-secundario" class="nav container-inner group"><li id="menu-item-1209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1209"><a href="https://www.uniaogeek.com.br/imprimindo-os-posts/">Como Salvar o Post em PDF</a></li>
+<li id="menu-item-131" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-131"><a href="https://www.uniaogeek.com.br/categ/noticias/">Notícias</a></li>
+<li id="menu-item-328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-328"><a href="#">Artigos</a>
+<ul class="sub-menu">
+	<li id="menu-item-130" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-130"><a href="https://www.uniaogeek.com.br/categ/artigos/dicas-tutoriais/">Dicas &#038; Tutoriais</a></li>
+	<li id="menu-item-266" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-266"><a href="https://www.uniaogeek.com.br/categ/artigos/it/redes-de-computadores/">Redes de Computadores</a></li>
+	<li id="menu-item-332" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-332"><a href="https://www.uniaogeek.com.br/categ/artigos/seguranca-da-informacao/">Segurança da Informação</a></li>
+	<li id="menu-item-367" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-367"><a href="https://www.uniaogeek.com.br/categ/artigos/it/programacao/">Programação</a></li>
+	<li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-369"><a href="https://www.uniaogeek.com.br/tag/banco-de-dados/">Banco de Dados</a></li>
+	<li id="menu-item-325" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-325"><a href="https://www.uniaogeek.com.br/tag/gnulinux/">GNU/Linux</a></li>
+	<li id="menu-item-326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-326"><a href="https://www.uniaogeek.com.br/tag/windows/">Windows</a></li>
+	<li id="menu-item-1216" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1216"><a href="https://www.uniaogeek.com.br/categ/artigos/it/programacao/android/">Android</a></li>
+	<li id="menu-item-1217" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1217"><a href="https://www.uniaogeek.com.br/categ/artigos/at/automacao-residencial/">Automação Residencial</a></li>
+	<li id="menu-item-129" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-129"><a href="https://www.uniaogeek.com.br/categ/artigos/">Todos os Artigos</a></li>
+</ul>
+</li>
+<li id="menu-item-798" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-798"><a href="#">Artigos por Autoria</a>
+<ul class="sub-menu">
+	<li id="menu-item-804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-804"><a href="https://goo.gl/CYlBXh">André Henrique</a></li>
+	<li id="menu-item-805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-805"><a href="https://goo.gl/EXtCN7">Bhrandon Borges</a></li>
+	<li id="menu-item-2151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151"><a href="https://goo.gl/KFm8sC">Glauco Sarraf</a></li>
+	<li id="menu-item-803" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-803"><a href="https://goo.gl/eubHmY">Lucas Toloto</a></li>
+</ul>
+</li>
+<li id="menu-item-128" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-128"><a href="https://www.uniaogeek.com.br/categ/dicas-para-concurseiros/">Dicas Para Concurseiros</a>
+<ul class="sub-menu">
+	<li id="menu-item-64" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64"><a href="https://www.uniaogeek.com.br/tag/concursos-publicos">Concursos Públicos</a></li>
+	<li id="menu-item-63" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-63"><a href="https://www.uniaogeek.com.br/tag/organizadoras">Organizadoras</a>
+	<ul class="sub-menu">
+		<li id="menu-item-68" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68"><a href="https://www.uniaogeek.com.br/tag/cesgranrio/">CESGRANRIO</a></li>
+		<li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73"><a href="https://www.uniaogeek.com.br/tag/cespeunb">Cespe|UnB</a></li>
+		<li id="menu-item-120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120"><a href="https://www.uniaogeek.com.br/tag/coned/">CONED</a></li>
+		<li id="menu-item-69" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69"><a href="https://www.uniaogeek.com.br/tag/esaf">EsAF</a></li>
+		<li id="menu-item-168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-168"><a href="https://www.uniaogeek.com.br/tag/espp/">ESPP</a></li>
+		<li id="menu-item-74" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74"><a href="https://www.uniaogeek.com.br/tag/fadesp">FADESP</a></li>
+		<li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71"><a href="https://www.uniaogeek.com.br/tag/fcc">FCC</a></li>
+		<li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70"><a href="https://www.uniaogeek.com.br/tag/fgv">FGV</a></li>
+		<li id="menu-item-169" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-169"><a href="https://www.uniaogeek.com.br/tag/fidesa/">FIDESA</a></li>
+		<li id="menu-item-72" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72"><a href="https://www.uniaogeek.com.br/tag/funcab">FUNCAB</a></li>
+		<li id="menu-item-75" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75"><a href="https://www.uniaogeek.com.br/tag/funrio">FUNRIO</a></li>
+		<li id="menu-item-498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-498"><a href="https://www.uniaogeek.com.br/tag/sbc/">SBC</a></li>
+	</ul>
+</li>
+	<li id="menu-item-65" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65"><a href="https://www.uniaogeek.com.br/tag/info-dicas">Dicas de Informática</a>
+	<ul class="sub-menu">
+		<li id="menu-item-165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-165"><a href="https://www.uniaogeek.com.br/tag/apostilas-de-informatica/">Apostilas Informática</a></li>
+		<li id="menu-item-166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166"><a href="https://www.uniaogeek.com.br/tag/apostilas-conhecimentos-especificos/">Apostilas Específicas</a></li>
+		<li id="menu-item-184" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-184"><a href="https://www.uniaogeek.com.br/categ/dicas-para-concurseiros/provas-comentadas/">Provas Comentadas</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-2458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2458"><a href="https://drive.google.com/open?id=1daQIlsBQs9IyGMCQ6eNoHbb3w6zS5xRo">Wallpapers</a></li>
+<li id="menu-item-3057" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3057"><a href="https://medium.com/@mrhenrike">CTF (boot2root)</a></li>
+</ul>      </div>
+</nav><!--/#nav-topbar-->  
+        <nav class="nav-container group desktop-menu desktop-sticky " id="nav-topbar" data-menu-id="header-2">
+    <div class="nav-text"></div>
+  <div class="topbar-toggle-down">
+    <i class="fas fa-angle-double-down" aria-hidden="true" data-toggle="down" title="Expand menu"></i>
+    <i class="fas fa-angle-double-up" aria-hidden="true" data-toggle="up" title="Collapse menu"></i>
+  </div>
+  <div class="nav-wrap container">
+    <ul id="menu-menu-topo" class="nav container-inner group"><li id="menu-item-1194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1194"><a href="https://www.uniaogeek.com.br/">Home</a></li>
+<li id="menu-item-1189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1189"><a href="https://www.uniaogeek.com.br/politicas-de-privacidade/">Políticas de Privacidade</a></li>
+<li id="menu-item-1190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1190"><a href="https://www.uniaogeek.com.br/termos-de-uso/">Termos de Uso</a></li>
+<li id="menu-item-1191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1191"><a href="https://www.uniaogeek.com.br/sobre-nos/">Sobre Nós</a></li>
+<li id="menu-item-1192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1192"><a href="https://www.uniaogeek.com.br/sugerir-assunto/">Sugerir Assunto</a></li>
+<li id="menu-item-1193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1193"><a href="https://www.uniaogeek.com.br/contato/">Contato</a></li>
+<li id="menu-item-1961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1961"><a href="#">Treinamentos</a>
+<ul class="sub-menu">
+	<li id="menu-item-3066" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3066"><a href="https://www.udemy.com/user/uniao-geek/">Cursos na Udemy</a></li>
+</ul>
+</li>
+<li id="menu-item-1985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1985"><a href="https://www.uniaogeek.com.br/certificados/">Validação de Certificados</a></li>
+</ul>  </div>
+      <div id="topbar-header-search" class="container">
+      <div class="container-inner">
+        <button class="toggle-search"><i class="fas fa-search"></i></button>
+        <div class="search-expand">
+          <div class="search-expand-inner"><form role="search" method="get" class="search-form" action="https://www.uniaogeek.com.br/">
+				<label>
+					<span class="screen-reader-text">Pesquisar por:</span>
+					<input type="search" class="search-field" placeholder="Pesquisar &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Pesquisar" />
+			</form></div>
+        </div>
+      </div><!--/.container-inner-->
+    </div><!--/.container-->
+  
+</nav><!--/#nav-topbar-->  
+  <div class="container group">
+        <div class="container-inner">
+
+                <div id="header-image-wrap">
+              <div class="group hu-pad central-header-zone">
+                                                          <div id="header-widgets">
+                                                </div><!--/#header-ads-->
+                                </div>
+
+              <a href="https://www.uniaogeek.com.br/" rel="home"><img src="https://www.uniaogeek.com.br/wp-content/uploads/2017/10/header-blog-uniao-geek-compact.jpg" width="1380" height="160" alt="União Geek Sempre Compartilhando Conhecimento" class="new-site-image" srcset="https://www.uniaogeek.com.br/wp-content/uploads/2017/10/header-blog-uniao-geek-compact.jpg 1380w, https://www.uniaogeek.com.br/wp-content/uploads/2017/10/header-blog-uniao-geek-compact-300x35.jpg 300w, https://www.uniaogeek.com.br/wp-content/uploads/2017/10/header-blog-uniao-geek-compact-768x89.jpg 768w, https://www.uniaogeek.com.br/wp-content/uploads/2017/10/header-blog-uniao-geek-compact-1024x119.jpg 1024w" sizes="(max-width: 1380px) 100vw, 1380px" decoding="async" fetchpriority="high" /></a>          </div>
+      
+                <nav class="nav-container group desktop-menu " id="nav-header" data-menu-id="header-3">
+    <div class="nav-text"><!-- put your mobile menu text here --></div>
+
+  <div class="nav-wrap container">
+        <ul id="menu-secundario-1" class="nav container-inner group"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1209"><a href="https://www.uniaogeek.com.br/imprimindo-os-posts/">Como Salvar o Post em PDF</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-131"><a href="https://www.uniaogeek.com.br/categ/noticias/">Notícias</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-328"><a href="#">Artigos</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-130"><a href="https://www.uniaogeek.com.br/categ/artigos/dicas-tutoriais/">Dicas &#038; Tutoriais</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-266"><a href="https://www.uniaogeek.com.br/categ/artigos/it/redes-de-computadores/">Redes de Computadores</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-332"><a href="https://www.uniaogeek.com.br/categ/artigos/seguranca-da-informacao/">Segurança da Informação</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-367"><a href="https://www.uniaogeek.com.br/categ/artigos/it/programacao/">Programação</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-369"><a href="https://www.uniaogeek.com.br/tag/banco-de-dados/">Banco de Dados</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-325"><a href="https://www.uniaogeek.com.br/tag/gnulinux/">GNU/Linux</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-326"><a href="https://www.uniaogeek.com.br/tag/windows/">Windows</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1216"><a href="https://www.uniaogeek.com.br/categ/artigos/it/programacao/android/">Android</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1217"><a href="https://www.uniaogeek.com.br/categ/artigos/at/automacao-residencial/">Automação Residencial</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-129"><a href="https://www.uniaogeek.com.br/categ/artigos/">Todos os Artigos</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-798"><a href="#">Artigos por Autoria</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-804"><a href="https://goo.gl/CYlBXh">André Henrique</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-805"><a href="https://goo.gl/EXtCN7">Bhrandon Borges</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151"><a href="https://goo.gl/KFm8sC">Glauco Sarraf</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-803"><a href="https://goo.gl/eubHmY">Lucas Toloto</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-128"><a href="https://www.uniaogeek.com.br/categ/dicas-para-concurseiros/">Dicas Para Concurseiros</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64"><a href="https://www.uniaogeek.com.br/tag/concursos-publicos">Concursos Públicos</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-63"><a href="https://www.uniaogeek.com.br/tag/organizadoras">Organizadoras</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68"><a href="https://www.uniaogeek.com.br/tag/cesgranrio/">CESGRANRIO</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73"><a href="https://www.uniaogeek.com.br/tag/cespeunb">Cespe|UnB</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120"><a href="https://www.uniaogeek.com.br/tag/coned/">CONED</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69"><a href="https://www.uniaogeek.com.br/tag/esaf">EsAF</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-168"><a href="https://www.uniaogeek.com.br/tag/espp/">ESPP</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74"><a href="https://www.uniaogeek.com.br/tag/fadesp">FADESP</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71"><a href="https://www.uniaogeek.com.br/tag/fcc">FCC</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70"><a href="https://www.uniaogeek.com.br/tag/fgv">FGV</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-169"><a href="https://www.uniaogeek.com.br/tag/fidesa/">FIDESA</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72"><a href="https://www.uniaogeek.com.br/tag/funcab">FUNCAB</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75"><a href="https://www.uniaogeek.com.br/tag/funrio">FUNRIO</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-498"><a href="https://www.uniaogeek.com.br/tag/sbc/">SBC</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65"><a href="https://www.uniaogeek.com.br/tag/info-dicas">Dicas de Informática</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-165"><a href="https://www.uniaogeek.com.br/tag/apostilas-de-informatica/">Apostilas Informática</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166"><a href="https://www.uniaogeek.com.br/tag/apostilas-conhecimentos-especificos/">Apostilas Específicas</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-184"><a href="https://www.uniaogeek.com.br/categ/dicas-para-concurseiros/provas-comentadas/">Provas Comentadas</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2458"><a href="https://drive.google.com/open?id=1daQIlsBQs9IyGMCQ6eNoHbb3w6zS5xRo">Wallpapers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3057"><a href="https://medium.com/@mrhenrike">CTF (boot2root)</a></li>
+</ul>  </div>
+</nav><!--/#nav-header-->      
+    </div><!--/.container-inner-->
+      </div><!--/.container-->
+
+</header><!--/#header-->
+  
+  <div class="container" id="page">
+    <div class="container-inner">
+            <div class="main">
+        <div class="main-inner group">
+          
+              <main class="content" id="content">
+              <div class="page-title hu-pad group">
+          	    		<ul class="meta-single group">
+    			<li class="category"><a href="https://www.uniaogeek.com.br/categ/artigos/dicas-tutoriais/" rel="category tag">Dicas &amp; Tutoriais</a> <span>/</span> <a href="https://www.uniaogeek.com.br/categ/artigos/sistemas-operacionais/" rel="category tag">Sistemas Operacionais</a></li>
+    			    			<li class="comments"><a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comments"><i class="far fa-comments"></i>37</a></li>
+    			    		</ul>
+            
+    </div><!--/.page-title-->
+          <div class="hu-pad group">
+              <article class="post-116 post type-post status-publish format-quote has-post-thumbnail hentry category-dicas-tutoriais category-sistemas-operacionais tag-batch-script tag-cmd tag-linha-de-comandos tag-ms-dos tag-prompt-de-comando tag-windows post_format-post-format-quote">
+    <div class="post-inner group">
+
+      <h1 class="post-title entry-title">Guia de Comandos CMD (Terminal do Windows)</h1>
+  <p class="post-byline">
+       por     <span class="vcard author">
+       <span class="fn"><a href="https://www.uniaogeek.com.br/author/mrhenrike/" title="Posts de Andre Henrique" rel="author">Andre Henrique</a></span>
+     </span>
+     &middot;
+                            
+                                Published <time class="published" datetime="2016-06-15T09:37:17-03:00">15 de junho de 2016</time>
+                &middot; Updated <time class="updated" datetime="2016-08-08T18:01:57-03:00">8 de agosto de 2016</time>
+                      </p>
+
+      
+
+
+
+
+    <div class="post-format">
+      <div class="format-container hu-pad">
+        <i class="fas fa-quote-right"></i>
+        <blockquote><p>Todos são vulneráveis.<br />
+O importante é ser atualizado.<br />
+A Microsoft não é vulnerável, mas mais apetitoso.<br />
+Um ataque a um sistema utilizado por muitas pessoas é mais relevante.</p>
+</blockquote>
+        <p class="quote-author">&mdash; Kevin Mitnick</p>
+      </div>
+    </div>
+
+
+                          
+      <div class="clear"></div>
+
+      <div class="entry themeform">
+        <div class="entry-inner">
+          <div class="at-above-post addthis_tool" data-url="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/"></div><h3 style="text-align: justify;"><strong>Manipulando a Janela do Prompt no Ambiente Windows</strong></h3>
+<p style="text-align: justify;">Para exibir o CMD em tela cheia, pressione “Alt+Enter”. Clicando no ícone que se encontra no alto à esquerda, você poderá acessar as propriedades da janela e escolher layout, cores, fontes, etc. Já para localizar texto, rolar tela, selecionar texto, copiar e colar, você deverá clicar com o botão direito do mouse dentro da própria janela e escolher a opção no menu que se abre.</p>
+<p style="text-align: justify;">A opção /t:fg permite alterar as cores do interpretador de comandos. Por exemplo, digite cmd /t:17 e a tela ficar com as letras em branco num fundo azul. O “f” representa a cor do texto e o “g” a cor do fundo.</p>
+<h3 style="text-align: justify;"><strong>Relação das cores que podem ser usadas:</strong></h3>
+<ul style="text-align: justify;">
+<li><span style="color: #000000;">0 – preto</span></li>
+<li><span style="color: #000000;">1 – Azul</span></li>
+<li><span style="color: #000000;">2 – Verde</span></li>
+<li><span style="color: #000000;">3 – Cian</span></li>
+<li><span style="color: #000000;">4 – Vermelho</span></li>
+<li><span style="color: #000000;">5 – Roxo</span></li>
+<li><span style="color: #000000;">6 – Amarelo</span></li>
+<li><span style="color: #000000;">7 – Branco</span></li>
+<li><span style="color: #000000;">8 – Cinza</span></li>
+<li><span style="color: #000000;">9 – Azul claro</span></li>
+<li><span style="color: #000000;">A – Verde claro</span></li>
+<li><span style="color: #000000;">B – Cian claro</span></li>
+<li><span style="color: #000000;">C – Vermelho claro</span></li>
+<li><span style="color: #000000;">D – Roxo claro</span></li>
+<li><span style="color: #000000;">E – Amarelo claro</span></li>
+<li><span style="color: #000000;">F – Branco Claro</span></li>
+</ul>
+<p style="text-align: justify;"><em><strong>Para obter mais informações sobre um comando específico, digite o “COMANDO” seguido de “/?”.</strong></em></p>
+<blockquote>
+<p style="text-align: justify;"><strong>ATENÇÃO: O Sistema Operacional Windows não é CASE SENSITVE, ou seja, os comandos podem ser digitados tanto em MAIÚSCULO quanto em MÍNUSCULO.</strong></p>
+</blockquote>
+<h3 style="text-align: justify;"><strong>Lista Geral de Comandos</strong></h3>
+<ul style="text-align: justify;">
+<li><strong>DIR</strong>: – Listando arquivos e pastas</li>
+<li><strong>COPY</strong>: – Copiar arquivos</li>
+<li><strong>MOVE</strong>: Mover arquivos ou renomear pastas</li>
+<li><strong>MD</strong>:– Criar uma Nova pasta</li>
+<li><strong>CD</strong>: Entrar em uma pasta</li>
+<li><strong>.:</strong>Retornar para a pasta anterior</li>
+<li><strong>RD</strong>:  Remover pastas</li>
+<li><strong>ERASE</strong>: Deletar arquivos</li>
+<li><strong>DEL</strong>:  Deletar arquivos</li>
+<li><strong>REN</strong>: Renomear arquivos (EX: ren imagem.jpg foto.jpg)</li>
+<li><strong>TIME</strong>:  O comando time permite acertar a hora e o comando date permite corrigir a data.</li>
+<li><strong>BOOTCFG</strong>: Permite ver as configurações do seu menu de boot</li>
+<li><strong>DEFRAG</strong>: Desfragmentador de disco.</li>
+<li><strong>DISKPART</strong>: Gerencia as partições de um disco.</li>
+<li><strong>DRIVERQUERY</strong>: Mostra a lista de drivers instalados no Windows e as respectivas propriedades.</li>
+<li><strong>FSUTIL</strong>: O comando fsutil tem vários complementos que serão listados digitando-o sem nenhum parâmetro. Digite fsutil fsingo drives e terá a lista dos drives no seu micro.</li>
+<li><strong>GEPRESULT</strong>: Este comando mostrará configurações de usuários e de diretivas de grupos.</li>
+<li><strong>RECOVER</strong>: Permite a recuperação de arquvios em disco danificado.</li>
+<li><strong>REG</strong>: Comando para exportar chaves do registro, copiar, restaurar, comparar, etc.</li>
+<li><strong>SCHTASKS</strong>: Para agendar, executar, alterar ou deletar tarefas numa máquina local ou remota com Windows.</li>
+<li><strong>SFC</strong>: Comando que permite verificar arquivos de sistemas alterados de forma indevida e recuperar os arquivos originais e oficiais da Microsoft, o que nem sempre será recomendável. Por exemplo, o arquivo uxtheme.dll modificado para permitir o uso de temas voltaria a ser substituído pelo original.</li>
+<li><strong>SHUTDOWN</strong>: O comando shutdown permite desligar ou reiniciar o computador de forma imediata ou agendada.</li>
+<li><strong>SYSTEMINFO</strong>: Fornece informações básicas sobre o sistema.</li>
+<li><strong>TASKLIST</strong>: Mostra a lista de processos sendo executados no Windows.</li>
+<li><strong>TASKKILL</strong>: Permite finalizar algum processo. O comando é quase sempre usado com base nas informações fornecidas pelo tasklist. Por exemplo, para finalizar o Messenger digite “taskkill /PID 1680”. A identificação do PID de cada processo sendo executado você ficará sabendo com o comando tasklist.</li>
+<li><strong>ASSOC</strong>: Exibe ou modifica associações de extensões de arquivo.</li>
+<li><strong>AT</strong>: Agenda comandos e programas para serem executados em um computador.</li>
+<li><strong>ATTRIB</strong>: Exibe ou altera atributos de arquivos.</li>
+<li><strong>BOOTCFG</strong>: Mostra o boot.ini no prompt de comando</li>
+<li><strong>BREAK</strong>: Define ou limpa a verificação estendida CTRL+C.</li>
+<li><strong>CACLS</strong>: Exibe ou modifica listas de controle de acesso (ACLs) de arquivos.</li>
+<li><strong>CALL</strong>: Chama um programa em lotes a partir de outro.</li>
+<li><strong>CHCP</strong>: Exibe ou define o número da página de código ativa.</li>
+<li><strong>CHKDSK</strong>: Verifica um disco e exibe um relatório de status.</li>
+<li><strong>CHKNTFS</strong>: Exibe ou modifica a verificação do disco na inicialização.</li>
+<li><strong>CLS</strong>: Limpa a tela</li>
+<li><strong>CMD</strong>: Abre uma outra janela de prompt.</li>
+<li><strong>COLOR</strong>: Define as cores padrão de primeiro plano e do plano de fundo do console</li>
+<li><strong>COMP</strong>: Compara o conteúdo de dois arquivos ou grupos de arquivos.</li>
+<li><strong>COMPACT</strong>: Exibe ou altera a compactação de arquivos.</li>
+<li><strong>CONVERT</strong>: Converte volumes FAT em NTFS.</li>
+<li><strong>COPY</strong>: Copia um ou mais arquivos para outro local.</li>
+<li><strong>DATE</strong>: Mostra a data atual e permite alterá-la.</li>
+<li><strong>DISKCOMP</strong>: Compara o conteúdo de dois disquetes.</li>
+<li><strong>DISKCOPY</strong>: Copia o conteúdo de um disquete para outro.</li>
+<li><strong>DISKPART</strong>: Faz particionamento de disco</li>
+<li><strong>DOSKEY</strong>: Edita linhas de comando, volta a chamar comandos do Windows e cria macros.</li>
+<li><strong>ECHO</strong>: Exibe mensagens ou ativa ou desativa o eco de comandos.</li>
+<li><strong>ENDLOCAL</strong>: Encerra a localização de alterações de ambiente em um arquivo em lotes.</li>
+<li><strong>EXIT</strong>: Sai do programa CMD.EXE (interpretador de comandos).</li>
+<li><strong>FC:</strong>Compara dois arquivos ou grupos de arquivos e exibe as diferenças entre eles.</li>
+<li><strong>FIND</strong>: Procura uma seqüência de texto em um arquivo ou arquivos.</li>
+<li><strong>FINDSTR</strong>: Procura seqüências de texto em arquivos.</li>
+<li><strong>FOR</strong>: Executa um determinado comando para cada arquivo em um grupo de arquivos.</li>
+<li><strong>FORMAT</strong>: Formata um disco rígido ou disquete.</li>
+<li><strong>FTYPE</strong>: Exibe ou modifica os tipos de arquivo utilizados em associações de extensões de arquivos.</li>
+<li><strong>GOTO</strong>: Direciona o interpretador de comandos do Windows para uma linha identificada em um programa em lotes.</li>
+<li><strong>GRAFTABL</strong>: Permite que o Windows exiba um conjunto de caracteres estendidos em modo gráfico.</li>
+<li><strong>HELP</strong>: Fornece informações de ajuda sobre comandos do Windows.</li>
+<li><strong>HOSTNAME</strong>: Dá o nome do host</li>
+<li><strong>IF</strong>: Realiza processamento condicional em arquivos em lotes.</li>
+<li><strong>IPCONFIG</strong>: Mostra detalhes das configurações de IP</li>
+<li><strong>LABEL</strong>: Cria, altera ou exclui o rótulo de volume de um disco.</li>
+<li><strong>MODE</strong>: Configura um dispositivo do sistema.</li>
+<li><strong>MORE</strong>: Exibe a saída fazendo pausa a cada tela.</li>
+<li><strong>MOVE</strong>: Move um ou mais arquivos de uma pasta para outra pasta.</li>
+<li><strong>PAGEFILECONFIG</strong>: Configura memória virtual</li>
+<li><strong>PATH</strong>: Exibe ou define um caminho de pesquisa para arquivos executáveis.</li>
+<li><strong>PAUSE</strong>: Suspende o processamento de um arquivo em lotes e exibe uma mensagem.</li>
+<li><strong>PING</strong>: Checa sua conexão de rede disponível</li>
+<li><strong>POPD</strong>: Restaura o valor anterior da pasta atual salva por PUSHD.</li>
+<li><strong>PRINT</strong>: Imprime um arquivo de texto.</li>
+<li><strong>PROMPT</strong>: Altera o prompt de comando do Windows.</li>
+<li><strong>PUSHD</strong>: Salva a pasta atual e, em seguida, altera a mesma.</li>
+<li><strong>REM</strong>: Grava comentários (observações) em arquivos em lotes.</li>
+<li><strong>REPLACE</strong>: Substitui arquivos.</li>
+<li><strong>ROUT</strong>: Mostra detalhes do parâmetro da interface de rede</li>
+<li><strong>SCHTASKS</strong>: Agenda e executa algum processo</li>
+<li><strong>SET</strong>: Exibe, define ou remove variáveis de ambiente do Windows.</li>
+<li><strong>SETLOCAL</strong>: Inicia a localização de alterações de ambiente em um arquivo em lotes.</li>
+<li><strong>SHIFT</strong>: Altera a posição dos parâmetros substituíveis em um arquivo em lotes.</li>
+<li><strong>SORT</strong>: Classifica a entrada.</li>
+<li><strong>START</strong>: Inicia uma janela separada para executar um programa ou comando especificado.</li>
+<li><strong>SUBST</strong>: Associa um caminho a uma letra de unidade.</li>
+<li><strong>TITLE</strong>: Define o título da janela para uma sessão do CMD.EXE.</li>
+<li><strong>TREE</strong>: Exibe graficamente a estrutura de pastas de uma unidade ou caminho.</li>
+<li><strong>TYPE</strong>: Exibe o conteúdo de um arquivo de texto.</li>
+<li><strong>VER</strong>: Mostra a versão do Windows.</li>
+<li><strong>VERIFY</strong>: Faz com que o Windows verifique se os arquivos estão gravados corretamente em um disco.</li>
+<li><strong>VOL</strong>: Exibe um rótulo e número de série de volume de disco.</li>
+<li><strong>XCOPY</strong>: Copia diretórios com seus subdiretórios.</li>
+</ul>
+<h3 style="text-align: justify;"><strong>Comandos do Painel de Controle</strong></h3>
+<ul style="text-align: justify;">
+<li><strong>CPL</strong>: abre as opções de acesso</li>
+<li><strong>CPL</strong>: abre a ferramenta Adicionar/Excluir um programa</li>
+<li><strong>MSC</strong>: abre o gerenciador de autorizações</li>
+<li><strong>MSC</strong>: abre os certificados para o usuário atual</li>
+<li><strong>CLICONFG</strong>: abre a configuração dos clientes SQL</li>
+<li><strong>CPL</strong>: abre a vizinhança imediata</li>
+<li><strong>MSC</strong><strong>ou DCOMCNFG:</strong> abre a ferramenta serviços e componentes</li>
+<li><strong>MSC</strong>: abre a ferramenta de gestão do computador</li>
+<li><strong>COMPUTERDEFAULTS</strong>: abre a ferramenta dos programas padrão</li>
+<li><strong>CONTROL /NAME MICROSOFT.BACKUPANDRESTORECENTER</strong>: abre o centro de backup e de restauração .</li>
+<li><strong>CONTROL ADMINTOOLS</strong>: abre as ferramentas de administração</li>
+<li><strong>CONTROL COLOR</strong>: abre as configurações de aparência</li>
+<li><strong>CONTROL FOLDERS</strong>: abre as opções de pastas</li>
+<li><strong>CONTROL FONTS</strong>: abre o gerenciador de caracteres</li>
+<li><strong>CONTROL INTERNATIONAL ou INTL.CPL</strong>: abre as opções regionais e linguísticas</li>
+<li><strong>CONTROL KEYBOARD</strong>: abre as propriedades do teclado</li>
+<li><strong>CONTROL MOUSE ou MAIN.CPL</strong>: abre as propriedades do mouse</li>
+<li><strong>CONTROL PRINTERS</strong>: abre as impressoras e os faxes disponíveis</li>
+<li><strong>CONTROL USERPASSWORDS</strong>: abre o editor de contas dos usuários</li>
+<li><strong>CONTROL USERPASSWORDS2</strong>ou <strong>NETPLWIZ</strong>: controla os usuários e seus acessos</li>
+<li><strong>CONTROL</strong>: abre o Painel de controle</li>
+<li><strong>CREDWIZ</strong>: abre a ferramenta de backup e de restauração de senhas dos usuários</li>
+<li><strong>CPL</strong>: abre as configurações de exibição</li>
+<li><strong>MSC</strong>: abre o gerenciador de periféricos.</li>
+<li><strong>DXDIAG</strong>: abre a ferramenta de diagnóstico DirectX</li>
+<li><strong>EVENTVWR ou EVENTVWR.MSC</strong>: abre o observador de eventos</li>
+<li><strong>MSC</strong>: abre as pastas compartilhadas</li>
+<li><strong>MSC:</strong> abre o editor de estratégias de grupo (Para as edições profissionais e mais do Windows)</li>
+<li><strong>CPL</strong>: abre o assistente “adicionar hardware”</li>
+<li><strong>CPL</strong>: abre o assistente “compatibilidade de programas”</li>
+<li><strong>CPL</strong>: abre o gerenciador de infravermelho</li>
+<li><strong>ISCSICPL</strong>: abre a ferramenta de configuração do iniciador ISCI Microsoft</li>
+<li><strong>CPL</strong>: abre a ferramenta do controlador de jogos</li>
+<li><strong>LPKSETUP</strong>: abre o assistente de instalação e desinstalação dos idiomas de exibição</li>
+<li><strong>MSC</strong>: abre o editor dos usuários e grupos locais</li>
+<li><strong>MDSCHED</strong>: abre a ferramenta de diagnósticos da memória Windows</li>
+<li><strong>MMC</strong>: abre um novo console vazio</li>
+<li><strong>CPL</strong>: abre as configurações de som</li>
+<li><strong>MOBSYNC</strong>: abre o centro de sincronização</li>
+<li><strong>MSCONFIG</strong>: abre a ferramenta de configuração do sistema</li>
+<li><strong>MSC</strong>: abre a ferramenta de configuração do cliente NAP</li>
+<li><strong>MSC</strong>: abre o gerenciador de suporte de armazenamento removível</li>
+<li><strong>MSC</strong>: abre as solicitações do operador de armazenamento removível</li>
+<li><strong>ODBCAD32</strong>: abre o administrador de fonte de dados ODBC</li>
+<li><strong>OPÇÃOALFEATURES</strong>: abre a ferramenta Adicionar/Excluír componentes do Windows</li>
+<li><strong>PERFMON ou PERFMON.MSC</strong>: abre o monitor de confiabilidade e de desempenho Windows.</li>
+<li><strong>CPL</strong>: abre o gerenciador de modos de alimentação</li>
+<li><strong>REGEDIT ou REGEDT32</strong>: abre o editor de registro</li>
+<li><strong>REKEYWIZ</strong>: abre o gerenciador de certificados de criptografia de arquivos</li>
+<li><strong>MSC</strong>: abre o jogo de estratégia resultante</li>
+<li><strong>MSC</strong>: abre as configurações de segurança local</li>
+<li><strong>MSC</strong>: abre o gerenciador de serviços</li>
+<li><strong>SLUI</strong>: abre o assistente de ativação do Windows</li>
+<li><strong>CPL</strong>: abre as propriedades do sistema</li>
+<li><strong>SYSEDIT</strong>: abre o editor de configuração do sistema (Atenção, manipular com cautela)</li>
+<li><strong>SYSKEY</strong>: abre o utilitário de proteção do banco de dados das contas Windows (Atenção, manipular com extrema cautela !)</li>
+<li><strong>SYSPREP</strong>: abre a pasta com a ferramenta de preparação do sistema</li>
+<li><strong>CPL</strong>: abre as configurações para o Tablet pc</li>
+<li><strong>MSC ou CONTROL SCHEDTASKS</strong>: abre o planejador de tarefas</li>
+<li><strong>CPL</strong>: abre a ferramenta de conexão telefônica</li>
+<li><strong>CPL</strong>: abre as configurações da hora e da data</li>
+<li><strong>MSC</strong>: abre a ferramenta de gestão do módulo de plataforma segura no computador local</li>
+<li><strong>UTILMAN</strong>: abre as opções de ergonomia (Central de Facilidades de Acesso)</li>
+<li><strong>MSC:</strong> abre o “Windows Management Infrastructure”</li>
+<li><strong>CPL:</strong> abre o centro de segurança Windows</li>
+</ul>
+<h3 style="text-align: justify;"><strong>Comandos de Programas e ferramentas Windows</strong></h3>
+<ul style="text-align: justify;">
+<li><strong>CALC</strong>: abre a calculadora</li>
+<li><strong>CHARMAP</strong>: abre a tabela de caracteres</li>
+<li><strong>DIALER</strong>: abre o numerador telefônico do Windows</li>
+<li><strong>DVDPLAY</strong>: abre seu leitor DVD</li>
+<li><strong>EUDCEDIT</strong>: abre o editor de caracteres privados</li>
+<li><strong>EXPLORER</strong>: abre o Windows Explorer</li>
+<li><strong>FSQUIRT</strong>: Assistente de transferência Bluetooth</li>
+<li><strong>IEXPLORE</strong>: abre Internet Explorer</li>
+<li><strong>IEXPRESS</strong>: abre o assistente de criação dos arquivos auto-extraíveis.</li>
+<li><strong>MAGNIFY</strong>: abre a lupa</li>
+<li><strong>MOVIEMK</strong>: abre o Windows Movie Maker</li>
+<li><strong>MRT</strong>: executa o utilitário de remoção de malwares.</li>
+<li><strong>MSDT</strong>: abre a ferramenta de diagnósticos e suporte da Microsoft</li>
+<li><strong>MSINFO32</strong>: abre as informações do sistema</li>
+<li><strong>MSPAINT</strong>: abre o “Paint”</li>
+<li><strong>MSRA</strong>: abre a assistência remota do Windows</li>
+<li><strong>MSTSC</strong>: abre a ferramenta de conexão da assistência remota</li>
+<li><strong>NOTEPAD</strong>: abre o bloco de notas</li>
+<li><strong>OSK</strong>: abre o teclado visual.</li>
+<li><strong>SIGVERIF</strong>: abre a ferramenta de verificação das assinaturas de arquivos</li>
+<li><strong>SNDVOL</strong>: abre o misturador de volume</li>
+<li><strong>SOUNDRECORDER</strong>: abre o gravador</li>
+<li><strong>TASKMGR</strong>: abre o gerenciador de tarefas do Windows</li>
+<li><strong>WINVER</strong>: abre a janela para que você conheça a versão do seu Windows</li>
+<li><strong>WINWORD</strong>: abre o Word (se estiver instalado)</li>
+<li><strong>WMPLAYER</strong>: abre o leitor Windows Media</li>
+<li><strong>WRITE ou WORDPAD</strong>: abre o Wordpad</li>
+</ul>
+<h3 style="text-align: justify;"><strong>Comandos de Gestão de discos</strong></h3>
+<ul style="text-align: justify;">
+<li><strong>CHKDSK</strong>: realiza uma análise da partição especificada nas configurações do comando <em>(Para mais informações, digite CHKDSK /? no interpretador de comandos CMD)</em></li>
+<li><strong>CLEANMGR</strong>: abre a ferramenta de limpeza do disco</li>
+<li><strong>DEFRAG</strong>: Desfragmenta o disco rígido</li>
+<li><strong>MSC</strong>: abre a ferramenta de desfragmentação do disco</li>
+<li><strong>MSC</strong>: abre o gerenciador de discos</li>
+<li><strong>DISKPART:</strong> abre a ferramenta de particionamento <em>(manipulação pesada)</em></li>
+</ul>
+<h3 style="text-align: justify;"><strong>Comandos de Gestão das Redes e Internet</strong></h3>
+<ul style="text-align: justify;">
+<li><strong>CONTROL NETCONNECTIONS ou NCPA.CPL</strong>: abre as conexões da rede</li>
+<li><strong>CPL</strong>: abre o firewall do Windows</li>
+<li><strong>CPL:</strong> abre as propriedades da internet</li>
+<li><strong>IPCONFIG</strong>: exibe as configuraçãos dos endereços IP no computador</li>
+<li><strong>MSC</strong>: abre as funções avançadas do firewall do Windows</li>
+</ul>
+<h3 style="text-align: justify;"><strong>Atalhos, paths e comandos adicionais:</strong></h3>
+<ul style="text-align: justify;">
+<li><strong>%HOMEDRIVE%:</strong> abre o explorador na partição onde o sistema operacional está instalado.</li>
+<li><strong>%HOMEPATH%:</strong> abre a pasta do usuário conectado. <em>Por exemplo C:\Usuários\[nome do usuário]</em></li>
+<li><strong>%PROGRAMFILES%:</strong> abre a pasta de instalação de outros programas <em>(Program Files)</em></li>
+<li><strong>%TEMP% ou %TMP%:</strong> abre a pasta temporária</li>
+<li><strong>%USERPROFILE%:</strong> abre a pasta do perfil do usuário conectado</li>
+<li><strong>%WINDIR% ou %SYSTEMROOT%: </strong>abre a pasta de instalação do Windows</li>
+<li><strong>%WINDIR%\system32\rundll32.exe shell32.dll,Control_RunDLL hotplug.dll:</strong> exibe a janela “Retirar o dispositivo com segurança”</li>
+<li><strong>CPL:</strong> abre as propriedades do filtro AC3 <em>(se estiver instalado)</em></li>
+<li><strong>FIREFOX:</strong> executa Mozilla FireFox <em>(se estiver instalado)</em></li>
+<li><strong>JAVAWS</strong>: Visualiza o cache do software JAVA <em>(se estiver instalado)</em></li>
+<li><strong>LOGOFF</strong>: fecha a sessão</li>
+<li><strong>NETPROJ</strong>: autoriza ou não a conexão a um projetor de rede</li>
+<li><strong>SFC /SCANNOW</strong>: varre, imediatamente, todos os arquivos do sistema e localiza os que estão danificados</li>
+<li><strong>SFC /VERIFYONLY</strong>: varre apenas os arquivos do sistema</li>
+<li><strong>SFC /SCANFILE=”nome e caminho do arquivo”:</strong> varre o arquivo especificado e repara, caso esteja danificado.</li>
+<li><strong>SFC /VERIFYFILE=”nome e caminho do arquivo”:</strong> varre apenas o arquivo especificado</li>
+<li><strong>SFC /SCANONCE:</strong> varre os arquivos do sistema no arranque seguinte</li>
+<li><strong>SFC /REVERT:</strong> repõe a configuração inicial <em>(Para mais informações, digite SFC /? no interpretador de comandos)</em></li>
+<li><strong>SHUTDOWN</strong>: desliga o Windows</li>
+<li><strong>SHUTDOWN -A:</strong> interrompe a desconexão do Windows</li>
+<li><strong>DRIVERQUERY</strong>:  O driverquery é uma ferramenta que fornece informações sobre os drivers de hardware instalados em seu computador. Você pode usar o comando driverquery -v ou driverquery -si</li>
+<li><strong>POWERCFG</strong>:  é um comando que lhe ajuda a habilitar recursos e obter várias informações sobre a energia do computador, como habilitar a hibernação e obter informações sobre o consumo de energia do Windows.</li>
+<li><strong>PATHPING</strong>: O “pathping” é uma versão avançada do ping que exibe várias informações sobre a rota dos pacotes e lhe ajuda a descobrir onde está o problema. Como o ping, digite “pathping” + o nome ou o endereço IP do host.</li>
+</ul>
+<p><strong><em>Fontes:</em></strong></p>
+<p><em>http://computeirodadepressao.com/guia-de-comandos-do-cmd-de-todos-os-windows/<br />
+http://br.ccm.net/faq/1420-lista-de-comandos-do-windows<br />
+http://pt.wikihow.com/Descobrir-Todos-os-Comandos-do-CMD-no-Seu-Computador<br />
+</em></p>
+<!-- AddThis Advanced Settings above via filter on the_content --><!-- AddThis Advanced Settings below via filter on the_content --><!-- AddThis Advanced Settings generic via filter on the_content --><!-- AddThis Share Buttons above via filter on the_content --><!-- AddThis Share Buttons below via filter on the_content --><div class="at-below-post addthis_tool" data-url="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/"></div><!-- AddThis Share Buttons generic via filter on the_content -->          <nav class="pagination group">
+                      </nav><!--/.pagination-->
+        </div>
+
+        
+        <div class="clear"></div>
+      </div><!--/.entry-->
+
+    </div><!--/.post-inner-->
+  </article><!--/.post-->
+
+<div class="clear"></div>
+
+<p class="post-tags"><span>Tags:</span> <a href="https://www.uniaogeek.com.br/tag/batch-script/" rel="tag">Batch Script</a><a href="https://www.uniaogeek.com.br/tag/cmd/" rel="tag">CMD</a><a href="https://www.uniaogeek.com.br/tag/linha-de-comandos/" rel="tag">Linha de Comandos</a><a href="https://www.uniaogeek.com.br/tag/ms-dos/" rel="tag">MS-DOS</a><a href="https://www.uniaogeek.com.br/tag/prompt-de-comando/" rel="tag">Prompt de Comando</a><a href="https://www.uniaogeek.com.br/tag/windows/" rel="tag">Windows</a></p>
+<div class="saboxplugin-wrap" itemtype="http://schema.org/Person" itemscope itemprop="author"><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img src="https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg" width="100"  height="100" alt="" itemprop="image"></div><div class="saboxplugin-authorname"><a href="https://www.uniaogeek.com.br/author/mrhenrike/" class="vcard author" rel="author"><span class="fn">Andre Henrique</span></a></div><div class="saboxplugin-desc"><div itemprop="description"><p>Profissional Hacker Ético com sólida experiência em Segurança da Informação, Cybersecurity e Hacking Ético, especializado em Segurança Ofensiva e Análise de Tráfego Malicioso. Minha trajetória combina habilidades técnicas avançadas e liderança estratégica em projetos que envolvem SIEM, SOAR, MDR, Gestão de Vulnerabilidades e Segurança OT/ICS, sempre com foco na proteção e resiliência das organizações frente a ameaças cibernéticas avançadas.</p>
+</div></div><div class="saboxplugin-web sab-web-position"><a href="https://medium.com/@mrhenrike/" target="_blank" rel="nofollow">medium.com/@mrhenrike/</a></div><div class="clearfix"></div><div class="saboxplugin-socials sabox-colored"><a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/mrhenrike" rel="nofollow noopener" class="saboxplugin-icon-color"><svg class="sab-linkedin" viewBox="0 0 500 500.7" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="st0" d="m499.8 250.7c0 7.6-0.4 15.2-1 22.6-0.2 2.2-0.4 4.4-0.7 6.6-0.1 0.6-0.1 1.1-0.2 1.7-0.3 2.6-0.7 5.2-1.1 7.7-0.4 2.3-0.8 4.7-1.2 7 0 0.3-0.1 0.6-0.2 0.9-0.2 1-0.4 1.9-0.5 2.9-0.2 0.8-0.4 1.6-0.5 2.5-0.1 0.3-0.1 0.5-0.2 0.8-0.7 3.3-1.5 6.5-2.3 9.7-0.6 2.3-1.2 4.5-1.9 6.8-1.5 5.3-3.2 10.5-5 15.6-26.7 73.9-87.3 131.6-163.2 154.2-3 0.9-6.1 1.8-9.2 2.6-1.5 0.4-3 0.8-4.5 1.1-3.6 0.9-7.2 1.6-10.9 2.3h-0.2c-0.2 0-0.3 0.1-0.5 0.1l-3 0.6c-1.8 0.3-3.6 0.6-5.4 0.9-0.2 0-0.3 0.1-0.5 0.1-0.9 0.1-1.9 0.3-2.8 0.4-5.5 0.8-11.1 1.3-16.7 1.7-0.8 0.1-1.6 0.1-2.4 0.1-5 0.3-10.1 0.4-15.2 0.4-137.7 0-249.3-111.6-249.3-249.3s111.6-249.4 249.3-249.4 249.3 111.7 249.3 249.4z" fill="#0077b5" /><path class="st1" d="m485 335.5c-26.7 73.9-87.3 131.6-163.2 154.2-3 0.9-6.1 1.8-9.2 2.6-1.5 0.4-3 0.8-4.5 1.1-3.6 0.9-7.2 1.6-10.9 2.3h-0.2l-148.3-148.1 35.3-142.9-32-37.6 38.1-38.7 68 68.4h11.9l9.5 9.3 70.5-3.9 135 133.3z" /><path class="st2" d="m195.6 347.6h-46.9v-150.8h46.9v150.8zm-23.5-171.4c-15 0-27.1-12.4-27.1-27.4s12.2-27.1 27.1-27.1c15 0 27.1 12.2 27.1 27.1s-12.1 27.4-27.1 27.4zm198.9 171.4h-46.8v-73.4c0-17.5-0.4-39.9-24.4-39.9-24.4 0-28.1 19-28.1 38.7v74.7h-46.8v-150.9h44.9v20.6h0.7c6.3-11.9 21.5-24.4 44.3-24.4 47.4 0 56.1 31.2 56.1 71.8l0.1 82.8z" /></svg></span></a><a title="Twitter" target="_blank" href="https://twitter.com/mrhenrike" rel="nofollow noopener" class="saboxplugin-icon-color"><svg class="sab-twitter" viewBox="0 0 500 500.7" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="st0" d="m499.4 250.9c0 2.2 0 4.4-0.1 6.6-0.1 5.4-0.5 10.7-0.9 15.9-0.2 2.2-0.4 4.5-0.7 6.7-0.1 0.6-0.1 1.1-0.2 1.7-0.7 4.8-1.4 9.5-2.2 14.2l-0.6 3.3c0 0.1 0 0.2-0.1 0.3 0 0.2-0.1 0.5-0.1 0.7-1.1 5.1-2.3 10.2-3.6 15.3-0.2 0.9-0.5 1.9-0.8 2.8-0.2 0.6-0.3 1.1-0.5 1.7-0.8 2.7-1.6 5.3-2.5 8-1.4 4.2-2.8 8.5-4.4 12.5-0.1 0.4-0.3 0.7-0.4 1.1-0.9 2.3-1.8 4.6-2.8 6.8-28.3 66.6-84.9 118.5-154.8 140.4-1.1 0.4-2.2 0.7-3.3 1-6.8 2-13.6 3.8-20.6 5.2-0.2 0.1-0.5 0.1-0.7 0.2-1.5 0.3-2.9 0.5-4.3 0.8-0.6 0.1-1.3 0.2-1.9 0.4-3.1 0.6-6.3 1.1-9.5 1.5-0.3 0-0.5 0.1-0.8 0.1-2.7 0.4-5.5 0.7-8.2 1-0.4 0-0.8 0.1-1.2 0.1-2.2 0.2-4.4 0.4-6.6 0.5-0.8 0.1-1.6 0.1-2.4 0.1-1.4 0.1-2.9 0.2-4.4 0.2-3.6 0.1-7.2 0.2-10.8 0.2-137.7 0-249.3-111.6-249.3-249.3s111.6-249.4 249.4-249.4 249.3 111.7 249.3 249.4z" fill="#1da1f2" /><path class="st1" d="m499.3 257.5c-0.1 5.4-0.5 10.7-0.9 15.9-0.2 2.2-0.4 4.5-0.7 6.7-0.1 0.6-0.1 1.1-0.2 1.7-0.7 4.8-1.4 9.5-2.2 14.2l-0.6 3.3c0 0.1 0 0.2-0.1 0.3 0 0.2-0.1 0.5-0.1 0.7-1.1 5.1-2.3 10.2-3.6 15.3-0.2 0.9-0.5 1.9-0.8 2.8-0.2 0.6-0.3 1.1-0.5 1.7-0.8 2.7-1.6 5.3-2.5 8-1.4 4.2-2.8 8.5-4.4 12.5-0.1 0.4-0.3 0.7-0.4 1.1-0.9 2.3-1.8 4.6-2.8 6.8-28.3 66.6-84.9 118.5-154.8 140.4-1.1 0.4-2.2 0.7-3.3 1-6.8 2-13.6 3.8-20.6 5.2-0.2 0.1-0.5 0.1-0.7 0.2-1.5 0.3-2.9 0.5-4.3 0.8-0.6 0.1-1.3 0.2-1.9 0.4-3.1 0.6-6.3 1.1-9.5 1.5-0.3 0-0.5 0.1-0.8 0.1-2.7 0.4-5.5 0.7-8.2 1-0.4 0-0.8 0.1-1.2 0.1-2.2 0.2-4.4 0.4-6.6 0.5-0.8 0.1-1.6 0.1-2.4 0.1-1.4 0.1-2.9 0.2-4.4 0.2l-151.8-151.8 18 4.3 23.7-2 36-1-26.8-39.1 19.5 1.1-20-7.7 3.3-12.7-22.8-23.5 93.2-25.5 155-96.3 111.2 111.7z" /><path class="st2" d="m366.5 199.6c0.2 2.5 0.2 5.1 0.2 7.6 0 77.8-59.2 167.4-167.4 167.4-33.3 0-64.3-9.7-90.3-26.4 4.7 0.5 9.3 0.7 14.2 0.7 27.5 0 52.8-9.3 73-25.1-25.9-0.5-47.5-17.5-55-40.8 3.6 0.5 7.3 0.9 11.1 0.9 5.3 0 10.6-0.7 15.5-2-27-5.5-47.2-29.1-47.2-57.7v-0.7c7.8 4.4 16.9 7.1 26.6 7.5-15.8-10.6-26.2-28.6-26.2-49 0-10.9 2.9-20.9 8-29.7 29 35.7 72.5 59 121.3 61.6-0.9-4.4-1.5-8.9-1.5-13.5 0-32.4 26.2-58.8 58.8-58.8 16.9 0 32.2 7.1 43 18.6 13.3-2.5 26-7.5 37.3-14.2-4.4 13.7-13.7 25.1-25.9 32.4 11.8-1.3 23.3-4.6 33.9-9.1-7.9 11.5-17.9 21.9-29.4 30.3z" /></svg></span></a><a title="Github" target="_blank" href="https://github.com/mrhenrike" rel="nofollow noopener" class="saboxplugin-icon-color"><svg class="sab-github" viewBox="0 0 500 500.7" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="st0" d="m499.8 250.7c0 9.9-0.6 19.7-1.7 29.2-0.1 0.6-0.1 1.1-0.2 1.7-0.3 2.6-0.7 5.2-1.1 7.7-0.4 2.3-0.8 4.7-1.2 7-0.2 1.3-0.5 2.5-0.7 3.8-0.2 1.1-0.5 2.2-0.7 3.3-1.2 5.6-2.6 11-4.2 16.5-23.4 81.3-87.1 145.6-168.2 169.8-4.5 1.3-9.1 2.6-13.7 3.7-6.5 1.6-13.2 2.8-20 3.9-0.2 0-0.3 0.1-0.5 0.1-0.9 0.1-1.9 0.3-2.8 0.4-5.5 0.8-11.1 1.3-16.7 1.7-0.8 0.1-1.6 0.1-2.4 0.1-5 0.3-10.1 0.4-15.2 0.4-137.7 0-249.3-111.6-249.3-249.3s111.6-249.4 249.3-249.4 249.3 111.7 249.3 249.4z" fill="#4078c0" /><path class="st1" d="m495.6 296.3c-0.2 1.3-0.5 2.5-0.7 3.8-0.2 1.1-0.5 2.2-0.7 3.3-1.2 5.6-2.6 11-4.2 16.5-23.4 81.3-87.1 145.6-168.2 169.8-4.5 1.3-9.1 2.6-13.7 3.7-6.5 1.6-13.2 2.8-20 3.9l-140.4-141.1-14.9-35.9-7.8-71 32.6-89.2 79.9-17.7 111.5 7.2 146.6 146.7z" /><path class="st2" d="m204 339c0 1.2-1.3 2.1-3 2.1-1.9 0.2-3.3-0.8-3.3-2.1 0-1.2 1.3-2.1 3-2.1 1.8-0.1 3.3 0.8 3.3 2.1zm-18.1-2.6c-0.4 1.2 0.8 2.5 2.5 2.8 1.5 0.6 3.3 0 3.6-1.2s-0.8-2.5-2.5-3c-1.5-0.3-3.2 0.3-3.6 1.4zm25.7-1c-1.7 0.4-2.8 1.5-2.7 2.8 0.2 1.2 1.7 1.9 3.4 1.5s2.8-1.5 2.7-2.7c-0.2-1-1.7-1.7-3.4-1.6zm38.2-222.8c-80.6 0-142.3 61.2-142.3 141.9 0 64.5 40.6 119.7 98.5 139.1 7.4 1.3 10.1-3.3 10.1-7 0-3.6-0.2-23.5-0.2-35.7 0 0-40.7 8.7-49.2-17.3 0 0-6.6-16.9-16.2-21.3 0 0-13.3-9.1 0.9-9 0 0 14.5 1.2 22.4 15 12.7 22.4 34.1 16 42.4 12.2 1.3-9.3 5.1-15.8 9.3-19.6-32.5-3.6-65.3-8.3-65.3-64.2 0-16 4.4-24 13.7-34.2-1.5-3.8-6.5-19.4 1.5-39.5 12.2-3.8 40.1 15.7 40.1 15.7 11.6-3.3 24.1-4.9 36.5-4.9s24.9 1.7 36.5 4.9c0 0 28-19.5 40.1-15.7 8 20.2 3 35.7 1.5 39.5 9.3 10.3 15 18.3 15 34.2 0 56.1-34.2 60.6-66.7 64.2 5.3 4.6 9.9 13.3 9.9 27 0 19.6-0.2 43.8-0.2 48.6 0 3.8 2.7 8.4 10.1 7 58.1-19.3 97.6-74.5 97.6-139 0.1-80.6-65.3-141.9-146-141.9zm-85.8 200.6c-0.8 0.6-0.6 1.9 0.4 3 0.9 0.9 2.3 1.3 3 0.6 0.8-0.6 0.6-1.9-0.4-3-0.9-1-2.2-1.4-3-0.6zm-6.3-4.7c-0.4 0.8 0.2 1.7 1.3 2.3 0.9 0.6 2.1 0.4 2.5-0.4s-0.2-1.7-1.3-2.3c-1.1-0.4-2-0.2-2.5 0.4zm18.9 20.7c-0.9 0.8-0.6 2.5 0.8 3.6 1.3 1.3 3 1.5 3.8 0.6 0.8-0.8 0.4-2.5-0.8-3.6-1.3-1.4-3.1-1.6-3.8-0.6zm-6.6-8.6c-0.9 0.6-0.9 2.1 0 3.4s2.5 1.9 3.3 1.3c0.9-0.8 0.9-2.3 0-3.6s-2.4-1.8-3.3-1.1z" /></svg></span></a></div></div></div>
+
+
+<h4 class="heading">
+	<i class="far fa-hand-point-right"></i>Você pode gostar...</h4>
+
+<ul class="related-posts group">
+  		<li class="related post-hover">
+		<article class="post-134 post type-post status-publish format-quote has-post-thumbnail hentry category-dicas-tutoriais category-sistemas-operacionais tag-bash tag-gnulinux tag-linha-de-comandos tag-linux tag-shell tag-shell-script tag-terminal post_format-post-format-quote">
+
+			<div class="post-thumbnail">
+				<a href="https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/" class="hu-rel-post-thumb">
+					<img width="520" height="245" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/comandos_linux-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/comandos_linux-520x245.jpg 520w, https://www.uniaogeek.com.br/wp-content/uploads/2016/07/comandos_linux-300x142.jpg 300w" sizes="auto, (max-width: 520px) 100vw, 520px" />																			</a>
+									<a class="post-comments" href="https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/#comments"><i class="far fa-comments"></i>47</a>
+							</div><!--/.post-thumbnail-->
+
+			<div class="related-inner">
+
+				<h4 class="post-title entry-title">
+					<a href="https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/" rel="bookmark">Guia de Comandos SHELL (Terminal GNU/Linux)</a>
+				</h4><!--/.post-title-->
+
+				<div class="post-meta group">
+					<p class="post-date">
+  <time class="published updated" datetime="2016-07-17 12:08:43">17 de julho de 2016</time>
+</p>
+
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="https://www.uniaogeek.com.br/author/mrhenrike/" title="Posts de Andre Henrique" rel="author">Andre Henrique</a></span>
+    </span> &middot; Published <span class="published">17 de julho de 2016</span>
+     &middot; Last modified <span class="updated">9 de agosto de 2016</span>  </p>
+				</div><!--/.post-meta-->
+
+			</div><!--/.related-inner-->
+
+		</article>
+	</li><!--/.related-->
+		<li class="related post-hover">
+		<article class="post-650 post type-post status-publish format-standard has-post-thumbnail hentry category-dicas-tutoriais tag-maquina-virtual tag-virtual-machine tag-virtualbox tag-virtualizacao tag-vm">
+
+			<div class="post-thumbnail">
+				<a href="https://www.uniaogeek.com.br/criando-vm-com-virtualbox/" class="hu-rel-post-thumb">
+					<img width="520" height="245" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/11/mockup_header_virtualbox-1-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="virtualbox-virtualizacao-criando-maquina-virtual" decoding="async" loading="lazy" srcset="https://www.uniaogeek.com.br/wp-content/uploads/2016/11/mockup_header_virtualbox-1-520x245.jpg 520w, https://www.uniaogeek.com.br/wp-content/uploads/2016/11/mockup_header_virtualbox-1-300x142.jpg 300w" sizes="auto, (max-width: 520px) 100vw, 520px" />																			</a>
+									<a class="post-comments" href="https://www.uniaogeek.com.br/criando-vm-com-virtualbox/#respond"><i class="far fa-comments"></i>0</a>
+							</div><!--/.post-thumbnail-->
+
+			<div class="related-inner">
+
+				<h4 class="post-title entry-title">
+					<a href="https://www.uniaogeek.com.br/criando-vm-com-virtualbox/" rel="bookmark">Criando uma Máquina Virtual com VirtualBox</a>
+				</h4><!--/.post-title-->
+
+				<div class="post-meta group">
+					<p class="post-date">
+  <time class="published updated" datetime="2016-11-17 14:12:10">17 de novembro de 2016</time>
+</p>
+
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="https://www.uniaogeek.com.br/author/toloto/" title="Posts de Lucas O Toloto" rel="author">Lucas O Toloto</a></span>
+    </span> &middot; Published <span class="published">17 de novembro de 2016</span>
+     &middot; Last modified <span class="updated">6 de dezembro de 2017</span>  </p>
+				</div><!--/.post-meta-->
+
+			</div><!--/.related-inner-->
+
+		</article>
+	</li><!--/.related-->
+		<li class="related post-hover">
+		<article class="post-2155 post type-post status-publish format-standard has-post-thumbnail hentry category-dicas-tutoriais tag-easeus tag-recuperacao-de-dados">
+
+			<div class="post-thumbnail">
+				<a href="https://www.uniaogeek.com.br/recuperacao-de-dados-com-easeus-data-recovery/" class="hu-rel-post-thumb">
+					<img width="520" height="245" src="https://www.uniaogeek.com.br/wp-content/uploads/2018/07/mockup_header_easeus-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="easeus-data-recovery" decoding="async" loading="lazy" srcset="https://www.uniaogeek.com.br/wp-content/uploads/2018/07/mockup_header_easeus-520x245.jpg 520w, https://www.uniaogeek.com.br/wp-content/uploads/2018/07/mockup_header_easeus-300x142.jpg 300w" sizes="auto, (max-width: 520px) 100vw, 520px" />																			</a>
+									<a class="post-comments" href="https://www.uniaogeek.com.br/recuperacao-de-dados-com-easeus-data-recovery/#respond"><i class="far fa-comments"></i>0</a>
+							</div><!--/.post-thumbnail-->
+
+			<div class="related-inner">
+
+				<h4 class="post-title entry-title">
+					<a href="https://www.uniaogeek.com.br/recuperacao-de-dados-com-easeus-data-recovery/" rel="bookmark">Recuperação de dados com EaseUS Data Recovery</a>
+				</h4><!--/.post-title-->
+
+				<div class="post-meta group">
+					<p class="post-date">
+  <time class="published updated" datetime="2018-07-16 14:00:05">16 de julho de 2018</time>
+</p>
+
+  <p class="post-byline" style="display:none">&nbsp;por    <span class="vcard author">
+      <span class="fn"><a href="https://www.uniaogeek.com.br/author/van-glauco/" title="Posts de Van Glauco" rel="author">Van Glauco</a></span>
+    </span> &middot; Published <span class="published">16 de julho de 2018</span>
+      </p>
+				</div><!--/.post-meta-->
+
+			</div><!--/.related-inner-->
+
+		</article>
+	</li><!--/.related-->
+		  
+</ul><!--/.post-related-->
+
+
+
+<section id="comments" class="themeform">
+
+	
+		<h3 class="heading">37 Resultados</h3>
+
+		<ul class="comment-tabs group">
+			<li class="active"><a href="#commentlist-container"><i class="far fa-comments"></i>Comentários<span>37</span></a></li>
+			<li><a href="#pinglist-container"><i class="fas fa-share"></i>Pingbacks<span>0</span></a></li>
+		</ul>
+
+				<div id="commentlist-container" class="comment-tab">
+
+			<ol class="commentlist">
+						<li class="comment even thread-even depth-1 parent" id="comment-149">
+				<div id="div-comment-149" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/89c933c58e9933dc9fdcb9d8003b8230?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/89c933c58e9933dc9fdcb9d8003b8230?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="http://google" class="url" rel="ugc external nofollow">josino andre mourad souza</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-149">9 de janeiro de 2020 às 08:37</a>		</div>
+
+		<p>bom dia   gostaria saber como me transformo em um hacker</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-149" data-commentid="149" data-postid="116" data-belowelement="div-comment-149" data-respondelement="respond" data-replyto="Responder para josino andre mourad souza" aria-label="Responder para josino andre mourad souza">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor odd alt depth-2" id="comment-153">
+				<div id="div-comment-153" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-153">15 de fevereiro de 2020 às 17:54</a>		</div>
+
+		<p>Não existe um &#8220;cook-book&#8221; ou receita de bolo ou guia definitivo de como tornar-se um Hacker. É uma profissão, um estilo de vida e depende de várias Skills do indivíduo. </p>
+<p>Se você gosta da área de tecnologia e segurança cibernética e principalmente, gosta de estudar, de enfrentar desafios e não está contente com as definições padrões que impõem sobre os sistemas, então já está iniciando certo. </p>
+<p>Estude sempre (isso nunca vai acabar, hahaha). Mas, no geral uma boa dica é ter um bom conhecimento em Redes de Computadores, Programação, Segurança da Informação e Políticas de SegInfo. Esse será um começo e a partir daí, poderá guiar-se por onde julgar melhor.</p>
+<p>Obrigado por seu comentário.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-153" data-commentid="153" data-postid="116" data-belowelement="div-comment-153" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-165">
+				<div id="div-comment-165" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/2fb09af368d194ba7dcfcab326eb7a19?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/2fb09af368d194ba7dcfcab326eb7a19?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Emanuel</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-165">13 de dezembro de 2020 às 13:12</a>		</div>
+
+		<p>Olá, tudo bom?<br />
+Gostei muito do seu conteúdo e percebi que você é fera em comandos msdos, por isso gostaria de fazer uma pergunta: Como faço para alterar o local de pasta de um diretório via cmd?<br />
+Procurei em vários locais e não consegui obter uma ajuda, poderia me auxiliar?</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-165" data-commentid="165" data-postid="116" data-belowelement="div-comment-165" data-respondelement="respond" data-replyto="Responder para Emanuel" aria-label="Responder para Emanuel">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor odd alt depth-2" id="comment-170">
+				<div id="div-comment-170" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-170">29 de janeiro de 2021 às 10:43</a>		</div>
+
+		<p>Você pode utilizar o comando &#8220;MOVE&#8221; do Prompt de Comandos do Windows.<br />
+Sintaxe:<br />
+move &#8220;<pasta_origem>&#8221; &#8220;<pasta_destino>&#8221;</p>
+<p>Exemplo:<br />
+move c:\minhapasta d:\novolocal</pasta_destino></pasta_origem>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-170" data-commentid="170" data-postid="116" data-belowelement="div-comment-170" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-171">
+				<div id="div-comment-171" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/7f3918788764be1a50fdacee5ee1013a?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7f3918788764be1a50fdacee5ee1013a?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Samuek</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-171">14 de fevereiro de 2021 às 20:57</a>		</div>
+
+		<p>Boa noite, gostaria de fazer um executável através do cmd para que todo dia em uma certa hora o computador me mostrasse uma notificação, com resposta interativa que ao responder positivamente ele executaria um shutdown. É possível?</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-171" data-commentid="171" data-postid="116" data-belowelement="div-comment-171" data-respondelement="respond" data-replyto="Responder para Samuek" aria-label="Responder para Samuek">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor odd alt depth-2" id="comment-180">
+				<div id="div-comment-180" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-180">22 de março de 2021 às 14:32</a>		</div>
+
+		<p>Sim, é possível. Crie um script (batch ou poweshell) e armazene em um local seguro com permissões do seu usuário apenas.<br />
+Utilize o agendador de tarefas para executá-lo (trigger) na hora e momento que você deseja.<br />
+O seu <strong>script irá executar a ação que você programar</strong>. Neste seu exemplo é &#8220;<strong>mostrasse uma notificação, com resposta interativa que ao responder positivamente ele executaria um shutdown</strong>&#8220;&#8230;<br />
+O <strong>agendador de tarefas</strong> fará o papel de disparar o script &#8220;<strong>todo dia em uma certa hora</strong>&#8220;.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-180" data-commentid="180" data-postid="116" data-belowelement="div-comment-180" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-172">
+				<div id="div-comment-172" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/c86a9afbcdbd3479bc694f2db40b3117?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c86a9afbcdbd3479bc694f2db40b3117?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Cristian</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-172">16 de fevereiro de 2021 às 20:24</a>		</div>
+
+		<p>Boa noite, preciso de uma resposta. Como desativo um macro? faz tempo que fiz ele, não sei onde está o arquivo. Sempre quando inicio o prompt o prompt executa &#8220;doskey make=mingw32-make.exe&#8221;</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-172" data-commentid="172" data-postid="116" data-belowelement="div-comment-172" data-respondelement="respond" data-replyto="Responder para Cristian" aria-label="Responder para Cristian">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor odd alt depth-2" id="comment-179">
+				<div id="div-comment-179" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-179">22 de março de 2021 às 14:29</a>		</div>
+
+		<p>Hmm&#8230; provavelmente o DosKey está com alguma execução programada. Tente limpar o histórico do DosKey e verificar se há alguma macro aberta. Vou te encaminhar o link do DosKey que poderá ajudá-lo. Não tenho uma sintaxe específica pois depende do seu cenário e ambiente.</p>
+<p><a href="https://docs.microsoft.com/pt-br/windows-server/administration/windows-commands/doskey" rel="nofollow ugc">https://docs.microsoft.com/pt-br/windows-server/administration/windows-commands/doskey</a><br />
+<a href="https://superuser.com/questions/1422408/powershell-keeps-printing-doskey" rel="nofollow ugc">https://superuser.com/questions/1422408/powershell-keeps-printing-doskey</a></p>
+<p>Provavelmente irá ajudá-lo melhor.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-179" data-commentid="179" data-postid="116" data-belowelement="div-comment-179" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-173">
+				<div id="div-comment-173" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/7d0a73af37b2192e3380cb6a2647bd43?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7d0a73af37b2192e3380cb6a2647bd43?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://www.youtube.com/channel/UC1ESKyw2NK_T0KDsw9N_UJQ" class="url" rel="ugc external nofollow">Alexandre Santos de Souza</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-173">26 de fevereiro de 2021 às 13:57</a>		</div>
+
+		<p>como chamo um programa enviando um argumento com espaço?<br />
+ex: system(&#8220;atari2600\\atari2600 roms\\pac man.bin&#8221;);</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-173" data-commentid="173" data-postid="116" data-belowelement="div-comment-173" data-respondelement="respond" data-replyto="Responder para Alexandre Santos de Souza" aria-label="Responder para Alexandre Santos de Souza">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor odd alt depth-2" id="comment-178">
+				<div id="div-comment-178" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-178">22 de março de 2021 às 14:22</a>		</div>
+
+		<p>Aí depende do interpretador. Por exemplo, se for executar um script batch ou powershell comum, basta passar a estrutura inteira dentro de aspas duplas. Mas pode ser que teu script dê erros de acordo com a versão do prompt ou PS que for executar, daí o espaço em branco deverá ser escapado por contra-barra &#8220;\&#8221;. </p>
+<p>ex: system(&#8220;atari2600\\atari2600\ roms\\pac\ man.bin&#8221;);</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-178" data-commentid="178" data-postid="116" data-belowelement="div-comment-178" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-175">
+				<div id="div-comment-175" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/fdfe01f06708516f9e23fdf842bd5d16?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/fdfe01f06708516f9e23fdf842bd5d16?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Gustavo Correa Da Boit</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-175">12 de março de 2021 às 23:59</a>		</div>
+
+		<p>queria saber como faço para abrir uma janelinha com o texto que eu quero de informações?</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-175" data-commentid="175" data-postid="116" data-belowelement="div-comment-175" data-respondelement="respond" data-replyto="Responder para Gustavo Correa Da Boit" aria-label="Responder para Gustavo Correa Da Boit">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor odd alt depth-2" id="comment-177">
+				<div id="div-comment-177" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-177">22 de março de 2021 às 14:19</a>		</div>
+
+		<p>Opa, não compreendi muito bem sua dúvida. Você quer saber como abrir uma janela do PROMPT CMD ou eh algo mais específico??</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-177" data-commentid="177" data-postid="116" data-belowelement="div-comment-177" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-181">
+				<div id="div-comment-181" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/2abcd91ad978a8259c7d818ec15e13b2?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/2abcd91ad978a8259c7d818ec15e13b2?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="http://rfans21.com" class="url" rel="ugc external nofollow">Lashawn</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-181">24 de março de 2021 às 23:45</a>		</div>
+
+		<p>Hi to all, it&#8217;s in fact a good for me to visit this site,<br />
+it consists of precious Information.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-181" data-commentid="181" data-postid="116" data-belowelement="div-comment-181" data-respondelement="respond" data-replyto="Responder para Lashawn" aria-label="Responder para Lashawn">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-182">
+				<div id="div-comment-182" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/8d8bb180b9635d145e46397e81c41964?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/8d8bb180b9635d145e46397e81c41964?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Gustavo</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-182">16 de abril de 2021 às 14:11</a>		</div>
+
+		<p>como q eu vejo o caminho deixado por alguem q invadiu um aparelho</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-182" data-commentid="182" data-postid="116" data-belowelement="div-comment-182" data-respondelement="respond" data-replyto="Responder para Gustavo" aria-label="Responder para Gustavo">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor even depth-2" id="comment-189">
+				<div id="div-comment-189" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-189">5 de julho de 2021 às 18:38</a>		</div>
+
+		<p>Não há uma resposta assertiva para sua pergunta. Cada ataque tem seu próprio comportamento. Mas, no geral, o primeiro passo é analisar os logs do sistema.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-189" data-commentid="189" data-postid="116" data-belowelement="div-comment-189" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-186">
+				<div id="div-comment-186" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/41f49bb80aa8d29f759009a7f2fd0e40?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/41f49bb80aa8d29f759009a7f2fd0e40?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/" class="url" rel="ugc">Thiago</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-186">12 de junho de 2021 às 01:50</a>		</div>
+
+		<p>como eu faço para entrar em uma rede de wi-fi no cmd e invadir rede de celulares conectados a rede</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-186" data-commentid="186" data-postid="116" data-belowelement="div-comment-186" data-respondelement="respond" data-replyto="Responder para Thiago" aria-label="Responder para Thiago">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor even depth-2" id="comment-188">
+				<div id="div-comment-188" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-188">5 de julho de 2021 às 18:37</a>		</div>
+
+		<p>Eh necessários alguns conhecimentos específicos de invasão de redes sem-fios. Não há uma receita de bolo para o ataque, é preciso entender o ambiente do alvo e tentar diversos ataques.<br />
+Nós da União Geek inclusive, temos um treinamento acessível na Udemy.<br />
+Segue link caso deseje conferir o curso de Wi-Fi Hacking: <a href="https://www.udemy.com/course/tecnicas-de-invasao-em-redes-sem-fios-wi-fi-hacking/" rel="nofollow ugc">https://www.udemy.com/course/tecnicas-de-invasao-em-redes-sem-fios-wi-fi-hacking/</a></p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-188" data-commentid="188" data-postid="116" data-belowelement="div-comment-188" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-191">
+				<div id="div-comment-191" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/53a62031dcadbc41c8c8cd6b023d5253?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/53a62031dcadbc41c8c8cd6b023d5253?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Rogério</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-191">8 de julho de 2021 às 10:50</a>		</div>
+
+		<p>Bom dia!<br />
+Como faço para executar uma API Rest através de um comando http via command line?<br />
+Obrigado.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-191" data-commentid="191" data-postid="116" data-belowelement="div-comment-191" data-respondelement="respond" data-replyto="Responder para Rogério" aria-label="Responder para Rogério">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor even depth-2" id="comment-198">
+				<div id="div-comment-198" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-198">17 de agosto de 2021 às 12:18</a>		</div>
+
+		<p>Depende do seu sistema operacional. Uso de CLI é restrito ao SO. Por exemplo, no Linux vc pode usar o cURL para interagir com requisições HTTP/S. No Windows, você pode usar o powershell com Invoke-RestMethod e criar uma função interna interagindo com os parâmetros. Da uma olhada neste link aqui que tem um exemplo: <a href="https://virtuallysober.com/2019/03/12/converting-curl-to-powershell-for-rest-apis/" rel="nofollow ugc">https://virtuallysober.com/2019/03/12/converting-curl-to-powershell-for-rest-apis/</a>.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-198" data-commentid="198" data-postid="116" data-belowelement="div-comment-198" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-193">
+				<div id="div-comment-193" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/b8d3ac5c846247ff12423aa226f35c5d?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/b8d3ac5c846247ff12423aa226f35c5d?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="http://http:/ntyyrg39.com" class="url" rel="ugc external nofollow">Earnestine</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-193">22 de julho de 2021 às 02:44</a>		</div>
+
+		<p>I am curious to find out what blog platform you&#8217;re working with?<br />
+I&#8217;m experiencing some minor security problems with my latest site and I would like to find something more risk-free.<br />
+Do you have any recommendations?</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-193" data-commentid="193" data-postid="116" data-belowelement="div-comment-193" data-respondelement="respond" data-replyto="Responder para Earnestine" aria-label="Responder para Earnestine">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor even depth-2" id="comment-196">
+				<div id="div-comment-196" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-196">17 de agosto de 2021 às 12:14</a>		</div>
+
+		<p>Currently used WordPress</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-196" data-commentid="196" data-postid="116" data-belowelement="div-comment-196" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-206">
+				<div id="div-comment-206" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/a4c9320a1a8f715406fc0bc0a27077d6?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/a4c9320a1a8f715406fc0bc0a27077d6?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Rômulo</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-206">4 de novembro de 2021 às 16:31</a>		</div>
+
+		<p>Boa Tarde.</p>
+<p>Teria como fazer um script que apaga o conteudo do perfil de usuario do dominio ad, por exemplo de um usuário C:\Users\&#8221;fulano.silva&#8221;, (apagaria o conteudo das pastas (desktop, documentos, downloads, etc)  todo dia ao desligar o PC?</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-206" data-commentid="206" data-postid="116" data-belowelement="div-comment-206" data-respondelement="respond" data-replyto="Responder para Rômulo" aria-label="Responder para Rômulo">Responder</a></div>
+				</div>
+				<ul class="children">
+		<li class="comment byuser comment-author-mrhenrike bypostauthor even depth-2" id="comment-210">
+				<div id="div-comment-210" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg' srcset='https://www.uniaogeek.com.br/wp-content/uploads/2025/02/andre-henrique-perfil-2.jpg 2x' class='avatar avatar-48 photo sab-custom-avatar' height='48' width='48' />			<cite class="fn"><a href="https://medium.com/@mrhenrike/" class="url" rel="ugc external nofollow">Andre H O Santos</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-210">16 de novembro de 2021 às 19:59</a>		</div>
+
+		<p>Sim, é possível. Você pode criar o script via powershell e chamar via GPO no seu AD.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-210" data-commentid="210" data-postid="116" data-belowelement="div-comment-210" data-respondelement="respond" data-replyto="Responder para Andre H O Santos" aria-label="Responder para Andre H O Santos">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-219">
+				<div id="div-comment-219" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/ae2a4da537aa2cbed55a486c80e6a488?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/ae2a4da537aa2cbed55a486c80e6a488?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Samuel</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-219">17 de março de 2022 às 09:40</a>		</div>
+
+		<p>Como faço para filtrar uma informação que esta dentro de um arquivo, e atribuir para uma variável? A idéia é validar a versão de um programa para executar a instalação de uma versão atualizada.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-219" data-commentid="219" data-postid="116" data-belowelement="div-comment-219" data-respondelement="respond" data-replyto="Responder para Samuel" aria-label="Responder para Samuel">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-287">
+				<div id="div-comment-287" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/c6cfb4914ff6981856b619d19ccebab9?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c6cfb4914ff6981856b619d19ccebab9?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://geileporn.com" class="url" rel="ugc external nofollow">381</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-287">15 de dezembro de 2022 às 23:59</a>		</div>
+
+		<p>Hmmm is anyonne elsee encountering problems with the images onn this blog loading?<br />
+I&#8217;m ttrying to determine if itts a prfoblem on mmy end orr iff it&#8217;s the blog.<br />
+Anyy suggestions ould bee greatly appreciated.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-287" data-commentid="287" data-postid="116" data-belowelement="div-comment-287" data-respondelement="respond" data-replyto="Responder para 381" aria-label="Responder para 381">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-290">
+				<div id="div-comment-290" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/8008a8a4a0e5f72f9370979fbadbaed1?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/8008a8a4a0e5f72f9370979fbadbaed1?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://jablex.com/tag/china" class="url" rel="ugc external nofollow">918</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-290">15 de janeiro de 2023 às 01:59</a>		</div>
+
+		<p>Fanhtastic beatt ! I would like to apprentice aat the<br />
+same time aas youu amend your site, howw could i subscribe for<br />
+a blog web site? Thee accojnt aidsed me a applicabhle<br />
+deal. I hace been a little bit familkiar of this your broadcast provided vivid<br />
+clar idea</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-290" data-commentid="290" data-postid="116" data-belowelement="div-comment-290" data-respondelement="respond" data-replyto="Responder para 918" aria-label="Responder para 918">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-293">
+				<div id="div-comment-293" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/ddfd900b031d9a5cb8566a7d38525657?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/ddfd900b031d9a5cb8566a7d38525657?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://dev.xxxcrunch.com/top6106707911" class="url" rel="ugc external nofollow">TINY4K Valentines Day Naked Sex Treats With Kenzie Reeves</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-293">28 de fevereiro de 2023 às 08:01</a>		</div>
+
+		<p>Keep oon writing, greatt job!</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-293" data-commentid="293" data-postid="116" data-belowelement="div-comment-293" data-respondelement="respond" data-replyto="Responder para TINY4K Valentines Day Naked Sex Treats With Kenzie Reeves" aria-label="Responder para TINY4K Valentines Day Naked Sex Treats With Kenzie Reeves">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-296">
+				<div id="div-comment-296" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/9de950476bad6c0cd98beedfb9b10405?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/9de950476bad6c0cd98beedfb9b10405?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://xxxtube2022.com/v/tube3665010911" class="url" rel="ugc external nofollow">抱起来干</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-296">1 de março de 2023 às 18:40</a>		</div>
+
+		<p>Veery nice post. I juet stumbled upon your weblog annd waanted tto sayy thaat I have trruly enjoyed browsing<br />
+your bblog posts. After alll I&#8217;ll be subscribing to<br />
+your feed and I hope yoou write again soon!</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-296" data-commentid="296" data-postid="116" data-belowelement="div-comment-296" data-respondelement="respond" data-replyto="Responder para 抱起来干" aria-label="Responder para 抱起来干">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-305">
+				<div id="div-comment-305" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/2574ef6d0f797b3d14c9f1b5570e0dd1?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/2574ef6d0f797b3d14c9f1b5570e0dd1?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://dev.xxxcrunch.com/top839794013" class="url" rel="ugc external nofollow">Nadine</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-305">28 de março de 2023 às 23:30</a>		</div>
+
+		<p>Quallity posts iss the crucia to attrdact the userrs too<br />
+payy a quick visit the web site, that&#8217;s what this webb site is providing.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-305" data-commentid="305" data-postid="116" data-belowelement="div-comment-305" data-respondelement="respond" data-replyto="Responder para Nadine" aria-label="Responder para Nadine">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-306">
+				<div id="div-comment-306" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/15cd3bea93084d156be9433a9f2143dd?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/15cd3bea93084d156be9433a9f2143dd?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://dev.xxxcrunch.com/top6463466911" class="url" rel="ugc external nofollow">https://dev.xxxcrunch.com/top6463466911</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-306">30 de março de 2023 às 00:18</a>		</div>
+
+		<p>Nicce respond in reeturn of this question with genuine<br />
+arguments aand explaining the whle thuing onn the topic of that.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-306" data-commentid="306" data-postid="116" data-belowelement="div-comment-306" data-respondelement="respond" data-replyto="Responder para https://dev.xxxcrunch.com/top6463466911" aria-label="Responder para https://dev.xxxcrunch.com/top6463466911">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-307">
+				<div id="div-comment-307" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/f4873a559a02e7fd4f47781ce895d413?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f4873a559a02e7fd4f47781ce895d413?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://dev.xxxcrunch.com/top199714690112" class="url" rel="ugc external nofollow">Soaking Wet_Pussy Party</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-307">30 de março de 2023 às 13:37</a>		</div>
+
+		<p>Pretty componednt to content. I just stumled upon your site aand iin accession capital to clazim thawt I acquire in fact loived account your<br />
+weblopg posts. Anyway I&#8217;ll be subscribing inn your feeds and even I fulfillmnent you<br />
+geet admission tto consistently rapidly.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-307" data-commentid="307" data-postid="116" data-belowelement="div-comment-307" data-respondelement="respond" data-replyto="Responder para Soaking Wet_Pussy Party" aria-label="Responder para Soaking Wet_Pussy Party">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-312">
+				<div id="div-comment-312" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/3c1d8699207b7eb2cd8ba988b2f82f61?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/3c1d8699207b7eb2cd8ba988b2f82f61?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://xmoviez.win/xxxmedia162237713" class="url" rel="ugc external nofollow">Lady Blum masturbating on the couch.</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-312">25 de abril de 2023 às 11:24</a>		</div>
+
+		<p>At thi time itt seemss like Wordprss is the preferred blogging platform oout ther rght now.<br />
+(fromwhat I&#8217;ve read) Is that what you&#8217;re using onn your blog?</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-312" data-commentid="312" data-postid="116" data-belowelement="div-comment-312" data-respondelement="respond" data-replyto="Responder para Lady Blum masturbating on the couch." aria-label="Responder para Lady Blum masturbating on the couch.">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-321">
+				<div id="div-comment-321" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/6dd7db8fd50eaac0279768c7b02fe78f?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/6dd7db8fd50eaac0279768c7b02fe78f?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Osnaldo</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-321">20 de julho de 2023 às 13:29</a>		</div>
+
+		<p>Gostei do conteúdo, mas senti falta da forma de usar os comandos.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-321" data-commentid="321" data-postid="116" data-belowelement="div-comment-321" data-respondelement="respond" data-replyto="Responder para Osnaldo" aria-label="Responder para Osnaldo">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-322">
+				<div id="div-comment-322" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/6dd7db8fd50eaac0279768c7b02fe78f?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/6dd7db8fd50eaac0279768c7b02fe78f?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">Osnaldo</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-322">20 de julho de 2023 às 14:57</a>		</div>
+
+		<p>Precisando remover meus arquivos de um HD de um antigo notebook Toshiba para substituir o Windows pela distribuição Linux Zorin de 32 bits e Android, tento sistematicamente concluir o processo mas sou impedido por conta de um arquivo PDF que está &#8220;preso&#8221;.</p>
+<p>Consigo &#8220;abrir&#8221; o PDF, o que indica que o arquivo não está &#8220;condenado&#8221;, mas de modo nenhum posso copiar/colar, recortar/colar ou  mover o arquivo, seja pelo Windows ou com o uso do CMD, embora nesse último caso possa estar fazendo algo errado pela falta de conhecimento/prática.</p>
+<p>Recebo mensagens como:<br />
+&#8220;Ocorreu um erro ao ler o fluxo&#8221;,<br />
+&#8220;Lendo o arquivo&#8230; Esse processo está demorando mais que o usual. Estamos trabalhando nisso. Tentar cancelar vai interromper uma leitura futura do arquivo&#8221;,<br />
+&#8220;Não é possível ler o arquivo ou disco de origem&#8221;,<br />
+&#8220;O documento não pôde ser salvo. Erro nos dados (verificação cíclica de redundância)&#8221;,<br />
+&#8220;Não foi possível imprimir o documento, use nossa página Ajuda para soluções de problemas.&#8221;</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-322" data-commentid="322" data-postid="116" data-belowelement="div-comment-322" data-respondelement="respond" data-replyto="Responder para Osnaldo" aria-label="Responder para Osnaldo">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-355">
+				<div id="div-comment-355" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/0980da6ca9ff0cb3fedee6815f6a3a8d?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/0980da6ca9ff0cb3fedee6815f6a3a8d?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://mostbet-bk.cz" class="url" rel="ugc external nofollow">Filip Voráček</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-355">8 de abril de 2024 às 02:08</a>		</div>
+
+		<p>I constantly spent my half an hour to read this<br />
+webpage&#8217;s posts daily along with a mug of coffee.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-355" data-commentid="355" data-postid="116" data-belowelement="div-comment-355" data-respondelement="respond" data-replyto="Responder para Filip Voráček" aria-label="Responder para Filip Voráček">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-357">
+				<div id="div-comment-357" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/6ce379063f88f161e645ee4a90e7d57b?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/6ce379063f88f161e645ee4a90e7d57b?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn">ram</cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-357">29 de abril de 2024 às 19:19</a>		</div>
+
+		<p>exite algum comando pelo cmd que possa formatar o pc imediatamente sem precisar da bot?</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-357" data-commentid="357" data-postid="116" data-belowelement="div-comment-357" data-respondelement="respond" data-replyto="Responder para ram" aria-label="Responder para ram">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-401">
+				<div id="div-comment-401" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://secure.gravatar.com/avatar/08644d2ab0a1a9befeb8fa620c7fccd8?s=48&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/08644d2ab0a1a9befeb8fa620c7fccd8?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/>			<cite class="fn"><a href="https://ytmp4.co.uk" class="url" rel="ugc external nofollow">Ytmp4</a></cite> <span class="says">disse:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-401">16 de fevereiro de 2025 às 20:01</a>		</div>
+
+		<p>Ótimo guia! Os comandos CMD podem ser um pouco intimidadantes no começo, mas com explicações claras como as suas, fica muito mais fácil entender e aplicar. Obrigado por compartilhar essas dicas úteis!</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-401" data-commentid="401" data-postid="116" data-belowelement="div-comment-401" data-respondelement="respond" data-replyto="Responder para Ytmp4" aria-label="Responder para Ytmp4">Responder</a></div>
+				</div>
+				</li><!-- #comment-## -->
+			</ol><!--/.commentlist-->
+
+			
+		</div>
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Deixe um comentário <small><a rel="nofollow" id="cancel-comment-reply-link" href="/guia-de-comandos-cmd-terminal-do-windows/?authuser=0#respond" style="display:none;">Cancelar resposta</a></small></h3><form action="https://www.uniaogeek.com.br/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">O seu endereço de e-mail não será publicado.</span> <span class="required-field-message">Campos obrigatórios são marcados com <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentário <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Nome <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Site</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publicar comentário" /> <input type='hidden' name='comment_post_ID' value='116' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	
+</section><!--/#comments-->          </div><!--/.hu-pad-->
+            </main><!--/.content-->
+          
+
+	<div class="sidebar s1 collapsed" data-position="left" data-layout="col-2cr" data-sb-id="s1">
+
+		<button class="sidebar-toggle" title="Expandir Sidebar"><i class="fas sidebar-toggle-arrows"></i></button>
+
+		<div class="sidebar-content">
+
+			           			<div class="sidebar-top group">
+                        <p>Siga:</p>                    <ul class="social-links"><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Curta nossa Fanpage!" aria-label="Curta nossa Fanpage!" href="https://www.facebook.com/uniaogeek.conhecimento/" target="_blank"  style="color:rgba(255,255,255,0.7)"><i class="fab fa-facebook-square"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Siga-nos no Instagram!" aria-label="Siga-nos no Instagram!" href="https://www.instagram.com/uniaogeek/" target="_blank"  style="color:rgba(255,255,255,0.7)"><i class="fab fa-instagram"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="LinkedIn Autor: André Santos" aria-label="LinkedIn Autor: André Santos" href="https://br.linkedin.com/in/mrhenrike" target="_blank"  style="color:rgba(255,255,255,0.7)"><i class="fab fa-linkedin"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Confira nosso repositório de aplicações" aria-label="Confira nosso repositório de aplicações" href="https://github.com/mrhenrike" target="_blank"  style="color:rgba(255,255,255,0.7)"><i class="fab fa-github-square"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Siga-nos no Telegram" aria-label="Siga-nos no Telegram" href="https://t.me/UniaoGeek" target="_blank" ><i class="fab fa-telegram"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Inscreva-se no nosso canal" aria-label="Inscreva-se no nosso canal" href="https://www.youtube.com/channel/UCh4FcN7Bim4aKbQaeZR2kbA" target="_blank" ><i class="fab fa-youtube"></i></a></li></ul>  			</div>
+			
+				<ul class="post-nav group">
+				<li class="next"><strong>Próximo história&nbsp;</strong><a href="https://www.uniaogeek.com.br/bancas-examinadoras-funrio/" rel="next"><i class="fas fa-chevron-right"></i><span>Bancas Examinadoras: FUNRIO</span></a></li>
+		
+				<li class="previous"><strong>História anterior&nbsp;</strong><a href="https://www.uniaogeek.com.br/bancas-examinadoras-fadesp/" rel="prev"><i class="fas fa-chevron-left"></i><span>Bancas Examinadoras: FADESP</span></a></li>
+			</ul>
+
+			
+			<div id="alxtabs-2" class="widget widget_hu_tabs">
+<h3 class="widget-title">Postagens</h3><ul class="alx-tabs-nav group tab-count-3"><li class="alx-tab tab-recent"><a href="#tab-recent-2" title="Posts Recentes"><i class="far fa-clock"></i><span>Posts Recentes</span></a></li><li class="alx-tab tab-popular"><a href="#tab-popular-2" title="Posts Populares"><i class="fas fa-star"></i><span>Posts Populares</span></a></li><li class="alx-tab tab-comments"><a href="#tab-comments-2" title="Comentários Recentes"><i class="far fa-comments"></i><span>Comentários Recentes</span></a></li></ul>
+	<div class="alx-tabs-container">
+
+
+		
+			
+			<ul id="tab-recent-2" class="alx-tab group thumbs-enabled">
+        								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/mulher-na-programacao-a-influencia-feminina-na-era-digital/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2023/09/Como-Instalar-Drivers-da-Placa-de-Video-no-Ubuntu-3-80x80.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/mulher-na-programacao-a-influencia-feminina-na-era-digital/" rel="bookmark">Mulher na Programação: A Influência Feminina na Era Digital</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/o-que-e-programacao/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2023/08/Como-Instalar-Drivers-da-Placa-de-Video-no-Ubuntu-2-80x80.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/o-que-e-programacao/" rel="bookmark">O que é Programação?</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/dicas-de-como-estudar-programacao/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2023/08/Como-Instalar-Drivers-da-Placa-de-Video-no-Ubuntu-1-80x80.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/dicas-de-como-estudar-programacao/" rel="bookmark">Dicas de Como Estudar Programação</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/como-instalar-drivers-da-placa-de-video-no-ubuntu-guia-completo/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2023/08/Como-Instalar-Drivers-da-Placa-de-Video-no-Ubuntu-80x80.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/como-instalar-drivers-da-placa-de-video-no-ubuntu-guia-completo/" rel="bookmark">Como Instalar Drivers da Placa de Vídeo no Ubuntu: Guia Completo</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/protegendo-seu-pc-com-gnulinux-44/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2020/05/mockup_header_linux_seg-4-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="mockup_header_linux_seg-4" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/protegendo-seu-pc-com-gnulinux-44/" rel="bookmark">Protegendo seu PC com GNU/Linux [Parte 4/4: Intermediário]</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/protegendo-seu-pc-com-gnulinux-34/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2019/05/mockup_header_linux_seg-3-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="mockup_header_linux_seg-3" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/protegendo-seu-pc-com-gnulinux-34/" rel="bookmark">Protegendo seu PC com GNU/Linux [Parte 3/4: Intermediário]</a></p>
+											</div>
+
+				</li>
+								        			</ul><!--/.alx-tab-->
+
+		
+
+		
+						<ul id="tab-popular-2" class="alx-tab group thumbs-enabled">
+        								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/comandos_linux-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/" rel="bookmark">Guia de Comandos SHELL (Terminal GNU/Linux)</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/comandos_cmd-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/" rel="bookmark">Guia de Comandos CMD (Terminal do Windows)</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/redes-de-comunicacao-de-dados-unicast-multicast-e-broadcast/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/12/mockup_header_com-dados-roteamento-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="mockup_header_com-dados-roteamento" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/redes-de-comunicacao-de-dados-unicast-multicast-e-broadcast/" rel="bookmark">Redes de Comunicação de Dados | Unicast, Multicast e Broadcast</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/principais-dispositivos-de-uma-rede-de-computadores-p1/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/09/mockup_header_redes_equip1-160x160.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="mockup_header_redes_equip1" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/principais-dispositivos-de-uma-rede-de-computadores-p1/" rel="bookmark">Principais Dispositivos de uma Rede de Computadores [Parte 1]</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/voce-sabe-o-que-e-o-modelo-osi/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/08/mockup_header_redes_osi-160x160.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/voce-sabe-o-que-e-o-modelo-osi/" rel="bookmark">Você sabe o que é o Modelo OSI?</a></p>
+											</div>
+
+				</li>
+								<li>
+
+										<div class="tab-item-thumbnail">
+						<a href="https://www.uniaogeek.com.br/arquitetura-de-redes-tcpip/">
+							<img width="80" height="80" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/08/mockup_header_redes_tcpip-160x160.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" decoding="async" loading="lazy" />																											</a>
+					</div>
+					
+					<div class="tab-item-inner group">
+												<p class="tab-item-title"><a href="https://www.uniaogeek.com.br/arquitetura-de-redes-tcpip/" rel="bookmark">Arquitetura de Redes TCP/IP</a></p>
+											</div>
+
+				</li>
+								        			</ul><!--/.alx-tab-->
+
+		
+
+		
+			
+			<ul id="tab-comments-2" class="alx-tab group avatars-enabled">
+								<li>
+
+												<div class="tab-item-avatar">
+							<a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-401">
+								<img alt='' src='https://secure.gravatar.com/avatar/08644d2ab0a1a9befeb8fa620c7fccd8?s=96&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/08644d2ab0a1a9befeb8fa620c7fccd8?s=192&#038;d=mm&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' loading='lazy' decoding='async'/>							</a>
+						</div>
+						
+						<div class="tab-item-inner group">
+														<div class="tab-item-name">Ytmp4 diz:</div>
+							<div class="tab-item-comment"><a href="https://www.uniaogeek.com.br/guia-de-comandos-cmd-terminal-do-windows/#comment-401">Ótimo guia! Os comandos CMD podem ser um pouco intimidadantes no...</a></div>
+
+						</div>
+
+				</li>
+								<li>
+
+												<div class="tab-item-avatar">
+							<a href="https://www.uniaogeek.com.br/protegendo-seu-pc-com-gnulinux-13/#comment-398">
+								<img alt='' src='https://secure.gravatar.com/avatar/?s=96&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=192&#038;d=mm&#038;r=g 2x' class='avatar avatar-96 photo avatar-default' height='96' width='96' loading='lazy' decoding='async'/>							</a>
+						</div>
+						
+						<div class="tab-item-inner group">
+														<div class="tab-item-name">Protegendo seu PC com GNU/Linux [Parte 3/4: Intermediário] &#8211; União Geek diz:</div>
+							<div class="tab-item-comment"><a href="https://www.uniaogeek.com.br/protegendo-seu-pc-com-gnulinux-13/#comment-398">[&#8230;] como o sistema operacional.&nbsp;Como matéria complementar, é importante que tenha...</a></div>
+
+						</div>
+
+				</li>
+								<li>
+
+												<div class="tab-item-avatar">
+							<a href="https://www.uniaogeek.com.br/protegendo-seu-pc-com-gnulinux-13/#comment-397">
+								<img alt='' src='https://secure.gravatar.com/avatar/?s=96&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=192&#038;d=mm&#038;r=g 2x' class='avatar avatar-96 photo avatar-default' height='96' width='96' loading='lazy' decoding='async'/>							</a>
+						</div>
+						
+						<div class="tab-item-inner group">
+														<div class="tab-item-name">Protegendo seu PC com GNU/Linux [Parte 4/4: Intermediário] &#8211; União Geek diz:</div>
+							<div class="tab-item-comment"><a href="https://www.uniaogeek.com.br/protegendo-seu-pc-com-gnulinux-13/#comment-397">[&#8230;] como o sistema operacional.&nbsp;Como matéria complementar, é importante que tenha...</a></div>
+
+						</div>
+
+				</li>
+								<li>
+
+												<div class="tab-item-avatar">
+							<a href="https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/#comment-396">
+								<img alt='' src='https://secure.gravatar.com/avatar/f115cc0ab5bb59e418f507d1b5417c03?s=96&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f115cc0ab5bb59e418f507d1b5417c03?s=192&#038;d=mm&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' loading='lazy' decoding='async'/>							</a>
+						</div>
+						
+						<div class="tab-item-inner group">
+														<div class="tab-item-name">tita diz:</div>
+							<div class="tab-item-comment"><a href="https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/#comment-396">Your content was great. I will definitely return to your site...</a></div>
+
+						</div>
+
+				</li>
+								<li>
+
+												<div class="tab-item-avatar">
+							<a href="https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/#comment-395">
+								<img alt='' src='https://secure.gravatar.com/avatar/f115cc0ab5bb59e418f507d1b5417c03?s=96&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f115cc0ab5bb59e418f507d1b5417c03?s=192&#038;d=mm&#038;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' loading='lazy' decoding='async'/>							</a>
+						</div>
+						
+						<div class="tab-item-inner group">
+														<div class="tab-item-name">tita diz:</div>
+							<div class="tab-item-comment"><a href="https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/#comment-395">Very well done thank you so much GTU</a></div>
+
+						</div>
+
+				</li>
+							</ul><!--/.alx-tab-->
+
+		
+			</div>
+
+</div>
+<div id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categorias</h3>
+			<ul>
+					<li class="cat-item cat-item-5"><a href="https://www.uniaogeek.com.br/categ/artigos/">Artigos</a> (53)
+<ul class='children'>
+	<li class="cat-item cat-item-3"><a href="https://www.uniaogeek.com.br/categ/artigos/dicas-tutoriais/">Dicas &amp; Tutoriais</a> (21)
+</li>
+	<li class="cat-item cat-item-61"><a href="https://www.uniaogeek.com.br/categ/artigos/seguranca-da-informacao/">Segurança da Informação</a> (20)
+</li>
+	<li class="cat-item cat-item-62"><a href="https://www.uniaogeek.com.br/categ/artigos/sistemas-operacionais/">Sistemas Operacionais</a> (12)
+</li>
+	<li class="cat-item cat-item-295"><a href="https://www.uniaogeek.com.br/categ/artigos/it/">Tecnologia da Informação</a> (20)
+	<ul class='children'>
+	<li class="cat-item cat-item-63"><a href="https://www.uniaogeek.com.br/categ/artigos/it/programacao/">Programação</a> (9)
+		<ul class='children'>
+	<li class="cat-item cat-item-80"><a href="https://www.uniaogeek.com.br/categ/artigos/it/programacao/android/">Android</a> (4)
+</li>
+		</ul>
+</li>
+	<li class="cat-item cat-item-53"><a href="https://www.uniaogeek.com.br/categ/artigos/it/redes-de-computadores/">Redes de Computadores</a> (11)
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-293"><a href="https://www.uniaogeek.com.br/categ/artigos/at/">Tecnologia de Automação</a> (1)
+	<ul class='children'>
+	<li class="cat-item cat-item-142"><a href="https://www.uniaogeek.com.br/categ/artigos/at/automacao-residencial/">Automação Residencial</a> (1)
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://www.uniaogeek.com.br/categ/dicas-para-concurseiros/">Dicas Para Concurseiros</a> (21)
+<ul class='children'>
+	<li class="cat-item cat-item-6"><a href="https://www.uniaogeek.com.br/categ/dicas-para-concurseiros/informatica-para-concursos/">Informática Para Concursos</a> (8)
+</li>
+	<li class="cat-item cat-item-52"><a href="https://www.uniaogeek.com.br/categ/dicas-para-concurseiros/provas-comentadas/">Provas Comentadas</a> (4)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-195"><a href="https://www.uniaogeek.com.br/categ/event-acad/">Eventos Acadêmicos</a> (7)
+</li>
+	<li class="cat-item cat-item-194"><a href="https://www.uniaogeek.com.br/categ/event-ti/">Eventos de TI</a> (5)
+</li>
+	<li class="cat-item cat-item-7"><a href="https://www.uniaogeek.com.br/categ/noticias/">Notícias</a> (5)
+</li>
+	<li class="cat-item cat-item-196"><a href="https://www.uniaogeek.com.br/categ/evet-other/">Outros Eventos</a> (1)
+</li>
+			</ul>
+
+			</div>
+		</div><!--/.sidebar-content-->
+
+	</div><!--/.sidebar-->
+
+	
+
+        </div><!--/.main-inner-->
+      </div><!--/.main-->
+    </div><!--/.container-inner-->
+  </div><!--/.container-->
+    <footer id="footer">
+
+                        <section class="container" id="footer-full-width-widget">
+          <div class="container-inner">
+            <div id="text-4" class="widget widget_text"><h3 class="widget-title">Navegação Segura Aprovada: Certificados de Segurança</h3>			<div class="textwidget"><p style="text-align: center;"><a href="https://www.google.com/transparencyreport/safebrowsing/diagnostic/index.html#url=www.uniaogeek.com.br" target="_blank" rel="noopener"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-91" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/Navegacaogooglepb.png" alt="Navegacaogooglepb" width="224" height="60" /></a><a href="https://www.cloudflare.com/ssl/" target="_blank" rel="noopener"> <img loading="lazy" decoding="async" class="alignnone size-full wp-image-89" src="https://www.uniaogeek.com.br/wp-content/uploads/2016/07/Image-Security-SSL-Certificates-Comodo-Logopb.png" alt="Image-Security-SSL-Certificates-Comodo-Logopb" width="231" height="60" /></a></p>
+</div>
+		</div>          </div><!--/.container-inner-->
+        </section><!--/.container-->
+          
+    
+        <section class="container" id="footer-widgets">
+          <div class="container-inner">
+
+            <div class="hu-pad group">
+
+                                <div class="footer-widget-1 grid one-third ">
+                    
+		<div id="recent-posts-3" class="widget widget_recent_entries">
+		<h3 class="widget-title">Tópicos Recentes</h3>
+		<ul>
+											<li>
+					<a href="https://www.uniaogeek.com.br/mulher-na-programacao-a-influencia-feminina-na-era-digital/">Mulher na Programação: A Influência Feminina na Era Digital</a>
+											<span class="post-date">19 de setembro de 2023</span>
+									</li>
+											<li>
+					<a href="https://www.uniaogeek.com.br/o-que-e-programacao/">O que é Programação?</a>
+											<span class="post-date">25 de agosto de 2023</span>
+									</li>
+											<li>
+					<a href="https://www.uniaogeek.com.br/dicas-de-como-estudar-programacao/">Dicas de Como Estudar Programação</a>
+											<span class="post-date">25 de agosto de 2023</span>
+									</li>
+											<li>
+					<a href="https://www.uniaogeek.com.br/como-instalar-drivers-da-placa-de-video-no-ubuntu-guia-completo/">Como Instalar Drivers da Placa de Vídeo no Ubuntu: Guia Completo</a>
+											<span class="post-date">21 de agosto de 2023</span>
+									</li>
+											<li>
+					<a href="https://www.uniaogeek.com.br/protegendo-seu-pc-com-gnulinux-44/">Protegendo seu PC com GNU/Linux [Parte 4/4: Intermediário]</a>
+											<span class="post-date">25 de maio de 2019</span>
+									</li>
+					</ul>
+
+		</div>                  </div>
+                                <div class="footer-widget-2 grid one-third ">
+                    <div id="rss-2" class="widget widget_rss"><h3 class="widget-title"><a class="rsswidget rss-widget-feed" href="http://rss.tecmundo.com.br/feed"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.uniaogeek.com.br/wp-includes/images/rss.png" alt="RSS" loading="lazy" /></a> <a class="rsswidget rss-widget-title" href="https://www.tecmundo.com.br/">Novidades Tecmundo</a></h3><ul><li><a class='rsswidget' href='https://www.tecmundo.com.br/minha-serie/600868-10-melhores-filmes-e-series-para-ver-na-netflix-em-marco-confira-indicacoes.htm'>10 melhores filmes e séries para ver na Netflix em março! Confira indicações</a> <span class="rss-date">8 de março de 2025</span></li><li><a class='rsswidget' href='https://www.tecmundo.com.br/voxel/500908-5-jogos-gratis-para-curtir-no-pc-consoles-e-celulares-no-fim-de-semana.htm'>5 jogos grátis para curtir no PC, consoles e celulares no fim de semana</a> <span class="rss-date">8 de março de 2025</span></li></ul></div><div id="rss-3" class="widget widget_rss"><h3 class="widget-title"><a class="rsswidget rss-widget-feed" href="https://medium.com/feed/@mrhenrike"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.uniaogeek.com.br/wp-includes/images/rss.png" alt="RSS" loading="lazy" /></a> <a class="rsswidget rss-widget-title" href="https://medium.com/@mrhenrike?source=rss-8adfd69cd514------2">Walkthrough CTFs</a></h3><ul><li><a class='rsswidget' href='https://medium.com/@mrhenrike/vulnhub-jigsaw-1-walkthrough-179e279f591a?source=rss-8adfd69cd514------2'>VulnHub Jigsaw:1 (Walkthrough)</a></li><li><a class='rsswidget' href='https://medium.com/@mrhenrike/vulnhub-mission-pumpkin-v1-0-3-3-festival-walkthrough-cac7b216e26c?source=rss-8adfd69cd514------2'>VulnHub Mission Pumpkin v1.0 (3/3): Festival (Walkthrough)</a></li><li><a class='rsswidget' href='https://medium.com/@mrhenrike/vulnhub-zeus-1-walkthrough-7e2ad46c9ab9?source=rss-8adfd69cd514------2'>VulnHub Zeus:1 (Walkthrough)</a></li></ul></div>                  </div>
+                                <div class="footer-widget-3 grid one-third last">
+                    <div id="text-8" class="widget widget_text"><h3 class="widget-title">Administrativo</h3>			<div class="textwidget"><a href="https://webmail1.hostinger.com.br/">Acesso E-mail</a></br>
+<a href="https://www.uniaogeek.com.br/feed/">RSS Feed</a></br>
+<a href="https://www.uniaogeek.com.br/comments/feed/">RSS Comentários</a></br>
+<a href="https://www.uniaogeek.com.br/sysacad/">Sistema de Certificados</a></br>
+<a href="https://www.uniaogeek.com.br/certificados/">Validação de Certificados</a></br>
+<hr></div>
+		</div><div id="text-10" class="widget widget_text"><h3 class="widget-title">Artigos dos Administradores</h3>			<div class="textwidget"><a href="https://goo.gl/CYlBXh">Autor André Henrique</a></br>
+<a href="https://goo.gl/EXtCN7">Autor Bhrandon Borges</a></br>
+<a href="https://goo.gl/eubHmY">Autor Lucas Toloto</a>
+<hr></div>
+		</div>                  </div>
+              
+            </div><!--/.hu-pad-->
+
+          </div><!--/.container-inner-->
+        </section><!--/.container-->
+
+    
+    
+    <section class="container" id="footer-bottom">
+      <div class="container-inner">
+
+        <a id="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+
+        <div class="hu-pad group">
+
+          <div class="grid one-half">
+                                      <img id="footer-logo" src="https://www.uniaogeek.com.br/wp-content/uploads/2019/02/uniaogeek-288x71.png" alt="">
+            
+            <div id="copyright">
+                <p></p>
+            </div><!--/#copyright-->
+
+            
+          </div>
+
+          <div class="grid one-half last">
+                                          <ul class="social-links"><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Curta nossa Fanpage!" aria-label="Curta nossa Fanpage!" href="https://www.facebook.com/uniaogeek.conhecimento/" target="_blank"  style="color:rgba(255,255,255,0.7)"><i class="fab fa-facebook-square"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Siga-nos no Instagram!" aria-label="Siga-nos no Instagram!" href="https://www.instagram.com/uniaogeek/" target="_blank"  style="color:rgba(255,255,255,0.7)"><i class="fab fa-instagram"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="LinkedIn Autor: André Santos" aria-label="LinkedIn Autor: André Santos" href="https://br.linkedin.com/in/mrhenrike" target="_blank"  style="color:rgba(255,255,255,0.7)"><i class="fab fa-linkedin"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Confira nosso repositório de aplicações" aria-label="Confira nosso repositório de aplicações" href="https://github.com/mrhenrike" target="_blank"  style="color:rgba(255,255,255,0.7)"><i class="fab fa-github-square"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Siga-nos no Telegram" aria-label="Siga-nos no Telegram" href="https://t.me/UniaoGeek" target="_blank" ><i class="fab fa-telegram"></i></a></li><li><a rel="nofollow noopener noreferrer" class="social-tooltip"  title="Inscreva-se no nosso canal" aria-label="Inscreva-se no nosso canal" href="https://www.youtube.com/channel/UCh4FcN7Bim4aKbQaeZR2kbA" target="_blank" ><i class="fab fa-youtube"></i></a></li></ul>                                    </div>
+
+        </div><!--/.hu-pad-->
+
+      </div><!--/.container-inner-->
+    </section><!--/.container-->
+
+  </footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+<script id="toc-front-js-extra">
+var tocplus = {"visibility_show":"Exibir","visibility_hide":"Ocultar","visibility_hide_by_default":"1","width":"Auto","smooth_scroll_offset":"0"};
+</script>
+<script src="https://www.uniaogeek.com.br/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2411.1" id="toc-front-js"></script>
+<script src="https://www.uniaogeek.com.br/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script id="hu-front-scripts-js-extra">
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"1","extLinksTargetExt":"1","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".post-row",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100,"threshold":0}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":false,"mobile":true},"sidebarOneWidth":"340","sidebarTwoWidth":"260","isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"mobileSubmenuExpandOnClick":"1","submenuTogglerIcon":"<i class=\"fas fa-angle-down\"><\/i>","isDevMode":"","ajaxUrl":"https:\/\/www.uniaogeek.com.br\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"fb0bda146d"},"isWelcomeNoteOn":"","welcomeContent":"","i18n":{"collapsibleExpand":"Expand","collapsibleCollapse":"Collapse"},"deferFontAwesome":"","fontAwesomeUrl":"https:\/\/www.uniaogeek.com.br\/wp-content\/themes\/hueman\/assets\/front\/css\/font-awesome.min.css?3.7.27","mainScriptUrl":"https:\/\/www.uniaogeek.com.br\/wp-content\/themes\/hueman\/assets\/front\/js\/scripts.min.js?3.7.27","flexSliderNeeded":"","flexSliderOptions":{"is_rtl":false,"has_touch_support":true,"is_slideshow":true,"slideshow_speed":5000}};
+</script>
+<script src="https://www.uniaogeek.com.br/wp-content/themes/hueman/assets/front/js/scripts.min.js?ver=3.7.27" id="hu-front-scripts-js" defer></script>
+<script src="https://www.uniaogeek.com.br/wp-includes/js/comment-reply.min.js?ver=aea88eeaefd8877fb6f97caa6a60658d" id="comment-reply-js" async data-wp-strategy="async"></script>
+<!--[if lt IE 9]>
+<script src="https://www.uniaogeek.com.br/wp-content/themes/hueman/assets/front/js/ie/respond.js"></script>
+<![endif]-->
+<script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
+</body>
+</html>

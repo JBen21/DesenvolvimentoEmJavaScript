@@ -1,0 +1,28 @@
+Versionamento com Git e GitHub - Extra - Não Obrigatório
+Lucas Torquato
+•
+11:19
+100 pontos
+🚩NÃO OBRIGATÓRIO!!!
+🚀 Atividade Extra - Fluxo Invertido no GitHub - Não Obrigatório
+Nesta atividade, você irá praticar um fluxo diferente no Git, começando pelo repositório remoto no GitHub e depois trazendo o projeto para sua máquina.
+
+Passos da Atividade:
+
+1️⃣ Criando o Repositório Remoto
+Acesse seu GitHub e crie um novo repositório chamado projeto-extra.
+Não adicione arquivos iniciais (README, .gitignore ou licença).
+2️⃣ Clonando para o Computador
+Copie a URL do repositório e clone para sua máquina.
+Acesse a pasta recém-criada.
+3️⃣ Criando e Versionando Arquivos
+Crie três arquivos: index.html, style.css e script.js.
+Adicione conteúdos básicos a cada um deles.
+Adicione ao controle de versão, faça um commit e envie para o GitHub.
+4️⃣ Fazendo Mais Commits e Pushes
+Realize pelo menos quatro alterações diferentes, criando um commit para cada.
+Envie as alterações ao repositório remoto ao longo do processo.
+No total, devem ser cinco commits e pelo menos três pushes.
+5️⃣ Verificação Final
+Acesse seu repositório no GitHub e confira o histórico de commits.
+Envie o link do repositório para a correção.

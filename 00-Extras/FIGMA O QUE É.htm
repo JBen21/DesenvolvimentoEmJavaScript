@@ -1,0 +1,1239 @@
+<!DOCTYPE html><html
+lang="pt-BR"><head><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0"><title>Figma: o que é a ferramenta, design e como usar | Alura</title><meta
+name="description" content="Conheça mais sobre o Figma, a ferramenta mais famosa de UI e entenda para que serve, funcionalidades, recursos, dicas e mais. Confira!"><link
+rel="canonical" href="https://www.alura.com.br/artigos/figma"><link
+rel="icon" href="/assets/favicon.1730889067.ico" /><link
+rel="preconnect" href="https://fonts.googleapis.com"><link
+rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Michroma&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link
+href="https://fonts.googleapis.com/css?family=Inter:wght@400;700&family=Michroma&display=swap" rel="stylesheet" type="text/css" />
+</noscript><link
+rel="stylesheet" href="/bundle,base/_reset,base/base,base/buttons,base/colors-apostilas,base/colors,base/titulos.1740085762.css"><link
+rel="stylesheet" href="/bundle,artigos/artigos,artigos/iframe.1732563688.css"><link
+rel="stylesheet" href="/bundle,cosmos/cosmos-article-list,cosmos/cosmos-content,cosmos/cosmos-header,cosmos/cosmos-media,cosmos/cosmos-related,cosmos/cosmos-webseries,cosmos/cosmos,cosmos/cosmosPodcast,cosmos/highlight.1730889069.css"><meta
+property="og:locale" content="pt_BR"><meta
+property="og:description" content="Conheça mais sobre o Figma, a ferramenta mais famosa de UI e entenda para que serve, funcionalidades, recursos, dicas e mais. Confira!"><meta
+property="og:title" content="Figma: o que é a ferramenta, design e como usar | Alura"><meta
+property="og:site_name" content="Alura"><meta
+property="og:url" content="https://www.alura.com.br/artigos/figma?authuser=0"><meta
+property="og:image" content="https://www.alura.com.br/artigos/assets/figma/capa-figma"><meta
+property="og:image:alt" content="Alura logo"><meta
+property="fb:app_id" content="140078819399376"><meta
+property="og:type" content="website"><meta
+name="twitter:card" content="summary_large_image"><meta
+name="theme-color" content="#031626"><meta
+name="google-site-verification" content="e-ieHUO1JHyNyCZv0Z8Nu-R3ECPykHiNHHEhPdF35Bk" /><meta
+name="thumbnail" content="https://www.alura.com.br/artigos/assets/figma/capa-figma"> <script>(function(w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src = 'https://stape.alura.com.br/qukryqvi.js?st=' + i + dl + '';
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayerAlura', 'NTLWWLR');</script> </head><body
+class=""> <script async src="/assets/js/avatarOnError.1730889068.js"></script> <noscript><iframe
+src="https://www.googletagmanager.com/ns.html?id=NTLWWLR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ <script type="application/ld+json">{
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://www.alura.com.br",
+          "name": "Alura"
+        }
+      }   
+              ,{
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.alura.com.br/artigos",
+            "name": "Artigos"
+          }
+        }
+              ,{
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.alura.com.br/artigos/design-ux",
+            "name": "UX & Design"
+          }
+        }
+              ,{
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.alura.com.br/artigos/figma",
+            "name": "Figma: o que é a ferramenta, design e como usar"
+          }
+        }
+            ]
+    }</script> <link
+rel="stylesheet" href="/assets/css/block/header.1739394378.css"><header
+class="header internalPage "><div
+class="header__principal"><nav
+class="container header__nav"><div
+class="header__nav--menu-cta" tabindex="2" data-tabindex-mobile="2" data-tabindex-desktop="0">
+<img
+class="--to-open" src="/assets/img/header/icon-menu-open.1730889067.svg" alt="Botão para abrir o Menu">
+<img
+class="--to-close" src="/assets/img/header/icon-menu-close.1730889067.svg" alt="Botão para fechar o Menu"></div><a
+href="/" class="header__nav--logo tabindex" tabindex="0" data-tabindex-mobile="0" data-tabindex-desktop="3">
+<img
+alt="Logo da empresa Alura" src="/assets/img/home/alura-logo.1730889067.svg">
+</a><div
+class="header__nav--busca header-barraBusca"><form
+action="/busca" class="header__nav--busca-form">
+<input
+type="search" class="header__nav--busca-input" id="header-barraBusca-form-campoBusca" name="query" placeholder="O que você quer aprender?" tabindex="4" data-tabindex-mobile="4" data-tabindex-desktop="4" autocomplete="off" required>
+<button
+class="header__nav--busca-submit" type="submit" tabindex="5" data-tabindex-mobile="5" data-tabindex-desktop="5" aria-label="Buscar">
+<svg
+xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" tabindex="-1">
+<g
+fill="none" fill-rule="evenodd" stroke="#D7F9FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" transform="translate(1 1)" tabindex="-1">
+<path
+d="M13.637 12.86l-3.526-3.527" tabindex="-1" />
+<circle
+cx="5.667" cy="5.667" r="5.667" tabindex="-1" />
+</g>
+</svg>
+</button></form></div><div
+class="header__nav--ctas">
+<a
+class="header__nav--ctas-entrar header__nav--link-hover" href="https://cursos.alura.com.br/loginForm" tabindex="3" data-tabindex-mobile="3" data-tabindex-desktop="1">Entrar</a>
+<a
+class="header__nav--ctas-matricule --cta-to-plans" href="/planos-cursos-online" tabindex="1" data-tabindex-mobile="1" data-tabindex-desktop="2">Ver planos</a></div><div
+class="header__nav--menu">
+<a
+href="/empresas" class="header__nav--menu-link header__nav--link-hover" tabindex="6" data-tabindex-mobile="6" data-tabindex-desktop="6">
+<span>Para</span>
+<span>Empresas</span>
+</a>
+<a
+href="https://carreira.alura.com.br/cursos-imersivos/home" class="header__nav--menu-link header__nav--link-hover" tabindex="7" data-tabindex-mobile="7" data-tabindex-desktop="7">
+<span>Cursos</span>
+<span>Imersivos</span>
+</a>
+<a
+href="/pos-tech" class="header__nav--menu-link header__nav--link-hover" tabindex="8" data-tabindex-mobile="8" data-tabindex-desktop="8">
+<span>Pós</span>
+<span>Graduação</span>
+</a></div></nav></div><div
+class="header__nav--courses"><div
+class="container"><ul
+class="header__nav--courses-list"><li
+class="header__nav--courses-item --programacao">
+<a
+href="/cursos-online-programacao" class="header__nav--courses-item-link">
+Programação                                    <span
+style="color: #00c86f;">_</span>
+</a></li><li
+class="header__nav--courses-item --front-end">
+<a
+href="/cursos-online-front-end" class="header__nav--courses-item-link">
+Front-end                                    <span
+style="color: #6bd1ff;">_</span>
+</a></li><li
+class="header__nav--courses-item --data-science">
+<a
+href="/cursos-online-data-science" class="header__nav--courses-item-link">
+Data Science                                    <span
+style="color: #9cd33b;">_</span>
+</a></li><li
+class="header__nav--courses-item --inteligencia-artificial">
+<a
+href="/cursos-online-inteligencia-artificial" class="header__nav--courses-item-link">
+Inteligência Artificial                                    <span
+style="color: #7b71ff;">_</span>
+</a></li><li
+class="header__nav--courses-item --devops">
+<a
+href="/cursos-online-devops" class="header__nav--courses-item-link">
+DevOps                                    <span
+style="color: #f16165;">_</span>
+</a></li><li
+class="header__nav--courses-item --design-ux">
+<a
+href="/cursos-online-design-ux" class="header__nav--courses-item-link">
+UX & Design                                    <span
+style="color: #dc6ebe;">_</span>
+</a></li><li
+class="header__nav--courses-item --mobile">
+<a
+href="/cursos-online-mobile" class="header__nav--courses-item-link">
+Mobile                                    <span
+style="color: #ffba05;">_</span>
+</a></li><li
+class="header__nav--courses-item --inovacao-gestao">
+<a
+href="/cursos-online-inovacao-gestao" class="header__nav--courses-item-link">
+Inovação & Gestão                                    <span
+style="color: #ff8c2a;">_</span>
+</a></li></ul></div></div></header><section
+class="cosmos-container-color"><div
+class="cosmos-color"><div
+class="cosmos artigos-topo"><div
+class="container">
+<a
+href="/artigos" class="artigos-topo__label">
+Artigos
+</a>
+&gt;
+<a
+class="artigos-topo__label --artigos-strong" href="/artigos/design-ux" style="color:#dc6ebe">UX & Design</a></div></div></div> <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.alura.com.br/artigos/figma"
+  },
+  "headline": "Figma: o que é a ferramenta, design e como usar",
+  "description": "Conheça mais sobre o Figma, a ferramenta mais famosa de UI e entenda para que serve, funcionalidades, recursos, dicas e mais. Confira!",
+  "image": "https://www.alura.com.br/artigos/assets/figma/capa-figma",
+  "datePublished": "2022-09-02",
+    "dateModified": "2024-08-22",
+      "author": {
+        "@type": "Organization",
+    "name": "Alura",
+    "url": "https://www.alura.com.br",
+    "logo": {
+      "@type": "ImageObject",
+    "url": "https://www.alura.com.br/assets/api/share/alura.jpg",
+      "height" : 60, 
+      "width" : 600,
+      "sameAs":["https://www.youtube.com/alura",
+               "https://www.facebook.com/AluraCursosOnline/",
+               "https://twitter.com/aluraonline",
+               "https://www.instagram.com/aluraonline/",
+               "https://play.google.com/store/apps/details?id=br.com.alura.mobi&hl=pt_BR&gl=US",
+               "https://apps.apple.com/br/app/alura-cursos-online/id1225776635"],
+      "contactPoint":{
+      "@type":"ContactPoint",
+     "email":"contato@alura.com.br",
+     "contactType":"customer support"
+     }},
+   "publisher": {
+    "@type": "Organization",
+    "name": "Alura",
+    "url": "https://www.alura.com.br",
+       "reviewedBy": {
+     "@type": "Person",
+     "name": "Mateus Villain, Maria Isabelle Silveira",
+     "image": "https://alura.com.br/assets/img/alura-share.1730889067.png"
+   }
+     }}}</script> <section
+class="cosmos-color"><article
+class="cosmos"
+data-ga4-article-name="Figma: o que é a ferramenta, design e como usar"
+data-ga4-article-category="UX & Design"
+data-ga4-article-author="Mateus Villain, Maria Isabelle Silveira"
+><div
+class="cosmos-header"><h1>Figma: o que é a ferramenta, design e como usar</h1><div
+class="cosmos-image__wrapper">
+<img
+src="assets/figma/capa-figma.jpg"
+alt="Figma: o que é a ferramenta, design e como usar"
+class="cosmos-image cosmos-banner-top"
+style="border: none; padding: 0px; width: 100%; height: 300px; object-fit: cover; max-width: none;"></div><div
+class="cosmos-header-info"><div
+class="cosmos-author">
+<img
+loading="lazy" class="cosmos-author-img" src="https://alura.com.br/assets/img/alura-share.1730889067.png" alt="Mateus Villain, Maria Isabelle Silveira" width="50" height="50"><div><div
+class="cosmos-author-name">Mateus Villain, Maria Isabelle Silveira</div>
+<time
+class="cosmos-author-date"
+datetime="2024-08-22 11:24">
+Atualizado em 22/08/2024                                    </time></div></div><div
+class="cosmos-container-social-media"><p
+class="cosmos-text-social-media">Compartilhe</p><ul
+class="cosmos-container-flex-social-media"><li
+class="--icon-twitter">
+<a
+href="https://twitter.com/share?url=https://www.alura.com.br/artigos/figma"></a></li><li
+class="--icon-linkedin">
+<a
+href="https://linkedin.com/shareArticle?url=https://www.alura.com.br/artigos/figma"></a></li><li
+class="--icon-facebook">
+<a
+href="https://facebook.com/share.php?u=https://www.alura.com.br/artigos/figma"></a></li><li
+class="--icon-whatsapp">
+<a
+href="https://api.whatsapp.com/send?text=https://www.alura.com.br/artigos/figma"></a></li></ul></div><div
+class="cosmos-related-gruides"><div
+class="cosmos-related-item cosmos-related-item__formacao">
+<a
+class="cosmos-related-link-formacao" href="/formacao-figma"><div
+class="cosmos-flex--text">
+<img
+loading="lazy" class="cosmos-related-item-image" src="https://www.alura.com.br/assets/api/formacoes/categorias/design-ux.svg"><div
+class="cosmos--margin"><p
+class="cosmos-text-category">Esse artigo faz parte da</p><p
+class="cosmos-related-item-title">Formação Figma</p></div></div>
+</a></div></div></div></div><div
+class="cosmos-header-line"></div><main
+class="article__main-content "><aside
+class="article__aside-content"><link
+rel="stylesheet" href="/assets/css/block/tableOfContents.1730889067.css"><div
+class="table-of-contents">
+<span>Confira neste artigo:</span><nav><ol><li>
+<a
+href="#introducao">
+Introdução                </a></li><li>
+<a
+href="#figma-—-o-que-e?">
+Figma — O que é?                </a></li><li>
+<a
+href="#como-usar-o-figma">
+Como usar o Figma                </a></li><li>
+<a
+href="#design-no-figma---funcionalidades">
+Design no Figma - funcionalidades                </a></li><li>
+<a
+href="#colaboracao">
+Colaboração                </a></li><li>
+<a
+href="#componentes">
+Componentes                </a></li><li>
+<a
+href="#auto-layout">
+Auto layout                </a></li><li>
+<a
+href="#figma-ai">
+Figma AI                </a></li><li>
+<a
+href="#dev-mode">
+Dev Mode                </a></li><li>
+<a
+href="#recursos-para-programadores-e-programadoras">
+Recursos para programadores e programadoras                </a></li><li>
+<a
+href="#figma-community-e-recursos">
+Figma Community e recursos                </a></li><li>
+<a
+href="#aprenda-mais-sobre-figma-gratuitamente">
+Aprenda mais sobre Figma gratuitamente                </a></li><li>
+<a
+href="#apostila-de-ux-e-ui-da-alura">
+Apostila de UX e UI da Alura                </a></li><li>
+<a
+href="#conclusao">
+Conclusão                </a></li></ol></nav></div></aside><div
+class="cosmos-color cosmos"><h2 id="introducao">Introdução</h2><p>Criar <strong>produtos digitais</strong> vem sendo um tópico extremamente relevante nos últimos anos, principalmente por conta da popularização da área <strong>User experience</strong> (ou <strong>Experiência do usuário</strong>, em português). Essa área, visa olhar para um produto de uma empresa, e por meio de análises, pesquisas e testes, fornecer a melhor experiência durante o uso desse sistema, <strong>reduzindo pontos negativos</strong> e <strong>solucionando os problemas do público-alvo</strong>.</p><p>Em paralelo à área de experiência, temos a <strong>User interface</strong> (ou <strong>Interface do usuário</strong>, em português), que atua em conjunto com a pessoa que realiza <strong>pesquisas e testes</strong>, convertendo esses resultados em <strong>interfaces digitais</strong>, fornecendo um meio dessas pessoas <strong>interagirem com o produto</strong> a fim de completar seus objetivos.</p><p>Para possibilitar essa interação,  o <a
+href="https://www.figma.com/" target="_blank" rel="noopener"><strong>Figma</strong></a> é um dos caminhos utilizado na <strong>criação de telas</strong> para produtos como aplicativos, sites ou softwares, permitindo que a pessoa designer crie todo o fluxo, estrutura e composição do projeto. É sobre essa ferramenta que iremos falar neste artigo.</p><a
+href="https://www.alura.com.br/escola-design-ux?utm_source=blog&utm_medium=banner&utm_campaign=banners-default-blog"
+data-ga4-banner-name="banner-default-escola-ux-design"
+class="cosmos-banner-image"
+>
+<picture>
+<source
+media="(min-width: 768px)" srcset="assets/alura-matricula-maior-escola-tecnologia-brasil-mais-500-mil-estudantes/matricula-escola-ux-design-alura-saiba-mais.png" />
+<img
+class="cosmos-image" src="assets/alura-matricula-maior-escola-tecnologia-brasil-mais-500-mil-estudantes/matricula-escola-ux-design-alura-saiba-mais-versao-mobile.png" alt="Banner da Escola de UX e Design: Matricula-se na escola de UX e Design. Junte-se a uma comunidade de mais de 500 mil estudantes. Na Alura você tem acesso a todos os cursos em uma única assinatura; tem novos lançamentos a cada semana; desafios práticos. Clique e saiba mais!" loading="lazy" />
+</picture>
+</a><h2 id="figma-—-o-que-e?">Figma — O que é?</h2><p>O Figma é uma <strong>plataforma colaborativa</strong> para construção de <strong>design de interfaces</strong> e <strong>protótipos</strong>, pertencente a empresa Figma, Inc., lançada em 2016 por Dylan Field e Evan Wallace. O objetivo era o de criar uma <a
+href="https://www.alura.com.br/artigos/as-8-melhores-ferramentas-gratuitas-de-design">ferramenta gratuita</a> que trouxesse <strong>colaboração entre pessoas e times</strong>, permitindo <strong>criar um produto</strong> para as mais diversas plataformas, mantendo a acessibilidade do sistema.</p>
+<img
+src="assets/figma/interface-figma.jpg" alt="Print da interface do Figma. Com três frames mobile de um projeto de interface." loading="lazy" class="cosmos-image" /><h3>Para que serve?</h3><p>Com essa ferramenta, <strong>designers e demais profissionais</strong> de todo o mundo têm a chance de construir o design de produtos digitais inteiros, como <strong>sites, aplicativos para dispositivos móveis (tais como tablets, smartphones ou até mesmo smartwatches)</strong>, e se quiser, até mesmo as pequenas telas como temporizador de micro-ondas.</p><p>Independente do nível de complexidade, seja simples ou complexo, com o Figma é possível explorar o máximo do <strong>design de interface</strong> e da *<em>criação de fluxos inteiros</em>.
+Você pode ler mais sobre a <strong>história do Figma</strong> na página <a
+href="https://www.figma.com/about/" target="_blank" rel="noopener">About Figma</a>.</p><blockquote><p><a
+href="https://www.youtube.com/watch?v=5HpvtVQh9kI" target="_blank" rel="noopener">Novidades do Figma | #AluraMais</a></p></blockquote><div
+class='video-player--cover' data-videoid='5HpvtVQh9kI'><img
+src='https://img.youtube.com/vi/5HpvtVQh9kI/hqdefault.jpg' loading='lazy' class='video-player__placeholder' /><iframe
+allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen frameborder='0' class='video-player__iframe'></iframe></div><h2 id="como-usar-o-figma">Como usar o Figma</h2><p>Para acessá-lo no navegador, basta seguir os passos de login no <a
+href="https://www.figma.com/" target="_blank" rel="noopener">site oficial</a>. Após a verificação das informações de login, você será redirecionado/a para o painel da sua conta no Figma, onde poderá acessar seus projetos, colaborar com equipes e explorar as funcionalidades da ferramenta.</p><p>Além da possibilidade de acessar o Figma online, é possível fazer o download para usá-la diretamente no seu computador ou notebook. A maneira mais segura de <strong>baixar o Figma</strong> é através do site oficial da ferramenta, na seção de <a
+href="https://www.figma.com/downloads/" target="_blank" rel="noopener">download</a>. Geralmente, as opções para download para Desktop são para Windows e macOS. Já para <a
+href="https://help.figma.com/hc/en-us/articles/1500007537281-Guide-to-the-Figma-mobile-app" target="_blank" rel="noopener">Mobile</a>, as opções são iOS, Android e iPadOS. Após o download, siga as instruções para instalar o Figma em seu dispositivo seguindo as orientações na tela.</p><h3>O Figma é gratuito?</h3><p>Atualmente o Figma é uma ferramenta totalmente <strong>gratuita</strong> que você pode acessar, criar uma conta e começar a usar sem custos. Embora haja limitações na versão gratuita, ela oferece tudo necessário para construir produtos digitais. Se você desejar <strong>recursos adicionais</strong> para equipes, <strong>compartilhamentos</strong> e outras funções, pode fazer um upgrade no plano, que está disponível tanto para profissionais individuais quanto para equipes de pequenas a grandes empresas.</p><p>Uma coisa interessante é que se você for <strong>professor, professora, aluno ou aluna de universidade</strong>, você pode garantir o <strong>plano Professional</strong> do Figma sem pagar absolutamente nada por dois anos, apenas seguindo os passos para se verificar no plano <a
+href="https://www.figma.com/education/" target="_blank" rel="noopener">Figma for education</a>.</p><h2 id="design-no-figma---funcionalidades">Design no Figma - funcionalidades</h2><p>Criar produtos digitais no Figma é bem fácil, imersivo, e a cada atualização, muito mais <strong>ágil</strong>, já que a equipe está constantemente implementando <strong>ferramentas e recursos</strong> que permitem a você projetar interfaces com mais <strong>praticidade</strong>. Vamos falar um pouco sobre os principais, a seguir.</p><p><em><a
+href="https://open.spotify.com/episode/1gLJrPJDUiRcBI6IB3LEX7" target="_blank" rel="noopener">Figma do Design ao Código – Layers ponto tech #03</a></em></p><div
+class='spotify-player' data-spotifyid='1gLJrPJDUiRcBI6IB3LEX7' data-spotifytype='episode' ><div
+class='spotify-banner'><img
+src=''
+width=''
+height=''
+loading='lazy' class='spotify-thumbnail' /><div
+class='spotify-about'><div
+class='spotify-sub'>Ouvir um pouco de:</div><div
+class='spotify-title'></div></div></div><iframe
+style="display:none" loading="lazy" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div><h3>Aprenda a transformar design em código</h3><blockquote><p>Aprenda a transformar design em código com o Figma | #AluraMais</p></blockquote><div
+class='video-player--cover' data-videoid='sup2hlWm5yE'><img
+src='https://img.youtube.com/vi/sup2hlWm5yE/hqdefault.jpg' loading='lazy' class='video-player__placeholder' /><iframe
+allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen frameborder='0' class='video-player__iframe'></iframe></div><h2 id="colaboracao">Colaboração</h2><p>Design é uma área que está ativamente atuando em colaboração, seja com outras pessoas do mesmo segmento, ou profissionais correlacionados, como pessoas programadoras. Para isso, o Figma permite que você <strong>convide novas pessoas para interagir com você no mesmo projeto</strong>, seja por meio de edição ou apenas visualização. Não só isso, mas também é possível conversar por voz dentro da ferramenta, melhorando a <strong>comunicação</strong> com outras pessoas.</p>
+<img
+src="assets/figma/figma-botao-share-clicado-preenchimento-email.gif" alt="GIF animado de um print do Figma, onde é clicado no botão share (de compartilhamento) e na sequência, preenchido e-mail e enviado para uma pessoa." loading="lazy" class="cosmos-image" /><h3>Ferramentas básicas e personalização</h3><p>Como toda plataforma de design de interface, mas também design num geral, o Figma conta com as <strong>ferramentas comuns que geralmente designers utilizam</strong>, como formas geométricas, imagens, vetores, caixas de texto, dentre outras. Você sabe ou imagina o que cada um desses recursos executam, mas o ponto relevante é que no Figma, cada coisa exerce mais <strong>funções</strong> do que aparenta.</p><div
+class='video-player--cover' data-videoid='fCHd2_lAcQQ'><img
+src='https://img.youtube.com/vi/fCHd2_lAcQQ/hqdefault.jpg' loading='lazy' class='video-player__placeholder' /><iframe
+allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen frameborder='0' class='video-player__iframe'></iframe></div><p>Trabalhando com cada um desses itens, o Figma permite <a
+href="https://www.alura.com.br/artigos/4-ferramentas-para-voce-criar-uma-paleta-de-cores-para-seus-projetos"><strong>personalizações de cores</strong></a>, utilizando tanto com cores sólidas, quanto diferentes tipos de gradiente, níveis e estilos de traçados, efeitos de sombra e desfoque, sem contar as <strong>opções de textos</strong>, que são mais de 30 opções para trabalhar com <strong>tipografias</strong>.</p>
+<img
+src="assets/figma/area-design-figma-sessao-posicao-layer-fill-stroke.jpg" alt="Print da área de design do Figma, mostrando as seções de Posição, Layer, Fill, Stroke, Effects e Export." loading="lazy" class="cosmos-image" /><h2 id="componentes">Componentes</h2><p>Ouso dizer que o <strong>recurso de componentização</strong> é o mais importante de todos no Figma, e provavelmente o mais usado por designers ao longo dos seus projetos. Ele permite que você crie apenas um <strong>elemento</strong>, e o multiplique várias vezes ao longo do produto, dando ao elemento diversas <strong>propriedades de personalização e edição rápida</strong>.</p><p>Não só isso, mas uma vez que um elemento seja<strong>componentizado</strong>, a edição é extremamente <strong>prática</strong>, já que você vai precisar mexer apenas uma vez no componente, e em todos os lugares que você aplicou, ele será atualizado automaticamente.</p>
+<img
+src="assets/figma/componente-card-vertical-card-horizontal.jpg" alt="Print de um componente de card, composto por um espaço para imagem, ícone, título, descrição e um botão de ação. Nele, há duas variantes, sendo que a primeira é um Card vertical, e a segunda um Card horizontal." loading="lazy" class="cosmos-image" /><h2 id="auto-layout">Auto layout</h2><p>Outro recurso muito útil e tão importante quanto os componentes, é o <strong>Auto layout</strong>. Ele <strong>automatiza a forma como trabalhar com interfaces</strong> num produto digital, fazendo ajustes de altura e largura de forma automática, sendo uma maneira brilhante para se trabalhar com design responsivo.</p>
+<img
+src="assets/figma/layout-figma-diagramas-dimensionamento.jpg" alt="Print do campo auto layout no Figma. Com diagramas e números de dimensionamento verticais e horizontais." loading="lazy" class="cosmos-image" /><p>Leia também: <a
+href="https://www.alura.com.br/artigos/10-truques-incriveis-pouco-conhecidos-figma">10 truques incríveis e pouco conhecidos no Figma | Alura</a></p><p><strong>Auto layout 3.0</strong></p><p>O Auto layout 3.0 é uma ferramenta que permite <strong>criar elementos adaptáveis para diferentes dispositivos</strong>, como botões e input de texto. Com a nova propriedade <strong>Wrap</strong>, é possível &quot;envelopar&quot; os elementos da interface e definir intervalos horizontais e verticais desejados. Além disso, agora podemos definir padrões de largura máxima e mínima redimensionável de um item, que podem ser usados em combinação com o <strong>flexible resizing</strong>.</p>
+<img
+src="assets/figma/atualizacoes-auto-layout.gif" alt="Gif contendo as atualizações do auto layout. É possível conferir como utilizar a função wrap e também o uso da largura máxima e mínima." loading="lazy" class="cosmos-image" /><p>Outra propriedade interessante do Auto layout 3.0 é o <strong>Text Truncation</strong>, que pode ser utilizado para acomodar o texto dentro de um frame. Ele oculta parte do texto, deixando fora da exibição do frame e adiciona reticências para indicar que o texto continua. A configuração do Text Truncation pode ser encontrada nas configurações de texto, onde também é possível definir um número máximo de linhas.</p>
+<img
+src="assets/figma/figma-auto-layout-propriedade-text-truncation.png" alt="Imagem exemplificando o uso da função Text Truncation e como aplicá-la em um texto dentro do Figma." loading="lazy" class="cosmos-image" /><h3>Variáveis</h3><p>No Figma, <strong>as variáveis são usadas para armazenar valores</strong>, como cores de preenchimento e visibilidade, que podem ser reutilizadas em todos os projetos da empresa. Se trata de uma ferramenta importante para garantir a consistência do design, assim como os tokens de design.</p>
+<img
+src="assets/figma/como-usar-variaveis.gif" alt="Demonstração de como usar as variáveis e as diversas oportunidades de criação que podemos ter com essa funcionalidade. Primeiramente é apresentado as variáveis de estilo e em seguida a possibilidade de mudar a língua de componente." loading="lazy" class="cosmos-image" /><p>Os tokens de design são variáveis semânticas que armazenam informações específicas de design como cores, espaçamentos, tamanhos, entre outros. Essas variáveis são usadas para manter a consistência visual em todos os elementos de um design system. No contexto do Figma, o design tokens podem ser usados para criar um design system consistente e escalável.</p>
+<iframe
+style="border-radius:12px" src="https://open.spotify.com/embed/episode/5X0OY1O9AHN5Y7dQpCbVll?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><p>Assim como os estilos e componentes, as variáveis podem ser publicadas nas bibliotecas do time de designers. Ao atualizar o valor de uma variável, é possível atualizar um componente facilmente, o que ajuda a criar produtos consistentes e torna as atualizações do design system mais eficientes. Além disso, as variáveis podem ser usadas para criar diferentes &quot;modos&quot;, como o modo escuro e o modo claro, definindo linguagens, estilos de espaçamento e muito mais.</p><h3>Prototipagem</h3><p>Criar as interfaces digitais de um produto é algo incrível de se fazer no Figma, e que pode ficar melhor ainda com os <strong>recursos de prototipagem</strong> da plataforma, que permitem criar uma imersão com o <strong>fluxo de navegação</strong> que você irá projetar, sem que o produto tenha sido desenvolvido no código.</p>
+<iframe
+style="border-radius:12px" src="https://open.spotify.com/embed/episode/4rbTdRVNzk1a00v4xbsqcg?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><p>Assim, você pode compartilhar o link com outras pessoas e deixá-las <strong>navegar pelo seu produto</strong>. Veja os pontos relevantes desse sistema:
+<strong>Protótipo simplificado</strong></p><p>Com o uso de variáveis, condicionais e expressões matemáticas, a prototipação se tornou mais simples e flexível. Antes dessas propriedades, os protótipos com estados variáveis precisavam ter frames e conexões duplicadas para imitar o fluxo desejado. Agora, <strong>podemos definir e modificar os valores das variáveis para criar protótipos dinâmicos com apenas um frame e poucas interações</strong>.</p>
+<img
+src="assets/figma/figma-prototipo-simplificado-com-variaveis.png" alt="Imagem contendo o antes e o depois do processo de prototipação com o uso das variáveis. Na esquerda é possível destacar o antes, cheio de linhas azuis e diferentes cópias das telas. Já na direita há poucas telas e componentes ligados entre si." loading="lazy" class="cosmos-image" /><p>É importante destacar que o uso de variáveis e condicionais está disponível apenas nos planos profissional ou superiores. Com essas ferramentas, é possível eliminar as conhecidas &quot;teias azuis&quot; e criar modos personalizados para a prototipação.</p><p><strong>Criação de fluxos</strong></p><p>É super comum que um único produto tenha diversos fluxos diferentes, afinal, quanto mais <strong>funções e níveis de responsabilidade</strong>, mais <strong>processos</strong> vão acabar nascendo internamente. Com o Figma, é possível definir diversos fluxos diferentes usando o recurso <a
+href="https://www.alura.com.br/artigos/flows-conheca-a-nova-funcionalidade-do-figma"><strong>Flow</strong></a>, e coletar o link de início para cada fluxo para separar informações diferentes.</p>
+<img
+src="assets/figma/figma-criacao-fluxos.jpg" alt="Três telas de onboarding do aplicativo fictício Alura Banks, dentro do Figma,  mostrando que estão ligadas por um fluxo de prototipagem, e na primeira tela está identificado o início de um Flow, chamado de Onboarding." loading="lazy" class="cosmos-image" /><p><strong>Interações, transições e animações</strong></p><p>Se existe algo que chama muito a atenção das pessoas num produto digital é a <strong>forma como um produto interage</strong> com a pessoa que está utilizando, de diferentes maneiras. Com o Figma, você consegue definir <strong>diferentes interações</strong> ao longo dos <strong>componentes, páginas e fluxos criados</strong>.</p><p>Precisa de uma interação que simula <strong>arrastar um objeto</strong> na tela? O Figma tem! Precisa de uma <strong>transição</strong> que uma tela empurra outra para a esquerda? Sem problemas, o Figma também tem isso. Precisa ser uma <strong>animação inteligente</strong> em que um elemento se modifica, mas sem precisar usar código e nem mesmo ter conhecimento sobre motion? Para a sua sorte, o Figma comporta também esse tipo de função.</p>
+<img
+src="assets/figma/figma-interacoes-transicoes-animacoes.jpg" alt="Duas telas do aplicativo fictício Alura Banks, no Figma, em que o botão Esqueci minha senha da primeira tela está ligado com a segunda tela por um traço com seta. Flutuando sobre a segunda tela, está a janela de Detalhes da interação, mostrando que o tipo de ação selecionada foi On tap, e a animação está como Instant." loading="lazy" class="cosmos-image" /><p>Leia também: <a
+href="https://www.alura.com.br/artigos/como-criar-micro-interacoes-figma">Como criar micro-interações no Figma | Alura</a></p><p><strong>Protótipo responsivo</strong></p><p>O conteúdo do protótipo será redimensionado e re-organizado conforme o visualizador de protótipos, onde o conteúdo será redimensionado de acordo com as restrições e propriedades do auto layout aplicadas ao design. Isso permite que você visualize o produto em diferentes tamanhos de tela e verifique seu comportamento responsivo. Para que o <strong>Responsive</strong> funcione, deve haver restrições e configurações de layout automático aplicadas ao design.</p>
+<img
+src="assets/figma/campo-configuracao.jpg" alt="Imagem do campo de configurações de responsividade do protótipo." loading="lazy" class="cosmos-image" /><h3>Visualização mobile</h3><p>A ferramenta em si já traz muita imersão, permitindo <strong>compartilhar os links dos seus fluxos</strong> para que pessoas acessem de forma online, e utilizem como se fosse a versão final programada. Mas, e se eu te contar que eles possuem um aplicativo que permite que você <strong>abra seus protótipos mobile e simule como se fosse um app real</strong>? Isso existe e é totalmente possível e fácil de ser feito.</p><p>Criando as interfaces do seu produto, você pode ir à loja de apps do seu sistema operacional, pesquisar por “Figma”, instalar o aplicativo da empresa, entrar na sua conta e buscar pelo seu protótipo.</p><h2 id="figma-ai">Figma AI</h2>
+<img
+src="assets/figma/make-designs.jpg" alt="Print da tela do Figma com foco na funcionalidade “Make designs”." loading="lazy" class="cosmos-image" /><p>O Figma AI é um conjunto de recursos criados para ajudar você a trabalhar de forma mais eficiente e criativa. Quer esteja buscando inspiração, explorando vários caminhos, e até automatizando tarefas repetitivas.
+<strong>Observação</strong>: No momento(atualizado em: 07/08/2024), os recursos do Figma AI são gratuitos e existem apenas na versão beta, mas podem ser aplicados limites de uso.</p><h3>Make a prototype</h3><p>Com o Figma AI, você pode criar interações de prototipagem entre seus projetos em poucos cliques. Isso acelera e simplifica o processo de construção de um protótipo interativo. A função &quot;Make a prototype&quot; permite criar interações e conexões entre quadros em sua seleção. Com essa ação, você pode criar fluxos simples entre uma seleção de quadros de nível superior, adicionar interações aos botões de &quot;Voltar&quot; ou &quot;Próximo&quot;, e vincular quadros individuais a partir de um menu de navegação.</p>
+<img
+src="assets/figma/make-prototype.jpg" alt="Print do campo com as funcionalidade que usam IA no Figma. Com destaque à funcionalidade “Make prototype”." loading="lazy" class="cosmos-image" /><p>Essa funcionalidade é útil para criar rapidamente um fluxo básico de protótipos a partir de seus projetos. Além disso, você pode personalizar cada interação ou adicionar mais interações ao seu protótipo conforme necessário. Para melhorar a saída do Figma AI, a nomeação consistente de camadas é recomendada.</p><h3>Make an image</h3><p>Com o Figma AI, você pode criar e editar imagens diretamente na tela. Isso ajuda a criar imagens para adicionar aos seus designs, além de remover o plano de fundo de qualquer imagem existente.</p>
+<img
+src="assets/figma/make-image.jpg" alt="Print do campo com as funcionalidade que usam IA no Figma. Com destaque à funcionalidade “Make an image”." loading="lazy" class="cosmos-image" /><h4>Criação de Imagens</h4><p>Com o Figma AI, você pode criar imagens usando um prompt de texto personalizado. Você pode preencher um quadro ou frame existente na tela ou criar uma imagem em um novo frame. Há duas maneiras de fazer uma imagem com o Figma AI:</p><ol><li>Para preencher uma camada existente, selecione a camada à qual deseja adicionar uma imagem. Para criar uma nova camada de imagem, clique em uma parte vazia da tela para limpar sua seleção.</li><li>Abra o menu <strong>Actions</strong> e selecione <strong>Make an image</strong>.</li><li>Insira um prompt no campo de texto, incluindo o máximo de contexto possível.</li><li>Clique em <strong>Faça</strong> ou pressione <strong>Return / Enter</strong>.</li></ol><p>A segunda maneira para preencher um frame ou elemento é a seguinte:</p><ol><li>Selecione ou crie a forma na tela que conterá a imagem.</li><li>Clique na amostra <strong>Preencher</strong> na barra lateral direita para abrir o seletor de cores.</li><li>No modo <strong>Preencher</strong>, selecione <strong>Imagem</strong> das opções.</li><li>Clique em <strong>Trocar imagem &gt; Gerar novo</strong>.</li><li>Insira um prompt no campo de texto, fornecendo o máximo de contexto possível.</li><li>Clique em <strong>Faça</strong> ou pressione <strong>Return / Enter</strong>. A imagem será adicionada à sua forma como um preenchimento.</li></ol><p>O Figma AI criará quatro imagens para você escolher. Se nenhuma das imagens atender às suas necessidades, clique em <strong>Faça alterações</strong> para tentar outro prompt.</p><h4>Remover Fundo</h4><p>Você pode usar o Figma AI para remover o plano de fundo de qualquer imagem, útil ao colocar uma imagem em camadas sobre um design. Para remover o fundo de uma imagem:</p><ol><li>Selecione a camada com a imagem que deseja editar.</li><li>Clique em <strong>Actions</strong> na barra de ferramentas.</li><li>Selecione <strong>Remover fundo</strong>.</li></ol><p>A partir daí, você pode colocar a imagem em qualquer lugar no seu design.</p><h3>Renomear layers com IA</h3><p>Você pode dar nomes contextuais às suas camadas com apenas alguns cliques usando o Figma AI, o que ajuda a organizar seus arquivos e simplifica o processo de nomeação em massa. O Figma AI utiliza o conteúdo, a localização e o relacionamento de uma camada com outras camadas selecionadas para escolher um nome apropriado.</p>
+<img
+src="assets/figma/layer.jpg" alt="Print do campo de layer, no lado esquerdo os elementos estão com nomes aleatórios e os elementos da direita estão devidamente renomeados." loading="lazy" class="cosmos-image" /><p>Se você tiver a mesma camada sem nome em vários quadros de nível superior na página, o Figma renomeará as camadas correspondentes, garantindo que qualquer configuração de prototipagem, como &quot;Animar inteligente&quot; e &quot;posição de rolagem&quot;, continue funcionando como esperado.</p><p>O Figma AI renomeia apenas as camadas que utilizam a convenção de nomenclatura padrão do Figma. Se você já renomeou camadas e as incluiu em sua seleção, o Figma AI manterá esses nomes de camada.</p><h3>Busca Visual:</h3><p>Procure por designs semelhantes ou assets com um frame, imagem ou captura de tela. para que você possa começar mais rápido, permanecer no fluxo e abrir espaço para mais criatividade. Existem duas maneiras de usar a IA na pesquisa procurando por similares ou usando uma imagem de referência.</p><h4>Procurar por Similar</h4><p>Com a função &quot;Procurar por similar&quot;, você pode encontrar componentes e elementos não componentes utilizando uma palavra-chave, um prompt descritivo, uma seleção de camada ou uma imagem. Se encontrar algo que goste, é possível abrir o arquivo de origem ou inseri-lo na tela sem sair do seu arquivo atual.</p><h5>Pesquisar por Palavras-Chave</h5><ol><li>Na barra de ferramentas, clique em <strong>Actions</strong>.</li><li>Digite palavras-chave ou uma descrição na barra de pesquisa e clique em <strong>Pearch assets for</strong>.</li><li>Nos resultados da pesquisa, use a guia <strong>Componentes</strong> para encontrar componentes e a guia <strong>Outros projetos</strong> para não componentes.</li></ol>
+<img
+src="assets/figma/funcionalidades-ia-figma.jpg" alt="Print do campo com as funcionalidade que usam IA no Figma. Com destaque à funcionalidade a pesquisa por palavras." loading="lazy" class="cosmos-image" /><h5>Pesquisar a Partir de uma Seleção de Tela</h5><ol><li>Selecione uma camada.</li><li>Clique em <strong>Actions</strong> na barra de ferramentas e selecione <strong>Procurar por similar</strong>.</li><li>Nos resultados da pesquisa, use a guia <strong>Componentes</strong> para encontrar componentes e a guia <strong>Desenhos</strong> para ativos não componentes.</li></ol>
+<img
+src="assets/figma/pesquisa-frame-componente.gif" alt="Gif animado demonstrando como ocorre a pesquisa a partir de um frame ou componente, utilizando a IA do Figma." loading="lazy" class="cosmos-image" /><h4>Pesquisar Usando uma Imagem</h4><ol><li>Na barra de ferramentas, clique em <strong>Actions</strong>.</li><li>Selecione <strong>Procurar por similar</strong>.</li><li>Escolha uma camada com um preenchimento de imagem ou clique em <strong>Carregar</strong> para adicionar uma imagem do seu computador e depois clique em <strong>Pesquisar</strong>.</li><li>Nos resultados da pesquisa, utilize a guia <strong>Componentes</strong> para encontrar componentes e a guia <strong>Desenhos</strong> para ativos não componentes.</li></ol>
+<img
+src="assets/figma/funcionalidade-upload-imagem.jpg" alt="Print do campo com as funcionalidade que usam IA no Figma. Com destaque à funcionalidade de fazer upload de uma imagem, para que haja uma pesquisa por referência." loading="lazy" class="cosmos-image" /><h2 id="dev-mode">Dev Mode</h2><p>O Dev Mode é uma função do Figma que facilita a vida das pessoas desenvolvedoras, permitindo que elas <strong>encontrem rapidamente as informações necessárias para começar a construir o produto e visualizar o que já está pronto para ser implementado</strong>. Com ele, é possível ver medidas, espaçamentos, especificações, estilos e o código pronto para começar o trabalho, tudo em um só lugar.</p>
+<img
+src="assets/figma/figma-dev-mode.gif" alt="Gif contendo a representação de como utilizar o Dev Mode." loading="lazy" class="cosmos-image" /><p>Além disso, o Dev Mode mantém designers e pessoas desenvolvedoras na mesma página, garantindo que detalhes importantes não sejam perdidos na etapa de handoff. O Dev Mode pode ser utilizado para:</p><ul><li>Visualizar e copiar propriedades, valores e código dos componentes do design;</li><li>Ver o que mudou desde a última vez que você visualizou um arquivo comparando versões de quadro;</li><li>Inspecionar e navegar nos arquivos de design com interações simples que exibem informações importantes da camada;</li><li>Encontrar rapidamente projetos prontos para desenvolvimento com status de seção;</li><li>Simplificar seu fluxo de trabalho com integrações focadas no desenvolvedor, como Jira, Storybook e GitHub;</li><li>Adicionar links relevantes e recursos do desenvolvedor aos componentes.</li></ul><h2 id="recursos-para-programadores-e-programadoras">Recursos para programadores e programadoras</h2><p>O Figma é uma ferramenta com foco para designers, mas não significa que se limita somente a tais profissionais. Designers de interface estão o tempo todo <strong>trabalhando ativamente com pessoas programadoras</strong>, pois são quem vão desenvolver as telas que serão criadas.</p><p><a
+href="https://open.spotify.com/episode/7Dlnf1MKBfcrLrWbxMiARD" target="_blank" rel="noopener"><em>Designers e Programadores – Hipsters #71</em></a></p>
+<iframe
+style="border-radius:12px" src="https://open.spotify.com/embed/episode/7Dlnf1MKBfcrLrWbxMiARD?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><p>Para facilitar esse trabalho, a ferramenta disponibiliza o <strong> Dev Mode que contém uma área de inspeção</strong>, possibilitando ver todos os <strong>detalhes de um elemento</strong>, tais como: valores de largura, altura, espaçamentos, cor, tipografia, e até mesmo uma pré-visualização de código que o programa gera para CSS, Android e iOS, o que <strong>melhora a sua comunicação</strong> na hora de realizar o <strong>handoff do projeto</strong>, e também facilita o trabalho das pessoas programadoras.</p>
+<img
+src="assets/figma/figma-recursos-para-programador.png" alt="Imagem contendo um printscreen da tela do Figma com o Dev Mode ativado. Nela é destacado o painel de inspec, o toggle do Dev Mode e o painel de navegação à esquerda." loading="lazy" class="cosmos-image" /><p>Além disso, o Figma disponibiliza uma <strong>extensão para o Visual Studio Code (VS Code)</strong> que permite as pessoas programadoras navegarem, inspecionarem arquivos de design, colaborarem com designers, rastrearem alterações e agilizarem a implementação do design - tudo isso sem sair do ambiente de desenvolvimento. Com o Figma for VS Code é possível ver quais projetos estão prontos para desenvolvimento, navegar facilmente por frames, exibir trechos de código, ver quais seções estão prontas para iniciar o desenvolvimento e muito mais.</p><h3>Desenvolvimento front-end sincronizado</h3><p>Para quem é dev, o Figma atua como uma ponte eficaz entre design e desenvolvimento. A geração automática de estilos, dimensões e assets a partir do Figma simplifica a implementação front-end. Isso garante que a visão da pessoa designer seja preservada durante o processo de codificação.</p><p>Veja também: <a
+href="https://www.youtube.com/watch?v=c-ZfdDqKbRs" target="_blank" rel="noopener">Convertendo projetos Figma em Flutter | #AluraMais — YouTube</a></p><div
+class='article__img-nest'><div
+class='video-player--cover' data-videoid='c-ZfdDqKbRs'><img
+src='https://img.youtube.com/vi/c-ZfdDqKbRs/hqdefault.jpg' loading='lazy' class='video-player__placeholder' /><iframe
+allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen frameborder='0' class='video-player__iframe'></iframe></div>
+<img
+src="assets/figma/figma-desenvolvimento-front-end-sincronizado.gif" alt="GIF contendo um exemplo de como utilizar a extensão do Figma no VS Code." loading="lazy" class="cosmos-image" /></div><h3>Visualização de desenvolvimento</h3><p>O processo de entrega para o desenvolvedor não ocorre em um único momento. Em vez disso, os projetos passam por vários ciclos de iteração enquanto a equipe refina ideias e aplica feedback. Um dos momentos-chave desse processo, que pode ocorrer frequentemente, é a revisão dos projetos prontos para o desenvolvimento. Para isso, foi criada a visualização &quot;Ready for Dev&quot; no Modo Dev.</p><p>A visualização &quot;Ready for Dev&quot; no Modo Dev exibe todos os designs marcados como prontos para desenvolvimento em um único local. Isso permite que os desenvolvedores encontrem rapidamente o que precisam sem ter que navegar por várias telas ou páginas. Um contador exibe o número de projetos marcados como prontos para desenvolvimento.</p><p>Para acessar a visualização &quot;Ready for Dev&quot;:</p><ol><li>Abra um arquivo de design no Figma.</li><li>Clique em <strong>Ready for Dev</strong> na barra lateral esquerda.</li></ol>
+<img
+src="assets/figma/ready-for-dev.jpg" alt="Print da tela do Dev Mode com destaque à funcionalidade “Ready for dev”." loading="lazy" class="cosmos-image" /><p>No Modo de desenvolvimento, um status de desenvolvimento indica o estado atual dos layouts construídos em termos de transferência. As estatísticas podem incluir notas de designers sobre o layout e o que mudou. O Dev Mode fornece alguns status para ajudar a gerenciar o handoff:</p>
+<img
+src="assets/figma/tatus-handoff.jpg" alt="Status para gerenciamento do handoff." loading="lazy" class="cosmos-image" /><hr
+/>
+<img
+src="assets/figma/dev-mode-funcionalidade-ready-for-dev.jpg" alt="Print da tela do Dev Mode com destaque à funcionalidade “Ready for dev”. e às telas que têm que serem feitas." loading="lazy" class="cosmos-image" /><h2 id="figma-community-e-recursos">Figma Community e recursos</h2><p>A forma de <strong>colaboração do Figma</strong> não se reflete apenas em duas ou mais pessoas mexendo simultaneamente no mesmo arquivo. A empresa criou uma forma de seu público <strong>colaborar ativamente</strong> com a evolução da ferramenta, por meio da divulgação e liberação de <strong>acesso em projetos prontos</strong> e funcionalidades novas que podem ser aplicadas ao seu perfil, que, por padrão, não existem nativamente no programa.</p><p>Dessa forma, nasceu o <strong>Figma Community (ou Comunidade Figma</strong>, em português), que é o meio como todas as <strong>pessoas publicam e compartilham arquivos</strong> dentro da ferramenta. Bem semelhante aos fóruns, mas é muito mais simples.</p><p>Nele, você pode pesquisar por diversos materiais que sejam da sua necessidade, como <strong>templates, componentes e canvas de processos de design totalmente prontos</strong>, e tanto a própria equipe da ferramenta quanto outras pessoas (inclusive você), podem <a
+href="https://www.alura.com.br/artigos/figma-community-awards-2022-plugins-templates-favoritos"><strong>publicar e baixar objetos da comunidade</strong></a>, e nisso incluem-se arquivos, <strong>plugins</strong> e <strong>widgets</strong>.</p>
+<img
+src="assets/figma/figma-community-recursos.jpg" alt="Print da página inicial do Figma Community, mostrando no topo uma barra de pesquisa, na área central as categorias mais buscadas, e embaixo banners das seções Curated by Figma e By the community, for the community." loading="lazy" class="cosmos-image" /><h3>Config 2024</h3><p>Com foco na comunidade e para apresentar o que há de novo na ferramenta, o Figma realiza anualmente uma conferência chamada <a
+href="https://www.figma.com/pt-br/whats-new/" target="_blank" rel="noopener">Config</a>, que é um evento voltado para designers, pessoas desenvolvedoras e outros profissionais interessados em design e tecnologia. Durante o evento, <strong>são apresentadas as novidades e atualização sobre o Figma</strong>, além de palestras e workshops com profissionais renomados da área. Além disso, a Config é uma oportunidade para a comunidade de design se conectar, aprender e compartilhar conhecimentos e experiências sobre as tendências e desafios do mercado.</p>
+<iframe
+style="border-radius:12px" src="https://open.spotify.com/embed/episode/4cgkKbYupEf02DxJztqtb0?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><h3>Arquivos</h3><p>Digamos que uma designer esteja produzindo um site novo, mas sempre que começa neste fluxo, alguns <strong>processos e elementos são sempre iguais</strong>. Utilizar objetos já construídos <strong>agilizaria o seu trabalho</strong>, não é mesmo? Pelo Figma Community, é possível pesquisar por sites, apps ou até mesmo design systems totalmente prontos, que pode ser <strong>duplicado para a sua conta</strong> (sem precisar pagar nada), e ficar livre para editar da maneira que preferir, e utilizar da forma como precisar.</p><h3>Plugins no Figma</h3><p>Os <a
+href="https://www.alura.com.br/artigos/5-plugins-essenciais-do-figma">plugins são aplicações instaláveis da comunidade</a> que adicionam <strong>funções novas</strong>, que nativamente não existem no Figma. É certo dizer que o Figma é um dos programas de design de interface e prototipagem mais completos do mercado, mas para determinadas situações, é comum sentir falta de uma função ou outra. Por essa razão que pessoas que utilizam da ferramenta e atuam com <strong>programação</strong>, desenvolvem plugins que criam <strong>novas funcionalidades</strong>, ou <strong>melhoram e agilizam recursos</strong> já existentes.</p><p>E a <strong>instalação</strong> é super fácil, uma vez que você só precisa pesquisar por algo na comunidade, e clicar no botão de instalar. Em pouquíssimos segundos, já pode começar a usar o plugin.</p><p>Não só isso, talvez uma das coisas mais interessantes é que a <strong>instalação de plugins</strong> não é vinculada ao seu computador, mas sim a sua conta Figma. Isso significa que independente do computador que você estiver acessando, você não precisará reinstalar o plugin, pois ele <strong>sempre estará vinculado ao seu perfil</strong>, a não ser que você desinstale.</p><p>Leia também:</p><ul><li><a
+href="https://www.alura.com.br/artigos/top-5-plugins-figma-trabalhar-com-design-system">Top 5 plugins no Figma para trabalhar com Design System | Alura</a></li><li><a
+href="https://www.alura.com.br/artigos/figma-community-awards-2022-plugins-templates-favoritos">Figma Community Awards 2022: confira os plugins e templates favoritos da comunidade do Figma | Alura</a></li></ul><h3>Widgets</h3><p>Os widgets são semelhantes aos plugins. Você pode pesquisar pela necessidade que precisar, e ele trará um recurso novo que não existe nativamente no Figma. Contudo, ele não precisa ser instalado, pois ele atua como se fosse um <strong>elemento criado dentro do próprio arquivo</strong>, podendo ser interagido por você e outras pessoas que estão colaborando, diferente dos plugins que são externos ao arquivo, e só você pode <strong>interagir</strong> com ele, sem colaboração.</p><h2 id="aprenda-mais-sobre-figma-gratuitamente">Aprenda mais sobre Figma gratuitamente</h2><p>Acesse gratuitamente as primeiras aulas da <strong>Formação Figma</strong>, feita pela <a
+href="https://www.alura.com.br/escola-design-ux">Escola de UX &amp; Design da Alura</a> e continue aprendendo sobre temas como:</p><ol><li><a
+href="https://www.alura.com.br/curso-online-figma-conhecendo-ferramenta">Figma: conhecendo a ferramenta</a></li><li><a
+href="https://www.alura.com.br/curso-online-figma-componentes-auto-layout-mascaras">Figma: componentes, auto layout e máscaras</a></li><li><a
+href="https://www.alura.com.br/curso-online-figma-prototipagem-interativa-animacoes">Figma: prototipagem interativa e animações</a></li></ol><div
+class='video-player--cover' data-videoid='Is6c9KSGCbk'><img
+src='https://img.youtube.com/vi/Is6c9KSGCbk/hqdefault.jpg' loading='lazy' class='video-player__placeholder' /><iframe
+allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen frameborder='0' class='video-player__iframe'></iframe></div><h2 id="apostila-de-ux-e-ui-da-alura">Apostila de UX e UI da Alura</h2><p>Mergulhe na <a
+href="https://www.alura.com.br/apostila-ux-usabilidade-mobile-web"><strong>Apostila: UX e Usabilidade aplicados em Mobile e Web</strong></a> e aprenda tópicos importantes como:</p><ul><li>Experiência do Usuário,</li><li>Design de Interação,</li><li>Pesquisa,</li><li>Personas,</li><li>Usabilidade,</li><li>Teste de Usabilidade, Padrões de interface, a Web</li></ul><p>Baixe nossas apostilas completas em: <a
+href="https://www.alura.com.br/apostilas">Apostilas da Alura - Conteúdo livre para o seu aprendizado</a>.</p><h2 id="conclusao">Conclusão</h2><p>Neste artigo você conheceu a importância do <strong>Figma</strong>, uma plataforma <strong>colaborativa</strong> para <strong>design de interfaces e protótipos</strong>, que permite a criação de produtos digitais completos, desde sites até aplicativos para dispositivos móveis. Viu que ele oferece recursos de colaboração, personalização, componentização e prototipagem, tornando-o uma ferramenta versátil para designers e programadores. Além disso, o Figma Community permite que os usuários compartilhem recursos e plugins, expandindo ainda mais as possibilidades da plataforma.</p><p>Você também viu que o Figma é <strong>gratuito</strong>, o que o torna acessível a todos, com opções de assinatura para recursos adicionais. Sua capacidade de funcionar em diferentes sistemas operacionais, juntamente com sua ênfase na colaboração, fazem do Figma uma ferramenta valiosa para profissionais que buscam criar <strong>produtos digitais eficazes</strong> e de alta qualidade. A prática e o estudo contínuos são recomendados para aproveitar ao máximo essa poderosa ferramenta de <strong>design de interface</strong>.</p><hr
+/><h3>Créditos</h3><p><strong>Apoio didático:</strong> <a
+href="https://cursos.alura.com.br/user/cinthia-bregola">Cinthia Bregola</a></p></div><aside
+class="article__aside-banner">
+<a
+class="cosmos-banner-image"
+href="https://www.alura.com.br/escola-design-ux?utm_source=blog&utm_medium=banner&utm_campaign=banners-default-blog"
+data-ga4-banner-name="banner-default-escola-ux-design"
+>
+<picture>
+<source
+media="(min-width: 768px)"
+srcset="assets/alura-matricula-maior-escola-tecnologia-brasil-mais-500-mil-estudantes/matricula-escola-ux-design-alura-saiba-mais-lateral-artigo-desktop.png"
+/>
+<img
+class="cosmos-image"
+src="assets/alura-matricula-maior-escola-tecnologia-brasil-mais-500-mil-estudantes/matricula-escola-ux-design-alura-saiba-mais-final-artigo-mobile.png"
+alt="Banner da Escola de UX e Design: Matricula-se na escola de UX e Design. Junte-se a uma comunidade de mais de 500 mil estudantes. Na Alura você tem acesso a todos os cursos em uma única assinatura; tem novos lançamentos a cada semana; desafios práticos. Clique e saiba mais!"
+loading="lazy"
+/>
+</picture>
+</a></aside></main><div
+class="cosmos-author-sobre">
+<img
+loading="lazy" class="cosmos-author-img" src="https://github.com/mateusvillain.png?size=200&d=https%3A%2F%2Fwww.gravatar.com%2Favatar%2F1fcc64f25740a1875c2f248cf5ebe8d9.png%3Fr%3DPG%26size%3D200x200%26date%3D2025-03-08%26d%3Dhttps%253A%252F%252Fcursos.alura.com.br%252Fassets%252Fimages%252Fforum%252Favatar_m.png" alt="Mateus Villain" width="150" height="150"><div
+class="cosmos-author-txt"><div
+class="cosmos-author-name">Mateus Villain</div><p>Product designer, instrutor de UX na Alura, pro player de Figma e especialista em Harry Potter.</p></div></div><div
+class="cosmos-author-sobre">
+<img
+loading="lazy" class="cosmos-author-img" src="https://cdn2.gnarususercontent.com.br/1/1763696/5a8b1e95-dc97-497f-b4f7-1811f1f061fb.jpg?width=200&height=200&aspect_ratio=1:1" alt="Maria Isabelle Silveira" width="150" height="150"><div
+class="cosmos-author-txt"><div
+class="cosmos-author-name">Maria Isabelle Silveira</div><p>Graduada em Design pela Universidade Federal do Maranhão, com certificação em Designing High Impact Solutions pelo MITdesignX. Desde 2020, atuo na criação de elementos gráficos e, a partir de 2022, iniciei minha trajetória na área de UX/UI Design. Com mais de 2 anos de experiência, dediquei-me na construção de produtos digitais nos segmentos de educação, saúde e beleza, além da construção de produtos SaaS, dashboards e soluções para os mercados B2B e B2C.</p></div></div><nav
+class="cosmos__navigation">
+<a
+href="mapa-de-competencias-area-de-product-design" class="cosmos__navigation-link --previous"><div
+class="cosmos__navigation-item"><div
+class="cosmos__navigation-label">
+<span
+class="cosmos__navigation-decoration"></span>
+<span
+class="cosmos__navigation-description">Artigo Anterior</span></div>
+<strong> Mapa de Competências para a área de Product Design </strong></div>
+</a>
+<a
+href="canva" class="cosmos__navigation-link --next"><div
+class="cosmos__navigation-item"><div
+class="cosmos__navigation-label">
+<span
+class="cosmos__navigation-decoration"></span>
+<span
+class="cosmos__navigation-description">Próximo Artigo</span></div>
+<strong
+class="cosmos__navigation-item-title" > Canva: o que é a ferramenta, Design e uso </strong></div>
+</a></nav><div
+class="cosmos-related-articles"><h2 class="cosmos-related-articles-title">Leia também:</h2><ul
+class="cosmos-related-articles-list"><li><a
+href="/artigos/config-2023-novas-funcionalidades-figma">Config 2023: descubra as novas funcionalidades do Figma</a><li><a
+href="/artigos/variaveis-figma">Variáveis no Figma</a><li><a
+href="/artigos/componentes-figma">Componentes no Figma</a><li><a
+href="/artigos/auto-layout-figma">Auto layout no Figma</a><li><a
+href="/artigos/profissional-arquitetura-informacao">O profissional de Arquitetura da Informação</a><li><a
+href="/artigos/mercado-trabalho-edicao-imagens">O mercado de trabalho e a edição de imagens</a><li><a
+href="/artigos/5-plugins-essenciais-do-figma">5 plugins essenciais que você precisa ter no seu Figma</a><li><a
+href="/artigos/flows-conheca-a-nova-funcionalidade-do-figma">Flows: Conheça a nova funcionalidade do Figma</a><li><a
+href="/artigos/10-truques-incriveis-pouco-conhecidos-figma">10 truques incríveis e pouco conhecidos no Figma</a><li><a
+href="/artigos/ux-design">UX Design: o que é, profissões e um guia para iniciar na área</a><li><a
+href="/artigos/ui-design">UI Design: o que é, UX vs UI e um Guia da profissão de UI Designer</a></ul></div></article></section><div
+class="cosmos-other-files"><div
+class="container --container-banner-flex"><div
+class="categories-artigos" style="background:#dc6ebe;">
+<svg
+class="categories-artigos-icon" style="fill:#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use
+xlink:href="/svg,1739394378/categorias#icon-categorias-design-ux" />
+</svg></div><p
+class="cosmos-other-files-text">Veja outros artigos sobre <a
+href="/artigos/design-ux" style="color:#dc6ebe">UX & Design</a></p></div></div><div
+class="cosmos-color"><div
+class="cosmos --newsletter-spacing"><link
+rel="stylesheet" href="/assets/css/block/subscribeNewsletterCard.1730889067.css"><div
+class="subscribeNewsletterCard-container"><section
+class="subscribeNewsletterCard-wrapper"><div
+class="subscribeNewsletterCard-decoration"></div><div
+class="subscribeNewsletterCard-busca-box container"><div
+class="subscribeNewsletterCard-box-texto"><p
+class="subscribeNewsletterCard-texto-bold">Quer mergulhar em tecnologia e aprendizagem?</p><p
+class="subscribeNewsletterCard-texto-normal">Receba conteúdos, dicas, notícias, inovações e tendências sobre o mercado tech diretamente na sua caixa de entrada.</p></div><div
+class="subscribeNewsletterCard__hubspot"><div
+id="39a8f8bd-d48f-4f45-8ed4-d26366176d39" class="hubspot-form"> <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script> <script>hbspt.forms.create({
+        region: 'na1',
+        portalId: '21748317',
+        formId: '39a8f8bd-d48f-4f45-8ed4-d26366176d39',
+        onFormSubmitted: async function($form, data) {
+          let newWindow;
+          if (window.FORM_REDIRECT_URL !== undefined) {
+            window.location.href = window.FORM_REDIRECT_URL
+          }
+
+          // redirect do formulário whatsapp
+          
+          // dataLayer do GA4
+          let dataLayerAlura = window.dataLayerAlura || [];
+          
+          // script JS extra
+          
+          
+          // redirect geral
+                  }
+      });</script> </div></div></div></section></div></div></div></section><link
+rel="stylesheet" href="/assets/css/block/footer.1735328967.css"><footer
+class="footer"><div
+class="container"><div
+class="footer-info flex-row"><div
+class="footer-logos">
+<a
+class="footer-logos-home" gtm-data='footer_primeira_secao_050' href="/">
+<img
+src="/assets/img/home/alura-logo.1730889067.svg" alt="Alura" class="footer-logo" loading="lazy">
+</a><p
+class="footer-navegue-lista-link --description">
+<span
+class="footer-empresa-item">AOVS Sistemas de Informática S.A</span>
+<span
+class="footer-empresa-item">CNPJ 05.555.382/0001-33</span></p></div><div
+class="footer-card-hotLinks social-desktop"><h2 class="footer-card-hotLinks-titulo">Nossas redes e apps</h2><div
+class="footer-card-hotLinks-info footer-card-redes">
+<a
+href="https://www.youtube.com/alura" gtm-data='footer_primeira_secao_065' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="YouTube da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-youtube" />
+</svg>
+<span>YouTube</span>
+</a>
+<a
+href="https://www.facebook.com/AluraCursosOnline/" gtm-data='footer_primeira_secao_066'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Facebook da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-facebook">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-facebook" />
+</svg>
+<span>Facebook</span>
+</a>
+<a
+href="https://twitter.com/aluraonline" gtm-data='footer_primeira_secao_067' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="Twitter da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-twitter">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-twitter" />
+</svg>
+<span>Twitter</span>
+</a>
+<a
+href="https://instagram.com/aluraonline" class="footer-card-hotLinks-link" gtm-data='footer_primeira_secao_073'
+target="_blank" rel="noopener" title="Instagram da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-instagram">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-instagram" />
+</svg>
+<span>Instagram</span>
+</a>
+<a
+href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&hl=pt_BR"
+gtm-data='footer_primeira_secao_069' class="footer-card-hotLinks-link" target="_blank" rel="noopener"
+title="Baixar na Google Play Store">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-googleplay" />
+</svg>
+<span>Google Play Store</span>
+</a>
+<a
+href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" gtm-data='footer_primeira_secao_070'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na AppStore">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-appstore" />
+</svg>
+<span>AppStore</span>
+</a>
+<a
+href="https://www.tiktok.com/@aluraonline?lang=pt-BR" gtm-data='footer_primeira_secao_071' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="TikTok da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-tiktok" />
+</svg>
+<span>TikTok</span>
+</a></div></div><div
+class="footer-card-hotLinks social-mobile"><h2 class="footer-card-hotLinks-titulo">Nossas redes e apps</h2><div
+class="footer-card-hotLinks-info footer-card-redes">
+<a
+href="https://www.youtube.com/alura" gtm-data='footer_primeira_secao_065' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="YouTube da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-youtube" />
+</svg>
+<span>YouTube</span>
+</a>
+<a
+href="https://www.facebook.com/AluraCursosOnline/" gtm-data='footer_primeira_secao_066'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Facebook da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-facebook">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-facebook" />
+</svg>
+<span>Facebook</span>
+</a>
+<a
+href="https://twitter.com/aluraonline" gtm-data='footer_primeira_secao_067' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="Twitter da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-twitter">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-twitter" />
+</svg>
+<span>Twitter</span>
+</a>
+<a
+href="https://instagram.com/aluraonline" class="footer-card-hotLinks-link" gtm-data='footer_primeira_secao_073'
+target="_blank" rel="noopener" title="Instagram da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-instagram">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-instagram" />
+</svg>
+<span>Instagram</span>
+</a>
+<a
+href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&hl=pt_BR"
+gtm-data='footer_primeira_secao_069' class="footer-card-hotLinks-link" target="_blank" rel="noopener"
+title="Baixar na Google Play Store">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-googleplay" />
+</svg>
+<span>Google Play Store</span>
+</a>
+<a
+href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" gtm-data='footer_primeira_secao_070'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na AppStore">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-appstore" />
+</svg>
+<span>AppStore</span>
+</a>
+<a
+href="https://www.tiktok.com/@aluraonline?lang=pt-BR" gtm-data='footer_primeira_secao_071' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="TikTok da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1730889067/footer#icon-footer-tiktok" />
+</svg>
+<span>TikTok</span>
+</a></div></div></div><div
+class="footer-navegue"><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">Institucional</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="/sobre" gtm-data='footer_primeira_secao_063'>Sobre nós</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://grupoalura.gupy.io">Carreiras Alura</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://www.alura.com.br/empresas">Para
+Empresas</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://startalura.com.br/">Para Sua Escola</a></li><li
+class="footer-navegue-lista-link"><a
+href="/politica-de-privacidade" gtm-data='footer_primeira_secao_061'>Política de Privacidade</a></li><li
+class="footer-navegue-lista-link"><a
+href="/compromisso-de-integridade">Compromisso de Integridade</a></li><li
+class="footer-navegue-lista-link"><a
+href="/termos-de-uso" gtm-data='footer_primeira_secao_062'>Termos
+de
+Uso</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://drive.google.com/open?id=10jsnllQrEddusKyqp9A2Q6Wg_HpQpC49&usp=drive_fs" target="_blank">Documentos Institucionais</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://status.alura.com.br/">Status</a></li></ul></div><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">A Alura</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="/formacoes" gtm-data='footer_primeira_secao_064'>Formações</a></li><li
+class="footer-navegue-lista-link"><a
+href="/como-funciona" gtm-data='footer_primeira_secao_064'>Como
+Funciona</a></li><li
+class="footer-navegue-lista-link"><a
+href="/cursos-online-tecnologia" gtm-data='footer_primeira_secao_054'>Todos os cursos</a></li><li
+class="footer-navegue-lista-link"><a
+href="/depoimentos" gtm-data="footer_primeira_secao_069">Depoimentos</a></li><li
+class="footer-navegue-lista-link"><a
+href="/instrutores" gtm-data="footer_primeira_secao_061">Instrutores(as)</a></li><li
+class="footer-navegue-lista-link"><a
+href="/dev-em-t" gtm-data='footer_primeira_secao_065'>Dev em
+&lt;T&gt;</a></li><li
+class="footer-navegue-lista-link"><a
+href="/luri-inteligencia-artificial" gtm-data='footer_primeira_secao_065'>Luri, a inteligência artificial da Alura</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://www.iaconferencebrasil.com.br/" target="_blank">IA Conference 2024</a></li></ul></div><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">Conteúdos</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="/cases">Alura Cases</a></li><li
+class="footer-navegue-lista-link"><a
+href="/imersao" gtm-data="footer_primeira_secao_068">Imersões</a></li><li
+class="footer-navegue-lista-link"><a
+href="/artigos" gtm-data='footer_primeira_secao_058'>Artigos</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://hipsters.network/">Podcasts</a></li><li
+class="footer-navegue-lista-link"><a
+href="/empresas/artigos">Artigos de educação <br> corporativa</a></li><li
+class="footer-navegue-lista-link">
+<a
+href="/imersao-dev-9">
+Imersão Dev 9ª Edição                  </a></li></ul></div><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">Fale Conosco</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="https://www.alura.com.br/contato">Email e telefone</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://suporte.alura.com.br/" gtm-data='footer_primeira_secao_066'>Perguntas frequentes</a></li></ul></div><div
+class="footer-column footer-column-cards"><div
+class="newsletter"><h2 class="newsletter-titulo">Novidades e Lançamentos</h2><div
+class="hubspot-form newsletter-form"> <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js?pre=1"></script> <script>hbspt.forms.create({
+                    region: "na1",
+                    portalId: "21748317",
+                    formId: "39a8f8bd-d48f-4f45-8ed4-d26366176d39"
+                  });</script> </div></div></div></div><div
+class="parceiros flex-column"><h2 class="footer-navegacao-titulo">Parceiros</h2><ul
+class="footer-navegue-lista flex-row"><li
+class="footer-navegue-lista-link --description footer-column-cards">
+<img
+src="/assets/img/footer/scale-up-endeavor.1730889067.png" alt="Programa de aceleração Scale-Up Endeavor" class="footer-navegue-lista__image" loading="lazy">
+<span
+class="footer-navegue-lista-link --description --partners">Nós, da Alura, somos uma das Scale-Ups
+selecionadas pela Endeavor, programa de aceleração das empresas que
+mais crescem no país.</span></li><li
+class="footer-navegue-lista-link --description footer-column-cards">
+<img
+src="/assets/img/footer/google-alumni-2021.1730889067.png" alt="Growth Academy 2021 do Google For Startups" class="footer-navegue-lista__image" loading="lazy">
+<span
+class="footer-navegue-lista-link --description --partners">Fomos uma das 7 startups selecionadas pelo
+Google For Startups a participar do programa Growth Academy em
+2021.</span></li></ul></div></div></footer><section
+class="footer_categorias-formacoes"><div
+class="container"><div
+class="footer_categorias_wrapper"><h2 class="footer_categorias_title">Cursos</h2><div
+class="footer_categorias_categorias footer-navegue-lista-link"><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-programacao">Cursos de Programação</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-programacao/logica">
+Lógica                    </a>
+|                                      <a
+href="/cursos-online-programacao/python">
+Python                    </a>
+|                                      <a
+href="/cursos-online-programacao/php">
+PHP                    </a>
+|                                      <a
+href="/cursos-online-programacao/java">
+Java                    </a>
+|                                      <a
+href="/cursos-online-programacao/dotnet">
+.NET                    </a>
+|                                      <a
+href="/cursos-online-programacao/node-js">
+Node JS                    </a>
+|                                      <a
+href="/cursos-online-programacao/linguagem-c">
+C                    </a>
+|                                      <a
+href="/cursos-online-programacao/computacao">
+Computação                    </a>
+|                                      <a
+href="/cursos-online-programacao/jogos">
+Jogos                    </a>
+|                                      <a
+href="/cursos-online-programacao/internet-das-coisas">
+IoT                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-front-end">Cursos de Front-end</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-front-end/front-end">
+HTML, CSS                    </a>
+|                                      <a
+href="/cursos-online-front-end/reactjs">
+React                    </a>
+|                                      <a
+href="/cursos-online-front-end/angular">
+Angular                    </a>
+|                                      <a
+href="/cursos-online-front-end/javascript">
+JavaScript                    </a>
+|                                      <a
+href="/cursos-online-front-end/jquery">
+jQuery                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-data-science">Cursos de Data Science</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-data-science/data-science">
+Ciência de dados                    </a>
+|                                      <a
+href="/cursos-online-data-science/business-intelligence">
+BI                    </a>
+|                                      <a
+href="/cursos-online-data-science/sql">
+SQL e Banco de Dados                    </a>
+|                                      <a
+href="/cursos-online-data-science/excel">
+Excel                    </a>
+|                                      <a
+href="/cursos-online-data-science/machine-learning">
+Machine Learning                    </a>
+|                                      <a
+href="/cursos-online-data-science/nosql">
+NoSQL                    </a>
+|                                      <a
+href="/cursos-online-data-science/estatistica">
+Estatística                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-inteligencia-artificial">Cursos de Inteligência Artificial</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-inteligencia-artificial/ia-para-programacao">
+IA para Programação                    </a>
+|                                      <a
+href="/cursos-online-inteligencia-artificial/ia-para-dados">
+IA para Dados                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-devops">Cursos de DevOps</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-devops/aws">
+AWS                    </a>
+|                                      <a
+href="/cursos-online-devops/azure">
+Azure                    </a>
+|                                      <a
+href="/cursos-online-devops/containers">
+Docker                    </a>
+|                                      <a
+href="/cursos-online-devops/seguranca">
+Segurança                    </a>
+|                                      <a
+href="/cursos-online-devops/infraestrutura-como-codigo">
+IaC                    </a>
+|                                      <a
+href="/cursos-online-devops/linux-comandos-e-processos">
+Linux                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-design-ux">Cursos de UX & Design</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-design-ux/ux">
+Usabilidade e UX                    </a>
+|                                      <a
+href="/cursos-online-design-ux/video">
+Vídeo e Motion                    </a>
+|                                      <a
+href="/cursos-online-design-ux/3d">
+3D                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-mobile">Cursos de Mobile</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-mobile/flutter-mobile">
+Flutter                    </a>
+|                                      <a
+href="/cursos-online-mobile/ios">
+iOS e Swift                    </a>
+|                                      <a
+href="/cursos-online-mobile/android">
+Android, Kotlin                    </a>
+|                                      <a
+href="/cursos-online-mobile/jogos">
+Jogos                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-inovacao-gestao">Cursos de Inovação & Gestão</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-inovacao-gestao/agilidade">
+Métodos Ágeis                    </a>
+|                                      <a
+href="/cursos-online-inovacao-gestao/softskills-carreira">
+Softskills                    </a>
+|                                      <a
+href="/cursos-online-inovacao-gestao/gestao-corporativa">
+Liderança e Gestão                    </a>
+|                                      <a
+href="/cursos-online-inovacao-gestao/startup-empreendedorismo">
+Startups                    </a>
+|                                      <a
+href="/cursos-online-inovacao-gestao/vendas">
+Vendas                    </a></div></div></div></div><div
+class="footer_categorias_wrapper" style="margin-top:2em"><h2 class="footer_categorias_title">Cursos universitários FIAP</h2><div
+class="footer_categorias_categorias footer-navegue-lista-link">
+<a
+target="_blank" href="https://www.fiap.com.br/graduacao/?utm_source=site-alura&utm_medium=referral&utm_campaign=BR_footer-site&utm_id=&utm_term=&utm_content=">Graduação</a> |
+<a
+target="_blank" href="https://postech.fiap.com.br?utm_source=site-alura&utm_medium=referral&utm_campaign=BR_footer-site&utm_id=&utm_term=&utm_content=">Pós-graduação</a> |
+<a
+target="_blank" href="https://www.fiap.com.br/mba?utm_source=site-alura&utm_medium=referral&utm_campaign=BR_footer-site&utm_id=&utm_term=&utm_content= ">MBA</a></div></div></div></section><style>@media not all and (min-width: 1024px) {
+			.grupoCaelum {
+				display: none;
+			}
+		}
+
+		.grupoCaelum {
+			background: #fff;
+			height: 440px;
+			border-top: 1px solid #EBEBEE;
+		}
+
+		.grupoCaelum .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			padding-top: 0;
+			padding-bottom: 0;
+			height: 100%;
+		}
+
+		.grupoCaelum-list {
+			display: flex;
+			list-style: none;
+			width: 80%;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-top: 1.25rem;
+		}
+
+		.grupoCaelum-title {
+			width: 20%;
+		}
+
+		.grupoCaelum-column {
+			display: inline-block;
+			padding-left: 1.1875rem;
+			width: 240px;
+			height: 400px;
+			min-width: 160px;
+		}
+
+		.grupoCaelum-column-title {
+			font-size: 0.625rem;
+			color: #d7e0e5;
+			text-transform: uppercase;
+			font-weight: 600;
+			margin-bottom: 1.1875rem;
+		}
+
+		.grupoCaelum-column-list {
+			list-style: none;
+		}
+
+		.column-item-title {
+			font-size: 0.6875rem;
+			text-align: center;
+			vertical-align: middle;
+			display: inline-block;
+			margin-left: 0.375rem;
+		}
+
+		.grupoCaelum-column:not(:first-child) {
+			border-left: solid 1px #e3e9ed;
+		}
+
+		.grupoCaelum-title {
+			display: inline-block;
+			text-decoration: none;
+			color: #657176;
+			letter-spacing: normal;
+			font-size: 1.125rem;
+			margin-top: 3.375rem;
+		}
+
+		.column-item-logo {
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		.column-item {
+			margin-bottom: 1.0625rem;
+		}
+
+		.column-item a {
+			text-decoration: none;
+			color: #657176;
+			display: flex;
+			align-items: center;
+		}</style><footer
+class="caelum-footer" id="caelum-footer"><div
+class="grupoCaelum"><div
+class="container"><p
+class="grupoCaelum-title">Alura</p><ul
+class="grupoCaelum-list"><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Educação em Tecnologia</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="https://www.fiap.com.br/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/fiap.1730889067.svg" alt="logo fiap" loading="lazy" />
+<span
+class="column-item-title">FIAP</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.casadocodigo.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/cdc.1730889067.svg" alt="logo casa do codigo" loading="lazy" />
+<span
+class="column-item-title">Casa do Código</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" style="fill: #657176" href="https://www.pm3.com.br/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/pm3.1730889067.svg" alt="logo pm3" loading="lazy" />
+<span
+class="column-item-title">PM3 - Cursos de Produto</span>
+</a></li></ul></li><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Mais Alura</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="https://www.startalura.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/startbyalura.1730889067.png" alt="logo alura start" loading="lazy" />
+<span
+class="column-item-title">START BY Alura</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.aluralingua.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/aluralingua.1730889067.svg" alt="logo alura lingua" loading="lazy" />
+<span
+class="column-item-title">Alura Língua</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.alura.com.br/empresas">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/alura-empresas.1730889067.svg" alt="logo alura para empresas" loading="lazy" />
+<span
+class="column-item-title">Alura Para Empresas</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.aluracursos.com">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/alura.1730889067.svg" alt="logo alura latam" loading="lazy" />
+<span
+class="column-item-title">Alura LATAM</span>
+</a></li></ul></li><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Comunidade</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="
+https://techguide.sh/								">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/techguide.1730889067.svg" alt="logo tech guide" loading="lazy" />
+<span
+class="column-item-title">Tech Guide</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://7daysofcode.io/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/7days.1730889067.svg" alt="logo 7 days of code"loading="lazy" />
+<span
+class="column-item-title">7 days of code</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://hipsters.jobs">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/hipstersjobs.1730889067.svg" alt="logo Hipsters ponto Jobs" loading="lazy" />
+<span
+class="column-item-title">Hipsters ponto Jobs</span>
+</a></li></ul></li><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Podcasts</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="https://hipsters.network/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/hipsternetwork.1738262209.svg" alt="logo Hipster Network" loading="lazy" />
+<span
+class="column-item-title">Hipster Network</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/hipsterstech">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/hipsterstech.1738609506.svg" alt="logo Hipsters ponto Tech" loading="lazy" />
+<span
+class="column-item-title">Hipsters ponto Tech</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/devsemfronteiras">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/devsemfronteiras.1730889067.svg" alt="logo Dev sem fronteiras" loading="lazy" />
+<span
+class="column-item-title">Dev sem Fronteiras</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/likeaboss">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/likeaboss.1738262209.svg" alt="logo Like a Boss" loading="lazy" />
+<span
+class="column-item-title">Like a Boss</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/iasobcontrole">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/iasobcontrole.1738262209.svg" alt="logo IA Sob Controle" loading="lazy" />
+<span
+class="column-item-title">IA Sob Controle</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/mesadeproduto">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/mesadeproduto.1738262209.svg" alt="logo Mesa de Produto" loading="lazy" />
+<span
+class="column-item-title">Mesa de Produto</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/decode">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/decode.1738262209.svg" alt="logo Decode" loading="lazy" />
+<span
+class="column-item-title">Decode</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/fiapcast">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/fiapcast.1738262209.svg" alt="logo FIAPCast" loading="lazy" />
+<span
+class="column-item-title">FIAPCast</span>
+</a></li></ul></li></ul></div></div></footer> <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21748317.js"></script>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script> <script>hljs.initHighlightingOnLoad();</script> <script src="/assets/js/lib/svg4everybody.min.1730889068.js" async></script> <script src="/assets/js/footer/footer.1730889068.js" defer></script> <script src="/assets/js/header/menuMobile.1739394378.js" defer></script> <script src="/assets/js/header/menu.1730889068.js" defer></script> <script src="/assets/js/header/busca.1730889068.js" defer></script> <script src="/assets/js/header/cursos.1730889068.js" defer></script> <script src="/assets/js/detect.1730889068.js" async></script> <script src="/assets/js/video.1730889068.js" defer></script> <script src="/assets/js/countdown.1730889068.js" async></script> <script src="/assets/js/header/cookie-influencer.1731937129.js" async></script> <script src="/assets/js/trackers.1730889068.js" async></script> <script src="/assets/js/courseIconFallback.1730889068.js" defer></script> <script src="/assets/js/linkBannerSupercupom.1732317466.js" defer></script> <script src="/assets/js/artigos/table-of-contents.1730889068.js" async></script> <script src="/assets/js/artigos/tracker-post-read.1730889068.js" async></script> <script src="/assets/js/artigos/tracker-click-banner-article.1730889068.js" async></script> <script src="https://static.codepen.io/assets/embed/ei.js" async></script> <script src="/assets/js/artigos/iframe-loader.1730889068.js" async></script> </body></html>
