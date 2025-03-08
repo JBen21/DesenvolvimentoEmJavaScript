@@ -1,3 +1,7 @@
+NO CMD CLONAR REPOSITORIO
+
+C:\Users\Aluno\Desktop>git clone https://github.com/JBen21/DesenvolvimentoEmJavaScript.git
+
 echo "# desenvolvimento-javascript" >> README.md
 git init
 git add README.md
