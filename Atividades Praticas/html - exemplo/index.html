@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Plataforma de cursos do SENAI</h1>
+        <nav>
+            <ul>
+                <li>Principal</li>
+                <li>Área do Aluno</li>
+                <li>Sobre o SENAI</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Meus cursos inscritos</h3>
+            <p>Bem vindo a área do Aluno</p>
+            <p>Programe-se para concluír as atividades dento do prazo.</p>
+            <p>Em caso de duvidas entre em contato com o suporte.</p>
+
+            <h4>Cursos em andamento</h4>
+            <ul>
+                <li><strong>Desenvolvimento em Javascript JS</strong> - Progresso: 35% - </li>
+                <li><strong>Power-BI</strong> - Progresso: 92% - </li>
+                <li><strong>Data Analytics</strong> - Progresso: 0% - </li>
+            </ul>
+
+            <h4>Cursos Concluidos</h4>
+            <ol type="I"> 
+                <li><strong>Tecnico em eletroeletronica</strong>- Concluido - </li>
+                <li><strong>NR-10</strong>- Concluido - </li>
+                <li><strong>Comandos eletricos</strong>- Concluido - </li>
+            </ol>
+            </h4>
+
+
+        </section>
+        
+        <section>
+            <h3>Alunos em Destaque</h3>
+            <dl>
+                <dt>Desenvolvimento Javascript JS</dt>
+                <dd>fulano um - Nota: 9.8 </dd>
+                <dd>fulano dois - Nota: 9.9</dd>
+    
+                <dt>Power-BI</dt>
+                <dd>fulano um - Nota: 9.8 </dd>
+                <dd>fulano dois - Nota: 9.9</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h3>Calendario das aulas</h3>
+            <p>Esse texto é em negrito usando a  <B>tag B </B> das <strong>tag strong </strong></p>
+            <p>Esse texto é em italico usando a  <i>tag i</i> e <em>tag em</em></p>
+            <p>Esse é um texto <sup>sobrescrito</sup> e esse é <sub>Subscrito</sub></p>
+            <p>Texto <ins>inserido</ins> e texto <del>excluído</del></p>
+            <p>mais um texto, agora <small>pequeno</small> e <mark>destacado</mark></p>
+        </section>
+
+        <section>
+            <h3>Material complementar</h3>
+            <a href="https://www.facebook.com/share/r/18gi5HpKsH/" target="_blank" rel="noopener noreferrer"> Clique aqui </a>
+            <br>
+            <a href="https://sp.senai.br/unidade/presidenteprudente/" target="_blank" rel="noopener noreferrer">
+                <img src="https://cronos-media.sesisenaisp.org.br//api/media/1-0/files?img=img_1_230829_d339a06d-6dca-4a91-b890-a0eba7ca4c5f_o.avif" alt="Imagem do SENAI" width="150" height="150">
+            </a>
+        </section>
+
+        <section>
+            <h3>Financeiro</h3>
+            <table border="1">
+                <tr>
+                    <th>Mês</th>
+                    <th>Valor</th>
+                    <th>Situação</th>
+                </tr>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>R$ 100,00</td>
+                    <td>Pago</td>
+                </tr>
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>R$ 100,00</td>
+                    <td>Pago</td>
+                </tr>
+                <tr>
+                    <td>Março</td>
+                    <td>R$ 100,00</td>
+                    <td><mark>Em Aberto</mark></td>
+                </tr>
+                
+            </table>
+        </section>
+
+        <section>
+            <h3>Video Aula da Semana</h3>
+            <video src="https://sample-files-online.com/pt/samples/countdownload/16"width="150" height="150"controls>
+            </video>
+            <h3>Podcast</h3>
+            <audio controls> 
+                <source src="file_example_MP3_700KB.mp3" type="audio/mp3">
+                Seu navegador não suporta o áudio
+            </audio>
+        </section>
+
+        <section>
+            <h3>Solicitação de Certificado</h3>
+            <form action="" method="post">
+                <label for="Nome"> Nome:</label>
+                <br>
+                <input type="text" name="Nome" id="Nome"
+                placeholder="Digite seu Nome" required>
+                <br><br>
+                <label for="email">E-mail:</label>
+                <br>
+                <input type="email" name="email" id="email"
+                placeholder="Digite seu E-mail" required>
+                <br><br>
+                <label for="curso">Curso:</label>
+                <br>
+                <select name="curso" id="curso" required>
+                    <option value="">Selecione</option>
+                    <option value="Tecnico em eletroeletronica">Tecnico em eletroeletronica</option>
+                    <option value="NR-10">NR-10</option>
+                    <option value="Comandos eletricos">Comandos eletricos</option>
+                </select>
+                <br><br>
+                <label for="obs">Observações</label>
+                <br>
+                <textarea name="obs" id="obs" rows="4" cols="50"
+                placeholder="Se houver informações digite aqui"></textarea>
+                <br><br>
+                <button type="submit"> Enviar</button>
+                <input type="submit" value="Solicitar" name="" id="">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

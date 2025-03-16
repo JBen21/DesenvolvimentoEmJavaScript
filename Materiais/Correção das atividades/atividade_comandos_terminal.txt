@@ -1,0 +1,67 @@
+:: Exercício 1: Criando a Estrutura Principal
+cd Desktop
+mkdir projeto_inicial
+cd projeto_inicial
+mkdir html
+mkdir css
+mkdir js
+mkdir assets
+
+:: Exercício 2: Navegando Entre Diretórios
+cd css
+cd
+
+:: Exercício 3: Criando Arquivos HTML e CSS
+cd ..\html
+echo Bem-vindo ao Projeto Inicial > index.html
+cd ..\css
+echo body { font-family: Arial, sans-serif; } > style.css
+
+:: Exercício 4: Criando Subpastas de Imagens e Fontes
+cd ..\assets
+mkdir img
+mkdir fonts
+
+:: Exercício 5: Movendo o Arquivo CSS
+cd ..
+move css\style.css assets
+
+:: Exercício 6: Verificando Diretórios
+cd assets
+dir
+
+:: Exercício 7: Criando Arquivos de Script
+cd ..\js
+echo console.log("Script carregado!"); > script.js
+echo console.log("Aplicação Iniciada!"); > app.js
+
+:: Exercício 8: Copiando Arquivos
+cd ..
+copy html\index.html assets
+
+:: Exercício 9: Renomeando um Arquivo
+cd js
+rename app.js main.js
+
+:: Exercício 10: Organização Final
+cd ..
+dir html
+dir css
+dir js
+dir assets
+
+:: Exercício 11: Excluindo o arquivo index.html da pasta assets
+del assets\index.html
+
+ou
+
+cd assets
+del index.html
+
+::Exercício 12: Abrindo arquivo no Bloco de Notas
+notepad html\index.html
+
+ou
+
+cd html
+notepad index.html

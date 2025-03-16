@@ -1,0 +1,9 @@
+Git e GitHub - Diário
+Lucas Torquato
+•
+8 de mar. (editado: 8 de mar.)
+git clone <repositório> -> clonar o repositório de javascript
+realizar as tarefas do dia dentro do repositório local
+git add .  -> adiciona os arquivos
+git commit -m "mensagem" -> cria o versionamento
+git push -> enviar para o repositório remoto
