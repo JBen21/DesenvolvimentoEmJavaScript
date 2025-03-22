@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprensa Respawn Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header">
+
+    </div>
+
+    <!--Inicio do meu main-->
+    <main class="principal">
+
+        <section id="noticia_principal">
+        <h1>Noticia principal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quod veniam vitae eos autem hic optio adipisci, nihil repellat dignissimos suscipit aspernatur perferendis debitis minus esse doloribus sunt eligendi. Molestiae.</p>
+        <img src="https://store-images.s-microsoft.com/image/apps.24270.13847644057609868.a4a91f76-8d1c-4e19-aa78-f4d27d2818fb.d96146d7-d00a-4db9-ad68-197b2f962a17?h=862&format=jpg" alt="">
+        </section>
+
+        <section id="noticia_secundaria">
+        <h2>Noticia secundária</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit magnam expedita esse nulla nam? Natus, rem dolores sint, dicta quia accusantium ipsam modi iusto voluptate, itaque quas minus voluptatibus odio?</p>
+        <img src="https://store-images.s-microsoft.com/image/apps.13249.14000456863863255.e1180b2d-029d-4c02-9385-6ad73421ad63.bfc47847-79a5-41e2-8992-cfc17c878b89?q=90&w=480&h=270" alt="">
+        </section>
+
+        <section id="noticia_simples">
+        <h3>Noticia simples</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, omnis veritatis ratione doloribus enim mollitia et nesciunt fuga molestiae nostrum odit aperiam minima rem architecto quo eaque earum exercitationem voluptatum.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZ4AUg_eB-dJB1hywJUT4ZhsFhbEXyG5dxQ&s" alt="">
+        </section>
+    </main>
+
+    <div id="footer">
+
+    </div>
+
+</body>
+<script>
+    async function include(idElemento,arquivo){
+        const resposta = await fetch(arquivo)
+        const conteudo = await resposta.text()
+        document.getElementById(idElemento).innerHTML = conteudo
+    }
+
+    include("header","header.html")
+    include("footer","footer.html")
+</script>
+</html>

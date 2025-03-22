@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem somos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header">
+
+    </div>
+
+<main class="principal">
+    <section id="introducao">
+        <h1>Introdução</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ullam magni, laborum ipsum molestiae nesciunt molestias eaque dolore dicta dolorum quo porro assumenda voluptatum est aliquid ipsa quam voluptas corrupti!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maiores, tenetur facilis explicabo ducimus iusto laboriosam quae enim exercitationem atque! Asperiores impedit consectetur quisquam cumque. Minima placeat itaque aspernatur accusamus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi consequatur explicabo recusandae ut eligendi esse, at, mollitia nemo repellendus nulla sit aut totam aliquid vero sequi nisi natus porro.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aliquid, porro ut nesciunt quis maiores nisi consequatur autem quod quibusdam rerum reprehenderit facilis incidunt mollitia nemo quia inventore hic eveniet.
+        </p>
+    </section>
+
+    <section id="criador">
+        <h1>Quem foi o criador/Fundador</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora doloremque architecto consequatur, omnis, possimus consectetur et officia dolore, facilis quia saepe dicta aliquid? Ea, sint delectus asperiores cum ex recusandae?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quam iste quidem, odio illo nostrum officiis doloribus pariatur qui numquam molestias, rem quibusdam sit quae magnam! Provident recusandae exercitationem odit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum vero, possimus minus explicabo quis aspernatur excepturi, odio, quae dolores sequi consectetur! Corporis deserunt quisquam beatae explicabo, sint quia velit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem atque, deserunt rerum ducimus maiores debitis, nostrum laudantium molestiae, velit veritatis ipsa neque. Saepe nesciunt, perferendis obcaecati hic fuga repellendus velit.
+        </p>
+    </section>
+
+    <section id="surgimento">
+        <h1>Como nós surgimos</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illo sed reiciendis, perferendis possimus voluptates dignissimos, delectus assumenda natus alias nobis iure? Sed fuga dolorum quisquam commodi alias sint dolores.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ducimus esse odio asperiores corrupti in inventore, accusamus praesentium, aliquam saepe doloribus unde tempore perspiciatis officia illo quis repudiandae, architecto temporibus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque quaerat iure consequuntur. Tempore, libero! Quod tempore expedita, corporis sunt officiis voluptates similique, dolore, laborum eligendi quasi in omnis non.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa omnis illum, quidem expedita veniam nulla maiores aut odit! Explicabo qui facere nisi ducimus tempora, nesciunt est adipisci molestiae distinctio id.
+        </p>
+    </section>
+
+    <section id="estado_atual">
+        <h1>Estado atual da Imprensa</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nobis deleniti eveniet cumque ducimus! Quia cum ratione id rem nostrum earum quam a vitae reiciendis non, dolores ex ad rerum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit modi totam necessitatibus assumenda dolores veritatis, iusto ab inventore maxime facilis nemo obcaecati enim dolor dicta! Dolore maxime repudiandae rem perspiciatis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, cupiditate architecto commodi ad maiores, delectus laboriosam cumque amet quasi mollitia consequatur recusandae molestiae eum voluptatem velit deserunt minus eos assumenda?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur libero pariatur autem, voluptates eum voluptatem consequuntur nam corrupti non. Iste, sapiente! Quaerat officiis, corrupti repudiandae impedit blanditiis alias omnis quasi.
+        </p>
+    </section>
+</main>
+
+<div id="footer">
+
+</div>
+</body>
+<script>
+    async function include(idElemento,arquivo){
+        const resposta = await fetch(arquivo)
+        const conteudo = await resposta.text()
+        document.getElementById(idElemento).innerHTML = conteudo
+    }
+
+    include("header","header.html")
+    include("footer","footer.html")
+</script>
+</html>

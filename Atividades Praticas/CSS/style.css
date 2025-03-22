@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: red;
+    padding: 60px;
+}
+
+p {
+    font-size: 30px;
+}
+
+#paragrafo {
+    color: blue;
+}
+
+.paragrafo {
+    color: brown;
+}
+
+.marg {
+    margin: 20px;
+}
