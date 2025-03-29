@@ -1,0 +1,59 @@
+JS - Operadores
+Lucas Torquato
+•
+10:33
+100 pontos
+Exercícios de fixação de Operadores.
+
+1. Soma
+Crie um script que receba dois números e exiba a soma deles.
+
+2. Subtração
+Crie um script que receba dois números e exiba a diferença entre eles (primeiro - segundo).
+
+3. Multiplicação
+Crie um script que receba dois números e exiba o resultado da multiplicação (primeiro * segundo).
+
+4 Divisão. 
+Crie um script que receba dois números e exiba o resultado da divisão (primeiro ÷ segundo).
+
+5 Módulo. 
+Crie um script que receba dois números e exiba o resto da divisão entre eles (primeiro % segundo).
+
+6 Sucessor. 
+Crie um script que receba um número e mostre seu sucessor.
+
+7. Antecessor
+Crie um script que receba um número e mostre seu antecessor.
+
+8. Soma
+Crie um script que receba três números e exiba a soma de todos.
+
+9. Média
+Crie um script que receba três números e calcule a média deles.
+
+10. Área do círculo
+Crie um script que calcule a área de um círculo dado o valor de seu raio (fórmula: A = π (3.14) * r²).
+
+11. Verdadeiro ou Falso
+Crie um script que leia a idade de uma pessoa e exiba e retorno (true or false).
+
+12. Verdadeiro ou Falso
+Crie um script que receba um número e exiba se ele é positivo, negativo ou zero (true or false) de cada um dos 3 tipos.
+
+13. Verdadeiro ou Falso
+Crie um script que verifique se um número é par (true or false).
+
+14. Verdadeiro ou Falso
+Crie um script que receba dois números e exiba se o primeiro é maior que o segundo. (true or false).
+
+15. Verdadeiro ou Falso
+Crie um script que verifique se um número está entre 10 e 20. (true or false).
+
+⭕1 ao 12 obrigatórios
+
+Utilizar o prompt para receber os valores e o console.log para exibir as respostas.
+
+Utilize apenas um arquivo com todos exercícios.
+
+Enviar o arquivo para o repositório remoto, dentro da pasta do curso, atv6-js-operadores.
