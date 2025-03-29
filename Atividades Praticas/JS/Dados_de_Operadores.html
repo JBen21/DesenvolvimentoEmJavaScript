@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de tipo de dados de operadores</title>
+</head>
+<body>
+    <H1>Exemplo de tipo de dados de operadores</H1>
+    <script>
+
+        var nome = "Jessé";
+        var msg = "Olá Mundo";
+        var texto = "texto";
+        console.log("String: ",nome, msg, texto);
+
+        //Number
+        var idade = 35;
+        var altura = 1.70;
+        var peso = 92;
+        var numeroNegativo = -10;
+        console.log("Number:",idade, altura, numeroNegativo);
+
+        //Booleanos bool (true or false)
+        var verdade = true;
+        var falso = false;
+        var idade = 17;
+        var maiorIdade = idade >= 18;
+        var menorIdade = idade < 18;
+        console.log(maiorIdade, menorIdade);
+        var igualdade = (10 == "10");
+        var igualdadeValorTipo = (10 === "10");
+        console.log(igualdade, igualdadeValorTipo);
+        console.log(typeof idade, typeof igualdade);
+
+        //null
+        var valorNulo = null;
+        console.log(valorNulo);
+
+        //Opeeradores Aritimeticos
+        var a = 10;
+        var b = 3;
+
+        var soma = a + b;
+        var sub = a - b;
+        var mult = a * b;
+        var div = a / b;
+        console.log(soma, sub, mult, div);
+        var modulo =a % b;
+        var potencia = a ** b;
+        a++; //a=a+1
+        b--; //b=b-1
+        console.log(modulo, potencia,   a,   b);
+
+        //operadores de atribuição combinada
+        var num =5;
+        //num = num + 2;
+        num += 2;
+        console.log(num) //7
+
+        num -= 1;
+        console.log(num); //6
+        num *= 3;
+        console.log(num); //18
+        num /= 2;
+        console.log(num);//9
+        num %= 4;
+        console.log(num) //1
+
+        //conversoes de variaveis
+
+        //string -> Number
+
+        var numTexto ="42";
+        var convInt = parseInt(numTexto);
+        var convFloat =parseFloat(numTexto);
+        var convNumber = Number(numTexto);
+        console.log(convInt, convFloat, convNumber);
+
+        //Number -> String
+        var numero = 123;
+        var convString1 = numero.toString();
+        var convString2 = String(numero);
+        var convString3 = "" + numero;
+
+        console.log (convString1, convString2, convString3);
+
+
+        //String -> Bool
+        var numPositivo = 42;
+        var numZero = 0;
+        var numNegativo = -10;
+        var boolPositivo = Boolean(numPositivo);
+
+
+
+
+
+        //Bool -> String
+        var verdadeiro = true;
+        var falso = false;
+        var boolString1 = verdadeiro.toString();
+        var boolString2 = String(falso);
+        console.log(boolString1, boolString2);
+
+        //Prompt
+        var nomeCompleto = prompt("inf nome comple:");
+        console.log(nomeCompleto);
+        console.log(typeof nomeCompleto);
+        alert(nomeCompleto);
+        
+    </script>
+</body>
+</html>
