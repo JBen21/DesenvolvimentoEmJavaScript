@@ -1,0 +1,20 @@
+JS - Condicionais
+Lucas Torquato
+•
+11:23
+100 pontos
+Exercícios de fixação de Condicionais.
+
+1. Maior que 10
+Verifique se um número é maior que 10 e exiba um retorno em caso de verdadeiro e falso.
+
+2. Par ou Ímpar
+Peça para o usuário digitar um número e, usando if else, exiba no console se o número é par ou ímpar.
+
+3. Maior e Menor de Três Números
+Solicite três números ao usuário e, utilizando if else, exiba o maior deles.
+
+4. Calculadora Simples
+Crie um programa que peça dois números e uma operação (+, -, *, /) e, com um switch case, exiba o resultado da operação escolhida.
+
+Enviar o arquivo para o repositório remoto, dentro da pasta do curso, atv7-js-condicionais.
