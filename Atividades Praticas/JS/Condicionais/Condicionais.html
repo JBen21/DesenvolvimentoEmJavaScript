@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Condicionais</title>
+</head>
+<body>
+    <h1>Exemplo de Condicionais</h1>
+
+    <script>
+        var idade = 17;
+
+        if (idade < 18){
+            console.log("menor de idade");
+        }else{
+            console.log("maior de idade");
+        }
+
+        if (idade < 18){
+            console.log("menor de idade");
+        } else if (idade === 18) {
+            console.log("tem 18 anos");
+        }else {
+            console.log("mais de 18 anos");
+        }
+
+        var nota = 7;
+        var faltas = 5;
+
+        if (nota >= 7 && faltas <= 4){
+            console.log("aluno aprovado!");
+        } else {
+            console.log("aluno reprovado!");
+        }
+
+        if (nota >= 7 || faltas <= 4){
+            console.log("aluno aprovado!");
+        } else {
+            console.log("aluno reprovado!");
+        }
+
+
+        var nome = "jesse";
+        if (nome){
+            console.log(nome);
+        } else {
+            console.log("nome não informado");
+        }
+
+        var sobrenome = "joão";
+        var msg = "";
+        if (nome){
+            msg = sobrenome;
+            
+        } else {
+            msg = "nome não informado";
+            
+        }
+        console.log (msg);
+
+        msg = sobrenome ? sobrenome : "nome não informado ternario";
+        console.log(msg);
+
+        var nome = "simone";
+        var idade = 34;
+
+        if (nome){
+            if (idade >= 18){
+                console.log(nome,idade);
+            } else {
+                console.log(nome);
+            }
+        } else {
+            console.log("nome nao informado!");
+        }
+
+        var categoria = "1";
+        switch (categoria){
+            case "1":
+                console.log("11,22")
+                break;
+            case "2":
+                console.log("22,11")
+                break
+            default:
+                console.log("categoria livre, pode passar")        
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 7</title>
+</head>
+<body>
+    <script>
+//exercicio 1
+//saber se o numero e maior que 10
+
+var numero = 19;
+if (numero> 10){
+    console.log("maior que 10");
+} else {
+    console.log("menor ou igual a 10");
+}
+
+//exercicio 2
+// saber se o numero e par/impar
+var numeroParImp = 5;
+if (numeroParImp % 2 === 0 ){
+    console.log("Par");
+} else {
+    console.log("Impar")
+}
+
+//exercicio 3
+//quem é o maior e menor numero
+var numero1 = 10;
+var numero2 = 20;
+var numero3 = 30;
+
+if (numero1 > numero2 && numero1 > numero3){
+    console.log(numero1);
+} else if (numero2 > numero1 && numero2 > numero3){
+    console.log(numero2);
+} else {
+    console.log(numero3)
+}
+
+if (numero1 < numero2 && numero1 < numero3){
+    console.log(numero1);
+} else if (numero2 < numero1 && numero2 < numero3){
+    console.log(numero2);
+} else {
+    console.log(numero3)
+}
+/*solução do professor
+var maior = numero1;
+var menor = numero1;
+
+if(numero2>maior){
+    maior=numero2; 
+
+}
+*/
+
+//exercicio 4
+/*calculadora simples => use switch
+var operação = + ou - ou / ou *
+var numero1 = 10
+var numero2 = 2 
+*/
+var numero1 = 10
+var numero2 = 2
+var operação = "p";
+        switch (operação){
+            case "+":
+                console.log (parseInt(numero1) + parseInt(numero2));
+                break;
+            case "-":
+                console.log(parseInt(numero1) - parseInt(numero2));
+                break;
+            case "*":
+                console.log(parseInt(numero1) * parseInt(numero2));
+                break; 
+            case "/":
+                console.log(parseInt(numero1) / parseInt(numero2));
+                break;    
+            default:
+                console.log("operação invalida");    
+
+        }
+
+
+
+    </script>
+</body>
+</html>
