@@ -26,3 +26,71 @@ No total, devem ser cinco commits e pelo menos três pushes.
 5️⃣ Verificação Final
 Acesse seu repositório no GitHub e confira o histórico de commits.
 Envie o link do repositório para a correção.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PS C:\Users\Jessé\Desktop> git clone https://github.com/JBen21/Projeto_Extra.git
+Cloning into 'Projeto_Extra'...
+warning: You appear to have cloned an empty repository.
+
+PS C:\Users\Jessé\Desktop> git add .
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git commit -m "git inicial"
+[main (root-commit) 0382c1a] git inicial
+ 3 files changed, 31 insertions(+)      
+ create mode 100644 index.html
+ create mode 100644 script.js
+ create mode 100644 style.css
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 885 bytes | 147.00 KiB/s, done. 
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/JBen21/Projeto_Extra.git
+ * [new branch]      main -> main
+
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git add .
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git commit -m "add titulo h1 em index.html"
+[main 5add91b] add titulo h1 em index.html
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 386 bytes | 386.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JBen21/Projeto_Extra.git
+   0382c1a..5add91b  main -> main
+
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git add .
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git commit -m "add paragrafo em index.html"
+[main 58f6936] add paragrafo em index.html
+ 1 file changed, 1 insertion(+)
+
+PS C:\Users\Jessé\Desktop\Projeto_Extra>git add .
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git commit -m "add +1 paragrafo em index.html"
+[main 3a82443] add +1 paragrafo em index.html
+ 1 file changed, 1 insertion(+)
+
+PS C:\Users\Jessé\Desktop\Projeto_Extra>git add .
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git commit -m "add +1 titulo em index.html"   
+[main 1838a3c] add +1 titulo em index.html
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Jessé\Desktop\Projeto_Extra> git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.02 KiB | 260.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/JBen21/Projeto_Extra.git
+   5add91b..1838a3c  main -> main
+PS C:\Users\Jessé\Desktop\Projeto_Extra> 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+https://github.com/JBen21/Projeto_Extra.git

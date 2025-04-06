@@ -8,55 +8,103 @@
 <body>
     <H1>JS Operadores</H1>
     <script>
-        /*
-        // 1. Soma. Crie um script que receba dois números e exiba a soma deles.
+        
+        console.log ("1. Soma. Crie um script que receba dois números e exiba a soma deles.");
         var valor1Soma = prompt("Informe o 1° Valor p/ Somar");
         var valor2Soma = prompt("Informe o 2° Valor p/ Somar");
         console.log (parseInt(valor1Soma) + parseInt(valor2Soma));
+        
+        console.log ("solução do professor")
+        var numero1Ex1 = parseFloat(prompt("Exercício 1 - Digite o primeiro número:"));
+        var numero2Ex1 = parseFloat(prompt("Exercício 1 - Digite o segundo número:"));
+        var soma = numero1Ex1 + numero2Ex1;
+        console.log(`A soma de ${numero1Ex1} e ${numero2Ex1} é: ${soma}`);
 
-        // 2. Subtração. Crie um script que receba dois números e exiba a diferença entre eles (primeiro - segundo).
+        console.log ("2. Subtração. Crie um script que receba dois números e exiba a diferença entre eles (primeiro - segundo).");
         var valor1Sub = prompt("Informe o 1° Valor p/ Subtrair");
         var valor2Sub = prompt("Informe o 2° Valor p/ Subtrair");
         console.log (parseInt(valor1Sub) - parseInt(valor2Sub));
 
-        // 3. Multiplicação. Crie um script que receba dois números e exiba o resultado da multiplicação (primeiro * segundo).
+        console.log ("3. Multiplicação. Crie um script que receba dois números e exiba o resultado da multiplicação (primeiro * segundo).");
         var valor1Mult = prompt("Informe o 1° Valor p/ Multiplicar");
         var valor2Mult = prompt("Informe o 2° Valor p/ Multiplicar");
         console.log (parseInt(valor1Mult) * parseInt(valor2Mult)); 
 
-        // 4. Divisão. Crie um script que receba dois números e exiba o resultado da divisão (primeiro ÷ segundo).
+        console.log ("4. Divisão. Crie um script que receba dois números e exiba o resultado da divisão (primeiro ÷ segundo).");
         var valor1Div = prompt("Informe o 1° Valor p/ Dividir");
         var valor2Div = prompt("Informe o 2° Valor p/ Dividir");
         console.log (parseInt(valor1Div) / parseInt(valor2Div));
         
-        // 5. Módulo. Crie um script que receba dois números e exiba o resto da divisão entre eles (primeiro % segundo).
+        console.log ("5. Módulo. Crie um script que receba dois números e exiba o resto da divisão entre eles (primeiro % segundo).");
         var valor1Mod = prompt("Informe o 1° Valor p/ Dividir e Mostrar o Resto");
         var valor2Mod = prompt("Informe o 2° Valor p/ Dividir e Mostrar o Resto");
         var Modulo = valor1Mod % valor2Mod
         console.log (parseFloat(Modulo));
         
-        //6. Sucessor. Crie um script que receba um número e mostre seu sucessor.
+        console.log ("6. Sucessor. Crie um script que receba um número e mostre seu sucessor.");
         var valor1Sucesor = prompt("Informe o Valor p/ Mostrar seu Sucessor");
         valor1Sucesor ++;
         console.log (parseFloat(valor1Sucesor));
         
-        //7. Antecessor. Crie um script que receba um número e mostre seu antecessor.
+        console.log ("7. Antecessor. Crie um script que receba um número e mostre seu antecessor.");
         var valor1Antecessor = prompt("Informe o Valor p/ Mostrar seu Antecessor");
         valor1Antecessor -- ;
         console.log (parseFloat(valor1Antecessor));
         
-        //8. Soma. Crie um script que receba três números e exiba a soma de todos.
+        console.log ("8. Soma. Crie um script que receba três números e exiba a soma de todos.");
         var valor1Soma = prompt("Informe o 1° Valor p/ Somar");
         var valor2Soma = prompt("Informe o 2° Valor p/ Somar");
         var valor3Soma = prompt("Informe o 3° Valor p/ Somar");
         console.log (parseInt(valor1Soma) + parseInt(valor2Soma) + parseInt(valor3Soma));
-        */
-        //9. Média. Crie um script que receba três números e calcule a média deles.
-        var valor1Media = prompt("Informe o 1° Valor p/ verificar a media");
-        var valor2Media = prompt("Informe o 2° Valor p/ verificar a media");
-        var valor3Media = prompt("Informe o 3° Valor p/ verificar a media");
-        var somaValormedia = valor1Media + valor2Media + valor3Media
-        console.log (parseInt(somaValormedia)/3)
+        
+        console.log ("9. Média. Crie um script que receba três números e calcule a média deles.");
+        var valor1Media = parseFloat(prompt("Informe o 1° Valor p/ verificar a media"));
+        var valor2Media = parseFloat(prompt("Informe o 2° Valor p/ verificar a media"));
+        var valor3Media = parseFloat(prompt("Informe o 3° Valor p/ verificar a media"));
+        var media = (valor1Media + valor2Media + valor3Media) / 3;
+        console.log(media);
+        
+        console.log ("10. Área do círculo. Crie um script que calcule a área de um círculo dado o valor de seu raio (fórmula: A = π (3.14) * r²).");
+        var raio = parseFloat(prompt("Informe o Valor do raio p/ verificar a área do circulo"));
+        var area = 3.14 * raio * raio;
+        console.log(area.toFixed(2));
+        
+        console.log ("Solução do professor");
+        var raio = parseFloat(prompt("Exercício 10 - Digite o raio do círculo:"));
+        var area = Math.PI * raio * raio;
+        console.log(`A área do círculo com raio ${raio} é: ${area.toFixed(2)}`);
+        
+        console.log ("11. Verdadeiro ou Falso. Crie um script que leia a idade de uma pessoa e exiba e retorno (true or false).");
+        var idade = parseInt(prompt("Digite a idade para verificar se é maior de idade"));
+        var maiorDeIdade = idade >= 18;
+        console.log(maiorDeIdade);
+        
+        console.log ("12. Verdadeiro ou Falso. Crie um script que receba um número e exiba se ele é positivo, negativo ou zero (true or false) de cada um dos 3 tipos.");
+        var numPN0 = parseFloat(prompt("Digite um numero para verificar se ele é positivo negativo ou zero"));
+        var numPositivo = numPN0 > 0;
+        var numZero = numPN0 === 0;
+        var numNegativo = numPN0 < 0;
+        console.log(`O número ${numPN0} é positivo: ${numPositivo}`);
+        console.log(`O número ${numPN0} é negativo: ${numNegativo}`);
+        console.log(`O número ${numPN0} é zero: ${numZero}`);
+        
+        console.log ("13. Verdadeiro ou Falso. Crie um script que verifique se um número é par (true or false).");
+        var numPouI = parseFloat(prompt("Digite um numero para saber se é par ou impar"));
+        var Par = numPouI % 2 === 0;
+        var Impar = numPouI % 2 != 0;
+        console.log(`O número ${numPouI} é Par: ${Par}`);
+        console.log(`O número ${numPouI} é Impar: ${Impar}`);
+        
+        console.log ("14. Verdadeiro ou Falso. Crie um script que receba dois números e exiba se o primeiro é maior que o segundo. (true or false).");
+        var Maior1 = parseFloat(prompt("Didigite o 1° Valor para verificar se é maior que o 2° valor"));
+        var Maior2 = parseFloat(prompt("Didigite o 2° Valor"));
+        var MaiorValor = Maior1 > Maior2;
+        console.log(`${Maior1} é maior que ${Maior2}: ${MaiorValor}`);
+        
+        console.log ("15. Verdadeiro ou Falso. Crie um script que verifique se um número está entre 10 e 20. (true or false).");
+        var ValorEntre10e20 = parseFloat(prompt("Didigite um Valor para saber se está entre 10 e 20"));
+        var Entre10e20 = ValorEntre10e20 >= 10 && ValorEntre10e20 <= 20;
+        console.log(`O número ${ValorEntre10e20} está entre 10 e 20: ${Entre10e20}`);
 
     </script>    
     
