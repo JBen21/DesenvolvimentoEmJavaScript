@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,8 +7,45 @@
   <link rel="stylesheet" href="tela login.css">
 </head>
 <body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="sobre">
+        <h1>Sobre</h1>
+        <p>A nossa escola de música oferece aulas de instrumentos musicais e canto para todas as idades.</p>
+    </section>
+    <section id="cursos">
+        <h1>Cursos</h1>
+        <ul>
+            <li>Piano</li>
+            <li>Guitarra</li>
+            <li>Canto</li>
+        </ul>
+    </section>
+    <section id="contato">
+        <h1>Contato</h1>
+        <form>     
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea><br><br>
+            <button onclick="enviarFormulario()">Enviar</button>
+        </form>
+    </section>
+    <div class="loader"></div>
+            <br></br> <br></br> <br></br>
+  </main>
   <div class="container">
-    
+    <img src="cello.png" alt="Imagem do cello" width="150" height="150">
     <div class="toggle-box">
       <div class="login-box">
         <h2>Login</h2>
@@ -31,6 +67,6 @@
     </div>
   </div>
 
-  <script src="tela login.js"></script>
+  <script src="tela de login.js"></script>
 </body>
 </html>
