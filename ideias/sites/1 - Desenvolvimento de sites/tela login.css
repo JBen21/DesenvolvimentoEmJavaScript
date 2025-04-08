@@ -1,0 +1,100 @@
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.toggle-box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.login-box, .recover-password-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3498db;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 1s ease-in-out;
+}
+
+.login-box {
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+.recover-password-box {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+.toggle-box.active .login-box {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+.toggle-box.active .recover-password-box {
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+
+.login-box h2, .recover-password-box h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.login-box input, .recover-password-box input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.login-box button, .recover-password-box button {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+}
+
+.recover-password-btn, .back-to-login-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+}
+
+.recover-password-btn:hover, .back-to-login-btn:hover {
+  background-color: #29b6f6;
+}
