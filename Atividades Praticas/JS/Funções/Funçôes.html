@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Exemplo de Funções</h1>
+
+    <script>
+
+        function saudacao() {
+            console.log("ola mundo!");
+        }
+
+        saudacao();
+
+        function saudacaoComParametro(nome) {
+            console.log("ola mundo! Eu Sou " + nome);
+        }
+
+        saudacaoComParametro("Jessé");
+        saudacaoComParametro("João")
+
+        function saudacaoComParametroOp(nome, saudacao = "Olá") {
+            console.log(saudacao + " , "+nome);            
+        }
+
+        saudacaoComParametroOp("Jessé");
+        saudacaoComParametroOp("João", "oi");
+
+        function somar(num1, num2) {
+            console.log(num1 + num2);            
+        }
+
+        somar(5,2);
+        somar(3,5);
+
+        function somarRetorno(num1 , num2) {
+            return (num1 + num2);
+        }
+        var soma = somarRetorno(7,2);
+        console.log(soma);
+
+        function media(n1,n2,n3) {
+            return ((n1+n2+n3)/3);            
+        }
+
+        console.log(media(10,10,10));
+
+        var m = media (10,10,10);
+        if (m > 7){
+            console.log("passou");
+        }else {
+            console.log("até ano que vem!")
+        } 
+    </script>
+    
+</body>
+</html>

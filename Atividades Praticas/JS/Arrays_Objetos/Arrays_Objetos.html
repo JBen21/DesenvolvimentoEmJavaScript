@@ -10,7 +10,7 @@
 
     <script>
         //Array
-        var frutas = ["banana", "uva", "maça", "abacaxi", "pera", "goiaba"];
+        var frutas = ["Banana", "Uva", "Maça", "Abacaxi", "Pera", "Goiaba"];
         console.log (frutas);
         console.log (frutas[0]);
         console.log (frutas.length);
@@ -18,11 +18,61 @@
         console.log (frutas.length-1);
         console.log (frutas[frutas.length-1])
 
-        frutas.push("manga");
+        frutas.push("Manga");
         console.log(frutas);
 
         frutas[1] = "Abacate";
         console.log(frutas)
+
+        frutas.unshift("Uva");
+        console.log(frutas);
+
+        frutas.pop();
+        console.log(frutas);
+
+        frutas.shift(frutas);
+        console.log(frutas);
+
+        frutas.splice(1,1);
+        console.log(frutas);
+//splice(posição que vou trabalhar,remover, incerir...)
+        frutas.splice(1,0,"Abacate","Laranja");
+        console.log(frutas);
+
+        console.log(frutas.slice(0,3));
+
+        console.log(frutas.includes("Banana"));
+        console.log(frutas.includes("banana"));
+
+        console.log(frutas.indexOf("Banana"));
+        console.log(frutas.indexOf("banana"));
+
+//Objetos
+        var pessoa = {
+            "nome":"João", 
+            "idade": 8,
+            "altura": 1.30,
+            "peso": 40,
+            "cpf": "123.456.789-00",
+        }        
+
+        console.log(pessoa);
+        console.log(pessoa.nome);
+        console.log(pessoa["nome"]);
+
+        pessoa.cidede = "Presidente Prudente";
+        console.log(pessoa);
+
+        pessoa.idade = 7
+
+        delete pessoa.cidede;
+        console.log(pessoa);
+
+        console.log("nome" in pessoa);
+        console.log("cidade" in pessoa);
+        console.log(Object.values(pessoa).includes
+        ("João"));
+
 
 
 

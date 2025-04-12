@@ -1,8 +1,10 @@
-Git e GitHub - Diário
+git config --global user.name "Seu Nome" Git e GitHub - Diário
 Lucas Torquato
 •
 11:44 (editado: 11:45)
 git clone <repositório> -> clonar o repositório de javascript
+git config --global user.name "Jesse Benicio" 
+git config --global user.email "cdcssloj@gmail.com" 
 realizar as tarefas do dia dentro do repositório local
 git add .  -> adiciona os arquivos
 git commit -m "mensagem" -> cria o versionamento
