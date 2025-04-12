@@ -1,0 +1,57 @@
+JS - Condicionais - Não Obrigatória
+Lucas Torquato
+•
+5 de abr.
+100 pontos
+Exercícios de fixação de Condicionais.
+
+1. Verificador de Notas
+O usuário deve inserir sua nota (0 a 10). Usando if else, exiba sua classificação:
+0 a 4 → Reprovado
+5 a 6 → Recuperação
+7 a 10 → Aprovado
+2. Dia da Semana
+Peça um número de 1 a 7 e, com switch case, exiba o nome do dia correspondente (1 = Domingo, 2 = Segunda, etc.).
+
+3. Classificação de Idade
+Solicite a idade do usuário e, usando if else, classifique:
+0 a 12 anos → Criança
+13 a 17 anos → Adolescente
+18 a 59 anos → Adulto
+60 anos ou mais → Idoso
+4. Estações do Ano
+Peça ao usuário que digite um número de 1 a 12 (representando os meses do ano) e use switch case para exibir a estação correspondente:
+Verão (12, 1, 2)
+Outono (3, 4, 5)
+Inverno (6, 7, 8)
+Primavera (9, 10, 11)
+5. Login Simples
+Crie um sistema de login onde o usuário insere um nome de usuário e senha. Se os dados forem "admin" e "1234", exiba "Login bem-sucedido". Caso contrário, exiba "Usuário ou senha incorretos".
+
+6. Classificação de Notas com Switch
+Peça ao usuário para inserir sua nota (de 0 a 10) e use switch case para classificar:
+0 a 4 → Insuficiente
+5 a 6 → Regular
+7 a 8 → Bom
+9 a 10 → Excelente
+7. Verificador de Turno
+Solicite ao usuário que informe em qual turno estuda (M = Matutino, V = Vespertino, N = Noturno). Use if else para exibir a mensagem:
+"Bom dia!" para matutino
+"Boa tarde!" para vespertino
+"Boa noite!" para noturno
+"Turno inválido" caso digite algo diferente
+8. IMC
+Crie um programa que calcule o Índice de Massa Corporal (IMC) de uma pessoa com base no seu peso (em kg) e altura (em metros) e apresente a classificação:
+Abaixo do peso: IMC < 18.5
+Peso normal: 18.5 <= IMC < 25
+Sobrepeso: 25 <= IMC < 30
+Obesidade: IMC >= 30
+9. Calculadora de Desconto Progressivo
+Crie um programa para uma loja que aplique descontos com base no valor da compra:
+Menos de R$ 100: sem desconto
+De R$ 100 a R$ 200: 10% de desconto
+De R$ 200 a R$ 300: 15% de desconto
+De R$ 300 a R$ 400: 20% de desconto
+Acima de R$ 400: 25% de desconto
+
+Enviar o arquivo para o repositório remoto, dentro da pasta do curso, atv7-js-condicionais.

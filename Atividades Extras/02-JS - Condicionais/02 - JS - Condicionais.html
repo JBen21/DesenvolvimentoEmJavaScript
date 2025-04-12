@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade extra de Condicionais</title>
+</head>
+<body>
+    <h1>Atividade extra de Condicionais</h1>
+
+    <script>
+    /*
+    1. Verificador de Notas
+        O usuário deve inserir sua nota (0 a 10). Usando if else, exiba sua classificação:
+        0 a 4 → Reprovado
+        5 a 6 → Recuperação
+        7 a 10 → Aprovado
+    
+    console.log ("Insira sua Nota para verifica se está: Aprovado, de Recuperação ou Reprovado");
+    var nota = parseFloat(prompt("Digite sua nota (0 a 10):"));
+        if (nota >= 0 && nota <= 4) {
+            document.write("Reprovado");
+        } else if (nota >= 5 && nota <= 6) {
+            document.write("Recuperação");
+        } else if (nota >= 7 && nota <= 10) {
+            document.write("Aprovado");
+        } else {
+            document.write("Nota inválida. Por favor, digite uma nota entre 0 e 10.");
+        }
+   
+    2. Dia da Semana Peça um número de 1 a 7 e, com switch case, exiba o nome do dia correspondente (1 = Domingo, 2 = Segunda, etc.).
+    
+    var Dia = (prompt("Digite um numero para saber qual dia da semana ele representa"));
+        switch (Dia){
+            case "1":
+            document.write("Domingo");
+                console.log("Domingo");
+                break;
+                case "2":
+            document.write("Segunda-Feira");
+                console.log("Segunda-Feira");
+                break;
+                case "3":
+            document.write("Terça-Feira");
+                console.log("Terça-Feira");
+                break;
+                case "4":
+            document.write("Quarta-Feira");
+                console.log("Quarta-Feira");
+                break;
+                case "5":
+            document.write("Quinta-Feira");
+                console.log("Quinta-Feira");
+                break;
+                case "6":
+            document.write("Sexta-Feira");
+                console.log("Sexta-Feira");
+                break;
+                case "7":
+            document.write("Sabado");
+                console.log("Sabado");
+                break;
+            default:
+            document.write("O numero digitado não representa um dia da semana");
+                console.log("O numero digitado não representa um dia da semana")        
+        }
+        */
+
+
+        var Nota = 17;
+
+        if (idade < 18){
+            console.log("menor de idade");
+        }else{
+            console.log("maior de idade");
+        }
+
+        if (idade < 18){
+            console.log("menor de idade");
+        } else if (idade === 18) {
+            console.log("tem 18 anos");
+        }else {
+            console.log("mais de 18 anos");
+        }
+
+        var nota = 7;
+        var faltas = 5;
+
+        if (nota >= 7 && faltas <= 4){
+            console.log("aluno aprovado!");
+        } else {
+            console.log("aluno reprovado!");
+        }
+
+        if (nota >= 7 || faltas <= 4){
+            console.log("aluno aprovado!");
+        } else {
+            console.log("aluno reprovado!");
+        }
+
+
+        var nome = "jesse";
+        if (nome){
+            console.log(nome);
+        } else {
+            console.log("nome não informado");
+        }
+
+        var sobrenome = "joão";
+        var msg = "";
+        if (nome){
+            msg = sobrenome;
+            
+        } else {
+            msg = "nome não informado";
+            
+        }
+        console.log (msg);
+
+        msg = sobrenome ? sobrenome : "nome não informado ternario";
+        console.log(msg);
+
+        var nome = "simone";
+        var idade = 34;
+
+        if (nome){
+            if (idade >= 18){
+                console.log(nome,idade);
+            } else {
+                console.log(nome);
+            }
+        } else {
+            console.log("nome nao informado!");
+        }
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
