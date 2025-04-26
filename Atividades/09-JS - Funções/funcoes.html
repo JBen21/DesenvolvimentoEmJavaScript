@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//1-verificar se o numero é par ou impar usando função
+function parOuImpar (n1){
+    if (n1 % 2 === 0) {
+        return "O Numero é Par";        
+    } else {
+        return "O Numero é Impar";
+    }
+}
+console.log("Situação:",parOuImpar(10));
+console.log("Situação:",parOuImpar(9));
+
+/* solução do professor
+function parOuImpar (n1){
+    if (n1 % 2 === 0) {
+        console.log(`o número ${n1} é par`);        
+    } else {
+        console.log(`o número ${n1} é impar`);
+    }
+}
+parOuImpar(10);
+parOuImpar(9);
+*/
+
+//gerar tabuada, lista array [10,5,3,8,2]
+/*
+function gerarTaboada(numeros){
+    for (var i = 0; i < numeros.length; i++){
+        console.log(`Tabuada do ${numeros[i]}`);
+        for(var j = 1; j <= 10; j++){
+            console.log(`${numeros[i]} x ${j} = ${numeros[i] * j} `);           
+        }
+    }
+}
+gerarTaboada([10,5,3,8,2])
+*/
+//IMC, receber peso e altura calcular IMC
+//verificar se a pessoa está abaixo do peso, peso normal, sobrepeso ou obesidade
+//abaixo do peso 18.5  => ABAIXO DO PESO
+//entre 18.5 e 24.9    => PESO NORMAL
+//entre 25 e 29.9      => SOBREPESO
+//igual ou acima de 30 => OBESIDADE
+/*
+  function IMC(peso,altura){
+    var IMCResult = peso/(altura**2);
+    if (IMCResult < 18.5) {
+        console.log(`${peso} e ${altura} seu IMC é ${IMCResult} você está ABAIXO DO PESO`);
+      } else if (IMCResult >= 18.5 && IMCResult <= 24.9){
+        console.log(`${peso} e ${altura} seu IMC é ${IMCResult} você está PESO NORMAL`);
+      } else if (IMCResult >= 25 && IMCResult <= 29.9){
+        console.log(`${peso} e ${altura} seu IMC é ${IMCResult} você está SOBREPESO`);
+      } else if (IMCResult >= 30){
+        console.log(`${peso} e ${altura} seu IMC é ${IMCResult} você está OBESO`);
+      }
+}
+IMC(50, 1.80)
+IMC(70, 1.80)
+IMC(90, 1.80)
+IMC(100, 1.80)
+*/
+
+//VERIFICAR SE O ANO É BISSESTO OU NÃO
+
+function anoBissexto(ano){
+    if ((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0) {
+        console.log(`O ano ${ano} é bissexto`);
+    } else {
+        console.log(`O ano ${ano} não é bissexto`);
+    }
+}
+anoBissexto(2023)
+anoBissexto(2024)
+anoBissexto(2025)
+
+</script>
+</body>
+</html>
