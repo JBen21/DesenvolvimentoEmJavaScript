@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de bibliotecas</title>
+</head>
+<body>
+    <h1>exemplo de bibliotecas</h1>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        // biblioteca Math
+        var numero = 10.5;
+        console.log("valor original", (numero) );
+        console.log("arredondamento para baixo", Math.floor(numero) );
+        console.log("arredondamento para cima", Math.ceil(numero) );
+        console.log("arredondamento para o mais proximo", Math.round(numero) );
+
+        var array = [10,20,30,40,50]; 
+        console.log("maior valor", Math.max(...array) );
+        console.log("maior valor 2", Math.max(10,20,30,40) );
+        console.log("menor valor", Math.min(...array) );
+        console.log("menor valor 2", Math.min(20,30,40) );
+
+        console.log("Raiz sem biblioteca", 16**0.5);
+        console.log("Raiz com biblioteca", Math.sqrt(16));
+        
+        console.log("Potência sem biblioteca", 2 ** 3);
+        console.log("Potência com biblioteca", Math.pow(2,3));
+
+        console.log("Valor de PI", Math.PI);
+        console.log("Valor de PI limite de casas decimais ", Math.PI.toFixed(2));
+
+        //biblioteca Data
+        
+        var data = new Date();
+        var data2 = new Date("2025-05-10");
+        console.log("Data atual", data);
+        console.log("dia", data.getDate() );
+        console.log("mes", data.getMonth()+1 );
+        console.log("ano", data.getFullYear() );
+        console.log("hora", data.getHours() );
+        console.log("minuto", data.getMinutes() );
+        console.log("segundos", data.getSeconds() );
+        console.log("dia semana", data.getDay() );
+
+        //biblioteca jquery
+
+        $("h1").css("color","blue");
+        $("h1").css({
+            "color": "red",
+            "font-family": "Arial",
+            "font-size": "80px",
+            "text-align": "center",
+        })
+
+
+
+
+
+    </script>
+</body>
+</html>
