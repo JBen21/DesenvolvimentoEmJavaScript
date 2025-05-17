@@ -20,78 +20,183 @@
     <ul class="list-group mb-3" id="listaTarefas"></ul>
 
     <p class="text-end fw-bold">Total de tarefas: <span id="contador">0</span></p>
-  </div>
 
-  <script>
-    let tarefas = [];
-    function adicionarTarefa() {
-      let input = document.getElementById("tarefaInput");
-      let texto = input.value.trim();
-      if (texto === "") {
-        alert("Digite uma tarefa valida");
-        return;
+    <!-- botôes de dowload  -->
+
+    <div class="d-flex justify-content-between mt-4">
+      <div class="upload-area">
+        <input type="file" name="upload" id="upload" accept=".json" class="d-none" onchange="uploadJson(event)">
+        <button id="btnUpload" class="btn btn-success" onclick="document.getElementById('upload').click()">Upload
+          Json</button>
+      </div>
+      <button id="btnDownload" onclick="downloadJson()" class="btn btn-info">Download Json</button>
+    </div>
+
+    <script>
+      let tarefas = [];
+
+      function adicionarTarefa() {
+        let input = document.getElementById("tarefaInput");
+        let texto = input.value.trim();
+        if (texto === "") {
+          alert("Digite uma tarefa valida");
+          return;
+        }
+        if (tarefas.includes(texto)) {
+          alert("Essa tarefa já foi Add");
+          return
+        }
+        tarefas.push(texto);
+        input.value = "";
+        atualizarLista();
       }
-      if (tarefas.includes(texto)) {
-        alert("Essa tarefa já foi Add");
-        return
+
+      function removerTarefa(item) {
+        tarefas.splice(item, 1);
+        atualizarLista();
+
       }
-      tarefas.push(texto);
-      input.value = "";
-      atualizarLista();
-    }
 
-    function removerTarefa() {
+      function atualizarLista(item) {
+        let lista = document.getElementById("listaTarefas");
+        lista.innerHTML = "";
 
-    }
+        for (let i = 0; i < tarefas.length; i++) {
+          let item = document.createElement("li");
+          item.className = "list-group-item";
 
-    function atualizarLista() {
-      let lista = document.getElementById("listaTarefas");
-      lista, innerHTML = "";
-
-      for (let i = 0; i < tarefas.length; i++) {
-        let item = document.createElement("li");
-        item.className = "list-group-item";
-
-        item.innerHTML = `
+          item.innerHTML = `
         ${tarefas[i]}
         <div class="float-end">
-          <button class="btn btn-sm btn-warning" onclick="editarTarefa()"> Editar </button>  
-          <button class="btn btn-sm btn-danger" onclick="removerTarefa()"> Remover</button>
+          <button class="btn btn-sm btn-warning" onclick="editarTarefa(${i})"> Editar </button>  
+          <button class="btn btn-sm btn-danger" onclick="removerTarefa(${i})"> Remover</button>
         </div>
         `;
 
-        lista.appendChild(item);
+          lista.appendChild(item);
+        }
+        atualizarContador();
+        salvarLocalStorage();
+        atualizarBotoes();
+
       }
-      atualizarContador();
 
-    }
+      function editarTarefa(item) {
+        let tarefaEditada = prompt("Editar a tarefa: ", tarefas[item]);
 
-    function editarTarefa() {
+        if (tarefaEditada.trim() == "") {
+          alert("o texto da tarefa não pode ser vazio!");
+          return
+        }
 
-    }
+        if (tarefas.includes(tarefaEditada)) {
+          alert("tarefa já existe na lista");
+          return;
+        }
+        tarefas[item] = tarefaEditada;
+        atualizarLista();
 
-    function atualizarContador() {
+      }
 
-    }
+      function atualizarContador() {
+        document.getElementById("contador").textContent = tarefas.length;
 
+      }
 
+      function salvarLocalStorage() {
+        localStorage.setItem("tarefas", JSON.stringify(tarefas));
+      }
 
+      function carregarLocalStorage() {
+        let dados = localStorage.getItem("tarefas");
+        if (dados) {
+          tarefas = JSON.parse(dados);
+          atualizarLista();
 
+        }
+      }
 
+      function atualizarBotoes() {
+        let btnUpload = document.getElementById("btnUpload");
+        let btnDownload = document.getElementById("btnDownload");
 
+        if (tarefas.length > 0) {
+          btnDownload.disabled = false;
+          btnUpload.disabled = true;
+        } else {
+          btnDownload.disabled = true;
+          btnUpload.disabled = false;
+        }
+      }
 
+      function downloadJson() {
+        if (tarefas.length == 0) {
+          alert("não tem tarefas para baixar");
+          return;
+        }
+        let dataStr = JSON.stringify(tarefas);
+        //cria o arquivo temp
+        let blob = new Blob([dataStr], { type: "application/json" });
+        let url = URL.createObjectURL(blob);
+        //cria o link para baixar o arquivo        
+        let a = document.createElement("a");
+        a.href = url;
+        a.download = "tarefas.json";
+        a.click();
+        //remove link e url do arquivo
+        URL.revokeObjectURL(url);
+        a.remove();
+      }
 
+      function uploadJson(arquivo) {
 
+        let file = arquivo.target.files[0];
+        if (!file) {
+          alert("arquivo não existe");
+          return;
+        }
 
+        let reader = new FileReader();
 
+        reader.onload = function (e) {
+          try {
 
+            let dados = JSON.parse(e.target.result);
 
+            if (!Array.isArray(dados)) {
+              alert("arquivo json invalido!");
+              return;
+            }
 
+            for (let tarefa of dados) {
+              if (typeof tarefa != "string") {
+                alert("arquivo json invalido! todas as tarefas devem ser texto!")
+                return;
+              }
+            }
 
+            if (tarefas.length > 0){
+              alert("para o upload funcionar, a lista tem que estar vazia!");
+              return;
+            }
 
+            tarefas = dados;
+            atualizarLista();
 
+          } catch (erro) {
+            alert("erro ao ler o arquivo JSON: " + error.message);
+          }
+        }
+        
+        reader.readAsText(file);
 
-  </script>
+        arquivo.target.value = "";
+
+      }
+      carregarLocalStorage();
+      atualizarBotoes();
+
+    </script>
 </body>
 
 
